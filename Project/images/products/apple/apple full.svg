@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463.64 437.58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e53333;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #c9e272;
+      }
+
+      .cls-3 {
+        fill: #dffb6c;
+      }
+    </style>
+  </defs>
+  <g id="Pattern_3" data-name="Pattern 3">
+    <circle id="Ellipse_30" data-name="Ellipse 30" class="cls-3" cx="330.01" cy="209.96" r="133.63"/>
+    <circle id="Ellipse_27" data-name="Ellipse 27" class="cls-1" cx="208.19" cy="345.95" r="91.63"/>
+    <circle id="Ellipse_28" data-name="Ellipse 28" class="cls-1" cx="306.91" cy="327.05" r="110.53"/>
+    <circle id="Ellipse_29" data-name="Ellipse 29" class="cls-2" cx="150.17" cy="263.25" r="107.12"/>
+    <circle id="Ellipse_31" data-name="Ellipse 31" class="cls-1" cx="25.73" cy="371.94" r="25.73"/>
+    <circle id="Ellipse_32" data-name="Ellipse 32" class="cls-1" cx="116.57" cy="68.97" r="42.01"/>
+    <circle id="Ellipse_33" data-name="Ellipse 33" class="cls-1" cx="436.34" cy="156.14" r="25.73"/>
+    <circle id="Ellipse_34" data-name="Ellipse 34" class="cls-1" cx="383.38" cy="15.42" r="15.41"/>
+  </g>
+</svg>

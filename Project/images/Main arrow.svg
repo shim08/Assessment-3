@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 695.16 695.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e51b6c;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="347.58" cy="347.58" r="347.58"/>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-2" d="m539.86,347.58l-325.39,187.35V160.23l325.39,187.35Z"/>
+</svg>

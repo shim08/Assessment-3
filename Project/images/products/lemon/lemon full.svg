@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.63 438.35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffffb7;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ffff7a;
+        isolation: isolate;
+        opacity: .94;
+      }
+
+      .cls-3 {
+        fill: #ffff40;
+      }
+    </style>
+  </defs>
+  <g id="Pattern_4" data-name="Pattern 4">
+    <ellipse id="Ellipse_35" data-name="Ellipse 35" class="cls-2" cx="338.88" cy="219.17" rx="122.84" ry="237.83" transform="translate(-62.57 177.74) rotate(-27)"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-1" x="210.96" y="60.4" width="233.65" height="233.65" rx="20.59" ry="20.59" transform="translate(17.51 383.58) rotate(-62.03)"/>
+    <ellipse id="Ellipse_36" data-name="Ellipse 36" class="cls-2" cx="106.35" cy="208.16" rx="165.24" ry="58.72" transform="translate(-125.15 175.78) rotate(-54.98)"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-3" x="97.51" y="145.38" width="187" height="187" rx="20.59" ry="20.59" transform="translate(-85.33 107.79) rotate(-25.98)"/>
+  </g>
+</svg>

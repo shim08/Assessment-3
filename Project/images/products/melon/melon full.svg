@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493 438.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #50db7e;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #f92356;
+      }
+    </style>
+  </defs>
+  <g id="Pattern_1" data-name="Pattern 1">
+    <ellipse id="Ellipse_22" data-name="Ellipse 22" class="cls-2" cx="192.63" cy="187.74" rx="222.4" ry="151.25" transform="translate(-76.29 181.81) rotate(-43)"/>
+    <ellipse id="Ellipse_24" data-name="Ellipse 24" class="cls-2" cx="276.35" cy="260.29" rx="118.92" ry="178.29" transform="translate(-25.69 30.31) rotate(-6)"/>
+    <ellipse id="Ellipse_25" data-name="Ellipse 25" class="cls-1" cx="368.48" cy="150.72" rx="123.82" ry="149.23" transform="translate(-19.04 59.5) rotate(-9)"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 779.89 779.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e51b6c;
+        stroke-dasharray: 0 0 242.51 242.51;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <g id="Ellipse_1" data-name="Ellipse 1">
+    <circle class="cls-1" cx="389.94" cy="389.94" r="385.94"/>
+  </g>
+</svg>

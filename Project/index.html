@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Warp Tea</title>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'ojj5iff',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<header>
+    <div id="cursorFx"></div>
+    <div id="navBar">
+        <div class="options">
+            <a class="home" onclick="returnHome()">HOME</a>
+            <a class="products" onclick="proNav()">PRODUCTS</a>
+            <a class="about" onclick="abPage()">ABOUT</a>
+            <a class="contact" onclick="conPage()">CONTACT</a>
+        </div>
+        <div id="navContainer">
+            <img id="logoNav" src="images/WB2 A2 Logo Mockup blue.svg" onclick="returnHome()">
+        </div>
+    </div>
+</header>
+<body>
+
+    <div id="navArrow" onclick="toggleHome()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+
+    </div>
+
+    <div id="proArrow" onclick="proPage2()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
+    <div id="proArrow2" onclick="proPage3()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
+    <div id="proArrow3" onclick="proPage4()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
+    <div id="proArrow4" onclick="abPage()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
+    <div id="abArrow" onclick="conPage()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
+    <div id="conArrow" onclick="returnHome()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
+
+
+
+
+    <div id="homePage">
+        <div id="homeLogo">
+            <img src="images/WB2 A2 Logo Mockup blue.svg">
+        </div>
+    </div>
+    
+    <div id="productPage">
+        <div id="flavour1">
+            <div class="watermelon">Watermelon</div>
+
+            <div class="bgContainer">
+                <img class="melon1" src="images/products/melon/melon 1.svg">
+                <img class="melon2" src="images/products/melon/melon 2.svg">
+                <img class="melon3" src="images/products/melon/melon 3.svg">
+            </div>
+        </div>
+        <div id="flavour2">
+            <div class="peach">Peach</div>
+            <div class="bottle">
+                <img class="bottleImg" src="images/products/peach 2.svg">
+            </div>
+            <div class="bgContainer">
+                <img class="peach1" src="images/products/peach/peach 1.svg">
+                <img class="peach2" src="images/products/peach/peach 2.svg">
+                <img class="peach3" src="images/products/peach/peach 3.svg">
+            </div>
+        </div>
+        <div id="flavour3">
+            <div class="apple">Apple</div>
+            <div class="bgContainer">
+                <img class="appleFront" src="images/products/apple/apple front.svg">
+                <img class="apple0" src="images/products/apple/apple 0.svg">
+                <img class="apple1" src="images/products/apple/apple 1.svg">
+                <img class="apple2" src="images/products/apple/apple 2.svg">
+                <img class="apple3" src="images/products/apple/apple 3.svg">
+            </div>
+        </div>
+        <div id="flavour4">
+            <div class="lemon">Lemon</div>
+            <div class="bgContainer">
+                <img class="lemon1" src="images/products/lemon/lemon 1.svg">
+                <img class="lemon2" src="images/products/lemon/lemon 2.svg">
+                <img class="lemon3" src="images/products/lemon/lemon 3.svg">
+                <img class="lemon4" src="images/products/lemon/lemon 4.svg">
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutPage">
+        <div id="aboutMain">
+            <div class="aboutMainTitle">ABOUT US</div>
+            <div class="aboutMain2">Learn about Time Warp</div>
+            <button class="explore" onclick="abSub1()">Explore</button>
+        </div>
+        <div id="aboutSubs">
+            <div id="about1">
+                <div class="about1Title">ABOUT US</div>
+                <div class="about1Sub">Our Background</div>
+                <div class="about1Text">
+                    <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce vehicula, massa vitae porta efficitur, metus metus
+                        condimentum metus, eget vehicula sapien nisl quis turpis.
+                        Nullam ut arcu erat. Aliquam auctor, enim et laoreet dictum,
+                        risus justo rhoncus arcu, at scelerisque quam sem sit 
+                        amet turpis. Suspendisse in lorem eros. Nam a pretium 
+                        magna, vitae rhoncus lorem. Suspendisse ultrices gravida 
+                        tellus, nec consequat nisl efficitur eget. Nam volutpat
+                        convallis lectus vel dapibus. Maecenas nec commodo
+                        ipsum, a eleifend ex.  </span>
+                </div>
+            </div>
+            <div id="about2">
+                <div class="about2Title">ABOUT US</div>
+                <div class="about2Sub">Our Ingredients</div>
+                <div class="about2Text">
+                    <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce vehicula, massa vitae porta efficitur, metus metus
+                        condimentum metus, eget vehicula sapien nisl quis turpis.
+                        Nullam ut arcu erat. Aliquam auctor, enim et laoreet dictum,
+                        risus justo rhoncus arcu, at scelerisque quam sem sit 
+                        amet turpis. Suspendisse in lorem eros. Nam a pretium 
+                        magna, vitae rhoncus lorem. Suspendisse ultrices gravida 
+                        tellus, nec consequat nisl efficitur eget. Nam volutpat
+                        convallis lectus vel dapibus. Maecenas nec commodo
+                        ipsum, a eleifend ex.  </span>
+                </div>
+            </div>
+            <div class="abSubNav">
+                <div class="navDots">
+                    <div class="arrow-left"></div>
+                    <div class="navDot1" onclick="abPage()"></div>
+                    <div class="navDot2" onclick="abSub1()"></div>
+                    <div class="navDot3" onclick="abSub2()"></div>
+                    <div class="arrow-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactPage">
+        <div class="contactTitle">CONTACT US</div>
+        <div class="social1">
+            <img class="socialIcons" src="images/facebook.svg" onclick = "openFacebook()">
+        </div>
+        <div class="social2">
+            <img class="socialIcons" src="images/twitter.svg" onclick = "openTwitter()">
+        </div>
+        <div class="social3">
+            <img class="socialIcons" src="images/instagram.svg" onclick = "openInsta()">
+        </div>
+        <div id="contactScroll">
+            <div class="contactSub">Have an Inquiry?</div>
+            <div class="inputContainer">
+                <textarea class="input1" placeholder="Name..."></textarea>
+                <textarea class="input2" placeholder="Email Address..."></textarea>
+                <textarea class="input3" placeholder="Type your message..."></textarea>
+                <button class="send">Send</button>
+            </div>
+            <div class="contactSub2">Prefer to contact us directly?</div>
+            <div class="email">Contact Email: sample@email.com</div>
+            <div class="tel">Phone Number: 08 **** ****</div>
+        </div>
+
+        <div class="botNav" onclick = 'toggleBotNav()'>
+            <div class="navHandle"></div>
+            <div class="quickNav">
+                <h1>Quick Access</h1>
+                <span onclick="returnHome()">Home</span>
+                <span onclick="proNav()">Products</span>
+                <span onclick="abPage()">About</span>
+                <span onclick="conPage()">Contact</span>
+            </div>
+            <div class="conInfo">
+                <h1>Contact Info</h1>
+                <span>Email: sample@email.com</span>
+                <span>Tel: 08 **** ****</span>
+            </div>
+            <div class="quickSocials">
+                <h1>Socials</h1>
+                <span onclick = "openTwitter()">Twitter</span>
+                <span onclick = "openInsta()">Instagram</span>
+                <span onclick = "openFacebook()">Facebook</span>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <div id="bgLines">
+        <div class="lHome">
+            <img class="linesHome" src="images/lines 1.svg">
+        </div>
+        <div class="lBot">
+            <img class="linesBot" src="images/lines 2.svg">
+        </div>
+        <div class="lRight">
+            <img class="linesRight" src="images/lines right.svg">
+        </div>
+        <div class="lBot2">
+            <img class="linesBot2" src="images/lines 2.svg">
+        </div>
+        <div class="lMain">
+            <img class="linesMain" src="images/lines main.svg">
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-FmrxaqOldbQJq7ruBRLrIzxYZxDJLH2GBKvJqJz8Jf7WKEgDkvAkfta6JeInBYExpr+R0aw8niow9OiunjDigQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

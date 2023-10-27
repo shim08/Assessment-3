@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1730.12 1730.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        isolation: isolate;
+        opacity: .7;
+        stroke: #707070;
+        stroke-miterlimit: 4;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="bg_lines_right" data-name="bg lines right">
+    <line id="Line_99" data-name="Line 99" class="cls-1" x1="212.84" y1=".71" x2="1729.42" y2="1517.29"/>
+    <line id="Line_93" data-name="Line 93" class="cls-1" x1="36.06" y1="177.48" x2="1552.64" y2="1694.06"/>
+    <line id="Line_94" data-name="Line 94" class="cls-1" x1="71.42" y1="142.13" x2="1588" y2="1658.71"/>
+    <line id="Line_96" data-name="Line 96" class="cls-1" x1="142.13" y1="71.42" x2="1658.71" y2="1588"/>
+    <line id="Line_97" data-name="Line 97" class="cls-1" x1="177.48" y1="36.06" x2="1694.06" y2="1552.64"/>
+    <line id="Line_98" data-name="Line 98" class="cls-1" x1="106.77" y1="106.77" x2="1623.35" y2="1623.35"/>
+    <line id="Line_95" data-name="Line 95" class="cls-1" x1=".71" y1="212.84" x2="1517.29" y2="1729.42"/>
+  </g>
+</svg>

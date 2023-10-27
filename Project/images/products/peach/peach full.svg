@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.03 416.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc5441;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ff956d;
+      }
+    </style>
+  </defs>
+  <g id="Pattern_2" data-name="Pattern 2">
+    <path id="Polygon_3" data-name="Polygon 3" class="cls-1" d="m121.57,37.66c30.83-15.62,66.62,9.46,62.45,43.77l-6.97,57.49c-3.93,32.41-40.99,48.94-67.73,30.2l-44.69-31.32c-26.74-18.74-23.85-59.22,5.28-73.97l51.66-26.17Z"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-2" x="83.45" y="49.25" width="210.52" height="228.96" rx="17.38" ry="17.38" transform="translate(-58.73 129.23) rotate(-33.01)"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-2" x="237.49" y="173.63" width="212.02" height="207.74" rx="19.08" ry="19.08" transform="translate(-97.83 262.57) rotate(-37)"/>
+    <path id="Polygon_2" data-name="Polygon 2" class="cls-1" d="m244.23,56.8c1.76-47.06,55.28-73.13,93.42-45.51l58.38,42.28c36.03,26.09,31.25,81.18-8.75,100.67l-61.07,29.75c-40,19.49-86.33-10.7-84.67-55.16l2.69-72.03Z"/>
+    <path id="Polygon_4" data-name="Polygon 4" class="cls-1" d="m169.22,277.83c10.68,16.51-1.37,38.25-21.03,37.94l-123.95-1.92c-18.57-.29-30.13-20.27-21.13-36.51l56.63-102.17c9-16.24,32.07-17.03,42.16-1.43l67.32,104.09Z"/>
+  </g>
+</svg>

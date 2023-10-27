@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420.39 315.77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc5441;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Pattern_2" data-name="Pattern 2">
+    <path id="Polygon_2" data-name="Polygon 2" class="cls-1" d="m244.23,56.8c1.76-47.06,55.28-73.13,93.42-45.51l58.38,42.28c36.03,26.09,31.25,81.18-8.75,100.67l-61.07,29.75c-40,19.49-86.33-10.7-84.67-55.16l2.69-72.03Z"/>
+    <path id="Polygon_4" data-name="Polygon 4" class="cls-1" d="m169.22,277.83c10.68,16.51-1.37,38.25-21.03,37.94l-123.95-1.92c-18.57-.29-30.13-20.27-21.13-36.51l56.63-102.17c9-16.24,32.07-17.03,42.16-1.43l67.32,104.09Z"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1906.9 1906.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        isolation: isolate;
+        opacity: .5;
+        stroke: #707070;
+        stroke-miterlimit: 4;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="bg_lines_left_" data-name="bg lines left ">
+    <line id="Line_61" data-name="Line 61" class="cls-1" x1="1552.64" y1="36.06" x2="36.06" y2="1552.64"/>
+    <line id="Line_62" data-name="Line 62" class="cls-1" x1="1588" y1="71.42" x2="71.42" y2="1588"/>
+    <line id="Line_64" data-name="Line 64" class="cls-1" x1="1658.71" y1="142.13" x2="142.13" y2="1658.71"/>
+    <line id="Line_65" data-name="Line 65" class="cls-1" x1="1694.06" y1="177.48" x2="177.48" y2="1694.06"/>
+    <line id="Line_66" data-name="Line 66" class="cls-1" x1="1623.35" y1="106.77" x2="106.77" y2="1623.35"/>
+    <line id="Line_67" data-name="Line 67" class="cls-1" x1="1764.77" y1="248.2" x2="248.19" y2="1764.77"/>
+    <line id="Line_68" data-name="Line 68" class="cls-1" x1="1800.13" y1="283.55" x2="283.55" y2="1800.13"/>
+    <line id="Line_69" data-name="Line 69" class="cls-1" x1="1729.42" y1="212.84" x2="212.84" y2="1729.42"/>
+    <line id="Line_70" data-name="Line 70" class="cls-1" x1="1870.84" y1="354.26" x2="354.26" y2="1870.84"/>
+    <line id="Line_71" data-name="Line 71" class="cls-1" x1="1906.19" y1="389.62" x2="389.62" y2="1906.19"/>
+    <line id="Line_72" data-name="Line 72" class="cls-1" x1="1835.48" y1="318.91" x2="318.91" y2="1835.48"/>
+    <line id="Line_63" data-name="Line 63" class="cls-1" x1="1517.29" y1=".71" x2=".71" y2="1517.29"/>
+  </g>
+</svg>
