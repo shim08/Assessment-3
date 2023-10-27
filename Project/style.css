@@ -460,7 +460,6 @@ header{
     display: none;
 }
 .abSubNav{
-    border: 1px solid red;
     width:40%;
     height:10%;
     margin: auto;
@@ -469,7 +468,6 @@ header{
 }
 .navDots{
     display: flex;
-    border: 1px solid red;
     margin: auto;
 }
 .navDot1, .navDot2, .navDot3{
@@ -491,22 +489,6 @@ header{
     transform: scale(1.2);
 }
 
-.arrow-left, .arrow-right{
-    width: 0; 
-    height: 0; 
-    border-top: 1.67vh solid transparent;
-    border-bottom: 1.67vh solid transparent;
-    margin:auto;
-    transition: 0.2s;
-}
-.arrow-right{
-    border-left: 2.5vh solid #E51B6C;
-    margin-left:1vh;
-}
-.arrow-left{
-    border-right: 2.5vh solid #E51B6C;
-    margin-right:1vh;
-}
 
 
 #contactScroll{
