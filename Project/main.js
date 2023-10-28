@@ -12,6 +12,10 @@ let proArrow3 = document.querySelector('#proArrow3');
 let proArrow4 = document.querySelector('#proArrow4');
 let abArrow = document.querySelector('#abArrow');
 let conArrow = document.querySelector('#conArrow');
+let revArrow = document.querySelector('#revArrow');
+let revArrow2 = document.querySelector('#revArrow2');
+let revArrow3 = document.querySelector('#revArrow3');
+let revArrow4 = document.querySelector('#revArrow4');
 
 let lHome = document.querySelector('.lHome');
 let lRight = document.querySelector('.lRight');
@@ -27,6 +31,11 @@ let flavour1 = document.querySelector('#flavour1');
 let flavour2 = document.querySelector('#flavour2');
 let flavour3 = document.querySelector('#flavour3');
 let flavour4 = document.querySelector('#flavour4');
+
+let f1Rev = document.querySelector('#f1Review')
+let f2Rev = document.querySelector('#f2Review')
+let f3Rev = document.querySelector('#f3Review')
+let f4Rev = document.querySelector('#f4Review')
 
 let melon1 = document.querySelector('.melon1');
 
@@ -51,6 +60,12 @@ function returnHome(){
     flavour3.style.display = 'none';
     flavour4.style.display = 'none';
 
+    f1Rev.style.display = 'none';
+    f2Rev.style.display = 'none';
+    f3Rev.style.display = 'none';
+    f4Rev.style.display = 'none';
+
+
     products.style.color = '#E51B6C';
     about.style.color = '#E51B6C';
     contact.style.color = '#E51B6C';
@@ -61,6 +76,10 @@ function returnHome(){
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'none';
     proArrow4.style.display = 'none';
+    revArrow.style.display = 'none';
+    revArrow2.style.display = 'none';
+    revArrow3.style.display = 'none';
+    revArrow4.style.display = 'none';
     abArrow.style.display = 'none';
     conArrow.style.display = 'none';
 
@@ -124,6 +143,63 @@ function proPage4(){
     proArrow4.style.display = 'block';
 }
 
+
+function proRev1(){
+    flavour1.style.display = 'none';
+    f1Rev.style.display = 'flex';
+
+    proArrow.style.display = 'none';
+    revArrow.style.display = 'block';
+}
+function revReturn1(){
+    flavour1.style.display = 'flex';
+    f1Rev.style.display = 'none';
+
+    proArrow.style.display = 'block';
+    revArrow.style.display = 'none';
+}
+function proRev2(){
+    flavour2.style.display = 'none';
+    f2Rev.style.display = 'flex';
+
+    proArrow2.style.display = 'none';
+    revArrow2.style.display = 'block';
+}
+function revReturn2(){
+    flavour2.style.display = 'flex';
+    f2Rev.style.display = 'none';
+
+    proArrow2.style.display = 'block';
+    revArrow2.style.display = 'none';
+}
+function proRev3(){
+    flavour3.style.display = 'none';
+    f3Rev.style.display = 'flex';
+
+    proArrow3.style.display = 'none';
+    revArrow3.style.display = 'block';
+}
+function revReturn3(){
+    flavour3.style.display = 'flex';
+    f3Rev.style.display = 'none';
+
+    proArrow3.style.display = 'block';
+    revArrow3.style.display = 'none';
+}
+function proRev4(){
+    flavour4.style.display = 'none';
+    f4Rev.style.display = 'flex';
+
+    proArrow4.style.display = 'none';
+    revArrow4.style.display = 'block';
+}
+function revReturn4(){
+    flavour4.style.display = 'flex';
+    f4Rev.style.display = 'none';
+
+    proArrow4.style.display = 'block';
+    revArrow4.style.display = 'none';
+}
 /*
 gsap.set(".bgContainer", {xPercent: -50, yPercent: -50});
 
@@ -308,6 +384,10 @@ function abPage(){
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'none';
     proArrow4.style.display = 'none';
+    revArrow.style.display = 'none';
+    revArrow2.style.display = 'none';
+    revArrow3.style.display = 'none';
+    revArrow4.style.display = 'none';
     abArrow.style.display = 'block';
     conArrow.style.display = 'none';
 }
@@ -363,6 +443,10 @@ function conPage(){
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'none';
     proArrow4.style.display = 'none';
+    revArrow.style.display = 'none';
+    revArrow2.style.display = 'none';
+    revArrow3.style.display = 'none';
+    revArrow4.style.display = 'none';
     abArrow.style.display = 'none';
     conArrow.style.display = 'block';
 }

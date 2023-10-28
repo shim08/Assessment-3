@@ -45,7 +45,17 @@
         <img class="surArrow2" src="images/arrow surround hovered.svg">
         <img class="mainArrow" src="images/Main arrow.svg">
     </div>
+    <div id="revArrow" onclick="revReturn1()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
     <div id="proArrow2" onclick="proPage3()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
+    <div id="revArrow2" onclick="revReturn2()">
         <img class="surArrow1" src="images/arrow surround.svg">
         <img class="surArrow2" src="images/arrow surround hovered.svg">
         <img class="mainArrow" src="images/Main arrow.svg">
@@ -55,7 +65,17 @@
         <img class="surArrow2" src="images/arrow surround hovered.svg">
         <img class="mainArrow" src="images/Main arrow.svg">
     </div>
+    <div id="revArrow3" onclick="revReturn3()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
     <div id="proArrow4" onclick="abPage()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/Main arrow.svg">
+    </div>
+    <div id="revArrow4" onclick="revReturn4()">
         <img class="surArrow1" src="images/arrow surround.svg">
         <img class="surArrow2" src="images/arrow surround hovered.svg">
         <img class="mainArrow" src="images/Main arrow.svg">
@@ -79,7 +99,13 @@
     
     <div id="productPage">
         <div id="flavour1">
-            <div class="watermelon">Watermelon</div>
+            <div class="proContainer">
+                <div class="watermelon">Watermelon</div>
+                <div class="reviews">
+                    <div onclick = "proRev1()">See Reviews <div class="rArrow"></div></div>
+                    <img src="images/review stars 4.svg">
+                </div>
+            </div>
             <div class="bottle" id="bottleM">
                 <img class="bottleImg" src="images/products/melon.svg">
             </div>
@@ -89,8 +115,76 @@
                 <img class="melon3" src="images/products/melon/melon 3.svg">
             </div>
         </div>
+    
+        
+        <div id="f1Review">
+            <div class="f1R">PRODUCTS</div>
+            <div class="f1RSub">Watermelon - Customer Reviews</div>
+            <img src="images/review stars 4.svg" class="f1RStar">
+            <div id="f1RScroll">
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Bruce - Confirmed Buyer</div>
+                        <img src="images/review stars 4.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Sally - Confirmed Buyer</div>
+                        <img src="images/review stars 5.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Jill - Confirmed Buyer</div>
+                        <img src="images/review stars 4.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+    
         <div id="flavour2">
-            <div class="peach">Peach</div>
+            <div class="proContainer">
+                <div class="peach">Peach</div>
+                <div class="reviews">
+                    <div onclick = "proRev2()">See Reviews <div class="rArrow"></div></div>
+                    <img src="images/review stars 5.svg">
+                </div>
+            </div>
             <div class="bottle" id="bottleP">
                 <img class="bottleImg" src="images/products/peach 2.svg">
             </div>
@@ -100,8 +194,76 @@
                 <img class="peach3" src="images/products/peach/peach 3.svg">
             </div>
         </div>
+
+        <div id="f2Review">
+            <div class="f1R">PRODUCTS</div>
+            <div class="f1RSub">Peach - Customer Reviews</div>
+            <img src="images/review stars 5.svg" class="f1RStar">
+            <div id="f2RScroll">
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Bruce - Confirmed Buyer</div>
+                        <img src="images/review stars 4.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Sally - Confirmed Buyer</div>
+                        <img src="images/review stars 5.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Jill - Confirmed Buyer</div>
+                        <img src="images/review stars 4.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+
+
         <div id="flavour3">
-            <div class="apple">Apple</div>
+            <div class="proContainer">
+                <div class="apple">Apple</div>
+                <div class="reviews">
+                    <div onclick = "proRev3()">See Reviews <div class="rArrow"></div></div>
+                    <img src="images/review stars 4.svg">
+                </div>
+            </div>
             <div class="bottle" id="bottleA">
                 <img class="bottleImg" src="images/products/apple 2.svg">
             </div>
@@ -113,8 +275,75 @@
                 <img class="apple3" src="images/products/apple/apple 3.svg">
             </div>
         </div>
+
+        <div id="f3Review">
+            <div class="f1R">PRODUCTS</div>
+            <div class="f1RSub">Peach - Customer Reviews</div>
+            <img src="images/review stars 5.svg" class="f1RStar">
+            <div id="f3RScroll">
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Bruce - Confirmed Buyer</div>
+                        <img src="images/review stars 4.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Sally - Confirmed Buyer</div>
+                        <img src="images/review stars 5.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                <div class="cust1">
+                    <div class="cust1Sub">
+                        <div>Jill - Confirmed Buyer</div>
+                        <img src="images/review stars 4.svg">
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                        faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                        imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                        dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                        vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                        et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                        Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                        ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                        ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+
         <div id="flavour4">
-            <div class="lemon">Lemon</div>
+            <div class="proContainer">
+                <div class="lemon">Lemon</div>
+                <div class="reviews">
+                    <div onclick = "proRev4()">See Reviews <div class="rArrow"></div></div>
+                    <img src="images/review stars 4.svg">
+                </div>
+            </div>
             <div class="bottle" id="bottleL">
                 <img class="bottleImg" src="images/products/lemon 2.svg">
             </div>
@@ -126,6 +355,67 @@
             </div>
         </div>
     </div>
+
+    <div id="f4Review">
+        <div class="f1R">PRODUCTS</div>
+        <div class="f1RSub">Peach - Customer Reviews</div>
+        <img src="images/review stars 5.svg" class="f1RStar">
+        <div id="f4RScroll">
+            <div class="cust1">
+                <div class="cust1Sub">
+                    <div>Bruce - Confirmed Buyer</div>
+                    <img src="images/review stars 4.svg">
+                </div>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                    faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                    imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                    dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                    vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                    et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                    Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                    ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                    ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                </span>
+            </div>
+            <div class="cust1">
+                <div class="cust1Sub">
+                    <div>Sally - Confirmed Buyer</div>
+                    <img src="images/review stars 5.svg">
+                </div>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                    faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                    imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                    dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                    vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                    et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                    Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                    ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                    ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                </span>
+            </div>
+            <div class="cust1">
+                <div class="cust1Sub">
+                    <div>Jill - Confirmed Buyer</div>
+                    <img src="images/review stars 4.svg">
+                </div>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
+                    faucibus vel placerat ac, blandit non nibh. Fusce non venenatis ipsum. Donec
+                    imperdiet odio vel facilisis cursus. Fusce hendrerit arcu quis mi elementum
+                    dapibus. In lacinia enim et pretium pulvinar. Etiam imperdiet nulla in augue
+                    vestibulum tincidunt. Vivamus varius ultricies orci, ut tincidunt enim blandit
+                    et. Integer condimentum ultrices felis, ac malesuada augue ultricies porta.
+                    Duis bibendum id sapien id rutrum. Cras vel quam ultrices, posuere eros at,
+                    ullamcorper nunc. Integer placerat tincidunt nulla, at varius neque pretium 
+                    ullamcorper. Sed quis eros quam. Etiam ac felis pellentesque est convallis feugiat. 
+                </span>
+            </div>
+            
+        </div>
+    </div>
+
 
     <div id="aboutPage">
         <div id="aboutMain">

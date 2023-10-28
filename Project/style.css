@@ -126,10 +126,10 @@ header{
 }
 
 
-#navArrow:hover, #proArrow:hover, #proArrow2:hover, #proArrow3:hover, #proArrow4:hover, #abArrow:hover, #conArrow:hover{
+#navArrow:hover, #proArrow:hover, #proArrow2:hover, #proArrow3:hover, #proArrow4:hover, #abArrow:hover, #conArrow:hover, #revArrow:hover, #revArrow2:hover, #revArrow3:hover, #revArrow4:hover{
     transform: scale(1.1);
 }
-#proArrow, #proArrow2, #proArrow3, #proArrow4, #abArrow, #conArrow{
+#proArrow, #proArrow2, #proArrow3, #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
     position: absolute;
     width:15vh;
     height:15vh;
@@ -270,13 +270,132 @@ header{
 #flavour2, #flavour3, #flavour4{
     display: none;
 }
+.proContainer{
+    width:85vh;
+    height:10vh;
+    margin: auto;
+    display: flex;
+    margin-top:8%;
+}
 .watermelon, .peach, .apple, .lemon{
     margin: auto;
-    margin-top: 10%;
     color: #E51B6C;
     z-index: 9;
 }
 
+.peach, .apple, .lemon{
+    margin-left:21%;
+}
+.reviews{
+    margin: auto;
+    width:30vh;
+    height:8vh;
+    font-size: 3vh;
+    color: rgb(26, 26, 26)
+}
+
+.reviews div{
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.reviews div:hover{
+    transform: scale(1.06);
+}
+.reviews img{
+    transform: scale(0.8);
+    margin-left: -11%;
+}
+.rArrow{
+    border: solid rgb(26, 26, 26);
+    border-width: 0 0.6vh 0.6vh 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+#f1Review, #f2Review, #f3Review, #f4Review{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    
+}
+
+.f1R{
+    position: absolute;
+    margin: auto;
+    font-size: 8vh;
+    color: #E51B6C;
+    top:16vh;
+}
+
+.f1RSub{
+    margin: auto;
+    font-size: 5.5vh;
+    color: #E51B6C;
+    margin-top:14%;
+    margin-bottom: 0%;
+}
+.f1RStar{
+    width:20%;
+    height:8%;
+    margin-bottom: -3%;
+}
+
+#f1RScroll, #f2RScroll, #f3RScroll, #f4RScroll{
+    width:70%;
+    height:50%;
+    padding-top:0.5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+}
+.cust1{
+    width:98%;
+    height: 48%;
+    margin: auto;
+    margin-top:0.75%;
+    margin-bottom:0.75%;
+    display: flex;
+    flex-direction: column;
+}
+.cust1Sub{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 20%;
+    font-size: 3.4vh;
+    color: rgb(22, 22, 22);
+}
+.cust1Sub div{
+    width: 42%;
+    margin-top:0.2%;
+}
+.cust1Sub img{
+    transform: scale(1);
+    width:25%;
+    height:100%;
+
+}
+.cust1 span{
+    width:95%;
+    height:78%;
+    margin-left:1.5%;
+    margin-top:0.6%;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2vh;
+}
+    
 .bottle{
     width:30%;
     height: 90%;
