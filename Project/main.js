@@ -28,6 +28,8 @@ let flavour2 = document.querySelector('#flavour2');
 let flavour3 = document.querySelector('#flavour3');
 let flavour4 = document.querySelector('#flavour4');
 
+let melon1 = document.querySelector('.melon1');
+
 let aboutMain = document.querySelector('#aboutMain');
 let about1 = document.querySelector('#about1');
 let about2 = document.querySelector('#about2');
@@ -121,6 +123,173 @@ function proPage4(){
     proArrow3.style.display = 'none';
     proArrow4.style.display = 'block';
 }
+
+/*
+gsap.set(".bgContainer", {xPercent: -50, yPercent: -50});
+
+let xTo = gsap.quickTo(".bgContainer", "x", {duration: 4, ease: "power3"}),  yTo = gsap.quickTo(".bgContainer", "y", {duration: 4, ease: "power3"});
+
+window.addEventListener("mousemove", e => {
+    xTo(e.clientX);
+    yTo(e.clientY);
+})
+*/
+
+const bottleM = gsap.utils.toArray('#bottleM')[0];
+const bottleP = gsap.utils.toArray('#bottleP')[0];
+const bottleA = gsap.utils.toArray('#bottleA')[0];
+const bottleL = gsap.utils.toArray('#bottleL')[0];
+
+const melon1Move = gsap.utils.toArray('.melon1')[0];
+const melon2Move = gsap.utils.toArray('.melon2')[0];
+const melon3Move = gsap.utils.toArray('.melon3')[0];
+
+const peach1Move = gsap.utils.toArray('.peach1')[0];
+const peach2Move = gsap.utils.toArray('.peach2')[0];
+const peach3Move = gsap.utils.toArray('.peach3')[0];
+
+const appleFrontMove = gsap.utils.toArray('.appleFront')[0];
+const apple0Move = gsap.utils.toArray('.apple0')[0];
+const apple1Move = gsap.utils.toArray('.apple1')[0];
+const apple2Move = gsap.utils.toArray('.apple2')[0];
+const apple3Move = gsap.utils.toArray('.apple3')[0];
+
+const lemon1Move = gsap.utils.toArray('.lemon1')[0];
+const lemon2Move = gsap.utils.toArray('.lemon2')[0];
+const lemon3Move = gsap.utils.toArray('.lemon3')[0];
+const lemon4Move = gsap.utils.toArray('.lemon4')[0];
+
+window.addEventListener('mousemove', (event) =>{
+    const mouseX = -((window.innerWidth / 2) - event.pageX) / 40
+    const mouseY = ((window.innerHeight / 2) - event.pageY) / 20
+
+    const mouseXb = -((window.innerWidth / 2) - event.pageX) / 80
+    const mouseYb = ((window.innerHeight / 2) - event.pageY) / 40
+
+    gsap.to(bottleM, {
+        duration: 1,
+        rotationY: mouseXb,
+        rotationX: mouseYb,
+        ease: 'power2.out'
+    })
+    gsap.to(bottleP, {
+        duration: 1,
+        rotationY: mouseXb,
+        rotationX: mouseYb,
+        ease: 'power2.out'
+    })
+    gsap.to(bottleA, {
+        duration: 1,
+        rotationY: mouseXb,
+        rotationX: mouseYb,
+        ease: 'power2.out'
+    })
+    gsap.to(bottleL, {
+        duration: 1,
+        rotationY: mouseXb,
+        rotationX: mouseYb,
+        ease: 'power2.out'
+    })
+
+    gsap.to(melon1Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(melon2Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(melon3Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+
+    gsap.to(peach1Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(peach2Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(peach3Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+
+    gsap.to(appleFrontMove, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(apple0Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(apple1Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(apple2Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(apple3Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+
+    gsap.to(lemon1Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(lemon2Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(lemon3Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    gsap.to(lemon4Move, {
+        duration: 0.5,
+        rotationY: mouseX,
+        rotationX: mouseY,
+        ease: 'power2.out'
+    })
+    
+})
+
+
+
+
 
 function abPage(){
     productPage.style.display = 'none';
