@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Warp Tea</title>
+
     <script>
         (function(d) {
           var config = {
-            kitId: 'ojj5iff',
+            kitId: 'uwv2ase',
             scriptTimeout: 3000,
             async: true
           },
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-      </script>
+    </script>
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide' );
+        splide.mount();
+        } );
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>    
+
+    <link rel="stylesheet" href="splide.min.css">
+
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <header>
     <div id="cursorFx"></div>
@@ -27,7 +40,7 @@
             <a class="contact" onclick="conPage()">CONTACT</a>
         </div>
         <div id="navContainer">
-            <img id="logoNav" src="images/WB2 A2 Logo Mockup blue.svg" onclick="returnHome()">
+            <img id="logoNav" src="images/Time Warp Logo Final.svg" onclick="returnHome()">
         </div>
     </div>
 </header>
@@ -48,7 +61,7 @@
     <div id="revArrow" onclick="revReturn1()">
         <img class="surArrow1" src="images/arrow surround.svg">
         <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/Main arrow.svg">
+        <img class="mainArrow" src="images/return arrow.svg">
     </div>
     <div id="proArrow2" onclick="proPage3()">
         <img class="surArrow1" src="images/arrow surround.svg">
@@ -58,7 +71,7 @@
     <div id="revArrow2" onclick="revReturn2()">
         <img class="surArrow1" src="images/arrow surround.svg">
         <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/Main arrow.svg">
+        <img class="mainArrow" src="images/return arrow.svg">
     </div>
     <div id="proArrow3" onclick="proPage4()">
         <img class="surArrow1" src="images/arrow surround.svg">
@@ -66,6 +79,11 @@
         <img class="mainArrow" src="images/Main arrow.svg">
     </div>
     <div id="revArrow3" onclick="revReturn3()">
+        <img class="surArrow1" src="images/arrow surround.svg">
+        <img class="surArrow2" src="images/arrow surround hovered.svg">
+        <img class="mainArrow" src="images/return arrow.svg">
+    </div>
+    <div id="proArrowOther" onclick="proPageAll()">
         <img class="surArrow1" src="images/arrow surround.svg">
         <img class="surArrow2" src="images/arrow surround hovered.svg">
         <img class="mainArrow" src="images/Main arrow.svg">
@@ -78,7 +96,7 @@
     <div id="revArrow4" onclick="revReturn4()">
         <img class="surArrow1" src="images/arrow surround.svg">
         <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/Main arrow.svg">
+        <img class="mainArrow" src="images/return arrow.svg">
     </div>
     <div id="abArrow" onclick="conPage()">
         <img class="surArrow1" src="images/arrow surround.svg">
@@ -88,21 +106,29 @@
     <div id="conArrow" onclick="returnHome()">
         <img class="surArrow1" src="images/arrow surround.svg">
         <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/Main arrow.svg">
+        <img class="mainArrow" src="images/home arrow.svg">
     </div>
 
-    <div id="homePage">
+    <section id="homePage">
         <div id="homeLogo">
-            <img src="images/WB2 A2 Logo Mockup blue.svg">
+            <img src="images/Time Warp Logo Final.svg">
         </div>
-    </div>
+    </section>
     
-    <div id="productPage">
+    <section id="productPage">
         <div id="flavour1">
             <div class="proContainer">
                 <div class="watermelon">Watermelon</div>
+                <div class="infoIcons">
+                    <img src="images/caffeine free icon.svg">
+                    <span>Caffeine Free</span>
+                    <img src="images/No sugar icon.svg">
+                    <span>No Sugar</span>
+                    <img src="images/vitamin icon.svg">
+                    <span>Vitamin C + D</span>
+                </div>
                 <div class="reviews">
-                    <div onclick = "proRev1()">See Reviews <div class="rArrow"></div></div>
+                    <sl-button class="reviewBtn" onclick = "proRev1()">See Reviews <div class="rArrow"></div></sl-button>
                     <img src="images/review stars 4.svg">
                 </div>
             </div>
@@ -180,8 +206,16 @@
         <div id="flavour2">
             <div class="proContainer">
                 <div class="peach">Peach</div>
+                <div class="infoIcons">
+                    <img src="images/caffeine free icon.svg">
+                    <span>Caffeine Free</span>
+                    <img src="images/No sugar icon.svg">
+                    <span>No Sugar</span>
+                    <img src="images/vitamin icon.svg">
+                    <span>Vitamin C + D</span>
+                </div>
                 <div class="reviews">
-                    <div onclick = "proRev2()">See Reviews <div class="rArrow"></div></div>
+                    <sl-button class="reviewBtn" onclick = "proRev2()">See Reviews <div class="rArrow"></div></sl-button>
                     <img src="images/review stars 5.svg">
                 </div>
             </div>
@@ -259,8 +293,16 @@
         <div id="flavour3">
             <div class="proContainer">
                 <div class="apple">Apple</div>
+                <div class="infoIcons">
+                    <img src="images/caffeine free icon.svg">
+                    <span>Caffeine Free</span>
+                    <img src="images/No sugar icon.svg">
+                    <span>No Sugar</span>
+                    <img src="images/vitamin icon.svg">
+                    <span>Vitamin C + D</span>
+                </div>
                 <div class="reviews">
-                    <div onclick = "proRev3()">See Reviews <div class="rArrow"></div></div>
+                    <sl-button class="reviewBtn" onclick = "proRev3()">See Reviews <div class="rArrow"></div></sl-button>
                     <img src="images/review stars 4.svg">
                 </div>
             </div>
@@ -283,7 +325,7 @@
             <div id="f3RScroll">
                 <div class="cust1">
                     <div class="cust1Sub">
-                        <div>Whiskers20 - Confirmed Buyer</div>
+                        <div>David Goblins - Confirmed Buyer</div>
                         <img src="images/review stars 4.svg">
                     </div>
                     <span>
@@ -339,8 +381,16 @@
         <div id="flavour4">
             <div class="proContainer">
                 <div class="lemon">Lemon</div>
+                <div class="infoIcons">
+                    <img src="images/caffeine free icon.svg">
+                    <span>Caffeine Free</span>
+                    <img src="images/No sugar icon.svg">
+                    <span>No Sugar</span>
+                    <img src="images/vitamin icon.svg">
+                    <span>Vitamin C + D</span>
+                </div>
                 <div class="reviews">
-                    <div onclick = "proRev4()">See Reviews <div class="rArrow"></div></div>
+                    <sl-button class="reviewBtn" onclick = "proRev4()">See Reviews <div class="rArrow"></div></sl-button>
                     <img src="images/review stars 4.svg">
                 </div>
             </div>
@@ -416,17 +466,32 @@
         </div>
 
 
+        <section id="productsAll">
+                            
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                  <div class="splide__list">
+                      <div class="splide__slide">Watermelon<div class="slideImgWrapper"><img class="slideImg" src="images/products/melon.svg"></div></div>
+                      <div class="splide__slide">Peach<div class="slideImgWrapper"><img class="slideImg" src="images/products/peach 2.svg"></div></div>
+                      <div class="splide__slide">Apple<div class="slideImgWrapper"><img class="slideImg" src="images/products/apple 2.svg"></div></div>
+                      <div class="splide__slide">Lemon<div class="slideImgWrapper"><img class="slideImg" src="images/products/lemon 2.svg"></div></div>
+                  </div>
+            </div>
+          </section>
 
-    </div>
+        </section>
+
+
+    </section>
 
     
 
 
-    <div id="aboutPage">
+    <section id="aboutPage">
         <div id="aboutMain">
             <div class="aboutMainTitle">ABOUT US</div>
             <div class="aboutMain2">Learn about Time Warp</div>
-            <button class="explore" onclick="abSub1()">Explore</button>
+            <sl-button class="explore" onclick="abSub1()">Explore</sl-button>
         </div>
         <div id="aboutSubs">
             <div id="about1">
@@ -469,9 +534,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="contactPage">
+    <section id="contactPage">
         <div class="contactTitle">CONTACT US</div>
         <div class="social1">
             <img class="socialIcons" src="images/facebook.svg" onclick = "openFacebook()">
@@ -488,13 +553,17 @@
                 <textarea class="input1" placeholder="Name..."></textarea>
                 <textarea class="input2" placeholder="Email Address..."></textarea>
                 <textarea class="input3" placeholder="Type your message..."></textarea>
-                <button class="send">Send</button>
+                <sl-button class="send">Send</sl-button>
             </div>
             <div class="contactSub2">Prefer to contact us directly?</div>
             <div class="email">Contact Email: sample@email.com</div>
             <div class="tel">Phone Number: 08 **** ****</div>
         </div>
-
+        <div class="conArrowContainer">
+            <div class="conBotArrow" class="a1"></div>
+            <div class="conBotArrow" class="a2"></div>
+            <div class="conBotArrow" class="a3"></div>
+        </div>
         <div class="botNav" onclick = 'toggleBotNav()'>
             <div class="navHandle"></div>
             <div class="quickNav">
@@ -516,7 +585,7 @@
                 <span onclick = "openFacebook()">Facebook</span>
             </div>
         </div>
-    </div>
+    </section>
     
     
 
@@ -540,7 +609,9 @@
 
     </div>
 
+    <script src="splide.min.js"></script>
     <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 </body>

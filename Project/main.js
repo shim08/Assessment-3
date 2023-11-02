@@ -1,3 +1,7 @@
+gsap.registerPlugin(ScrollTrigger) 
+
+
+
 let homePage = document.querySelector('#homePage');
 let productPage = document.querySelector('#productPage');
 let aboutPage = document.querySelector('#aboutPage');
@@ -10,6 +14,7 @@ let proArrow = document.querySelector('#proArrow');
 let proArrow2 = document.querySelector('#proArrow2');
 let proArrow3 = document.querySelector('#proArrow3');
 let proArrow4 = document.querySelector('#proArrow4');
+let proArrowOther = document.querySelector('#proArrowOther');
 let abArrow = document.querySelector('#abArrow');
 let conArrow = document.querySelector('#conArrow');
 let revArrow = document.querySelector('#revArrow');
@@ -31,6 +36,7 @@ let flavour1 = document.querySelector('#flavour1');
 let flavour2 = document.querySelector('#flavour2');
 let flavour3 = document.querySelector('#flavour3');
 let flavour4 = document.querySelector('#flavour4');
+let proAll = document.querySelector('#productsAll');
 
 let f1Rev = document.querySelector('#f1Review')
 let f2Rev = document.querySelector('#f2Review')
@@ -47,7 +53,8 @@ let dot1 = document.querySelector('.navDot1');
 let dot2 = document.querySelector('.navDot2');
 let dot3 = document.querySelector('.navDot3');
 
-let botNav = document.querySelector('.botNav')
+let botNav = document.querySelector('.botNav');
+let conBotArrow = document.querySelector('.conArrowContainer');
 
 function returnHome(){
     homePage.style.display = 'block';
@@ -76,6 +83,7 @@ function returnHome(){
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'none';
     proArrow4.style.display = 'none';
+    proArrowOther.style.display = 'none';
     revArrow.style.display = 'none';
     revArrow2.style.display = 'none';
     revArrow3.style.display = 'none';
@@ -140,9 +148,17 @@ function proPage4(){
     flavour4.style.display = 'flex';
 
     proArrow3.style.display = 'none';
-    proArrow4.style.display = 'block';
+    proArrowOther.style.display = 'block';
 }
 
+function proPageAll(){
+    flavour4.style.display = 'none';
+    proAll.style.display = 'flex';
+
+    proArrowOther.style.display = 'none';
+    proArrow4.style.display = 'block';
+
+}
 
 function proRev1(){
     flavour1.style.display = 'none';
@@ -190,26 +206,16 @@ function proRev4(){
     flavour4.style.display = 'none';
     f4Rev.style.display = 'flex';
 
-    proArrow4.style.display = 'none';
+    proArrowOther.style.display = 'none';
     revArrow4.style.display = 'block';
 }
 function revReturn4(){
     flavour4.style.display = 'flex';
     f4Rev.style.display = 'none';
 
-    proArrow4.style.display = 'block';
+    proArrowOther.style.display = 'block';
     revArrow4.style.display = 'none';
 }
-/*
-gsap.set(".bgContainer", {xPercent: -50, yPercent: -50});
-
-let xTo = gsap.quickTo(".bgContainer", "x", {duration: 4, ease: "power3"}),  yTo = gsap.quickTo(".bgContainer", "y", {duration: 4, ease: "power3"});
-
-window.addEventListener("mousemove", e => {
-    xTo(e.clientX);
-    yTo(e.clientY);
-})
-*/
 
 const bottleM = gsap.utils.toArray('#bottleM')[0];
 const bottleP = gsap.utils.toArray('#bottleP')[0];
@@ -234,6 +240,7 @@ const lemon1Move = gsap.utils.toArray('.lemon1')[0];
 const lemon2Move = gsap.utils.toArray('.lemon2')[0];
 const lemon3Move = gsap.utils.toArray('.lemon3')[0];
 const lemon4Move = gsap.utils.toArray('.lemon4')[0];
+
 
 window.addEventListener('mousemove', (event) =>{
     const mouseX = -((window.innerWidth / 2) - event.pageX) / 40
@@ -364,6 +371,15 @@ window.addEventListener('mousemove', (event) =>{
 })
 
 
+new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 3,
+  } );
+
+
+
+
+
 
 
 
@@ -384,6 +400,7 @@ function abPage(){
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'none';
     proArrow4.style.display = 'none';
+    proArrowOther.style.display = 'none';
     revArrow.style.display = 'none';
     revArrow2.style.display = 'none';
     revArrow3.style.display = 'none';
@@ -391,14 +408,6 @@ function abPage(){
     abArrow.style.display = 'block';
     conArrow.style.display = 'none';
 }
-
-/*function abNav(){
-    returnHome();
-    toggleHome();
-    abSub1();
-    abPage();
-    proArrow.style.display = 'none';
-}*/
 
 function abSub1(){
     aboutMain.style.display = 'none';
@@ -443,6 +452,7 @@ function conPage(){
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'none';
     proArrow4.style.display = 'none';
+    proArrowOther.style.display = 'none';
     revArrow.style.display = 'none';
     revArrow2.style.display = 'none';
     revArrow3.style.display = 'none';
@@ -452,11 +462,13 @@ function conPage(){
 }
 
 function toggleBotNav(){
-    if(botNav.className == ('botNav')) {
+    if(botNav.className == ('botNav'), conBotArrow.className == ('conArrowContainer')) {
         botNav.className = 'botNav botNav_Up';
+        conBotArrow.className = 'conArrowContainer conArrowContainer_Up';
     }
     else {
         botNav.className = 'botNav';
+        conBotArrow.className = 'conArrowContainer';
     }
 }
 

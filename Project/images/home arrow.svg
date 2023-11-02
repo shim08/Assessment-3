@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 695.16 695.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e51b6c;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="347.58" cy="347.58" r="347.58"/>
+  <rect class="cls-2" x="192.09" y="273.28" width="310.99" height="252.05"/>
+  <polygon class="cls-2" points="347.58 163.08 570.9 311.4 124.25 311.4 347.58 163.08"/>
+  <rect class="cls-1" x="313.91" y="415.69" width="67.35" height="117.81"/>
+</svg>
