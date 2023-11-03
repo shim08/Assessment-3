@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 680">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="276.25" y1="372.25" x2="196.48" y2="452.02"/>
+  <line class="cls-1" x1="642.07" y1="250.07" x2="582.71" y2="309.44"/>
+  <line class="cls-1" x1="746.07" y1="432.07" x2="643.92" y2="534.23"/>
+  <line class="cls-1" x1="1099.07" y1="229.07" x2="1019.52" y2="308.63"/>
+</svg>

@@ -23,6 +23,8 @@ header{
     z-index: 5;
 }
 
+
+/* GET BACK TO THIS 
 #cursorFx{
     position: absolute;
     z-index: 20;
@@ -32,8 +34,7 @@ header{
     border-radius: 50%;
     border-color: #E51B6C;
     animation: cursorRipple 1s ease-in-out 0 1;
-    
-}
+}   
 
 @keyframes cursorRipple{
     
@@ -61,7 +62,7 @@ header{
         transform: scale(2);
     }
 }
-
+                    */
 
 
 #logoNav, .home, .products, .about, .contact{
@@ -103,7 +104,6 @@ header{
 }
 
 .home:hover, .products:hover, .about:hover, .contact:hover{
-    color: #27AAE1;
     transform: scale(1.2);
 }
 
@@ -553,10 +553,9 @@ header{
     margin-top:2%;
 }
 .splide{
-    border:1px solid red;
-    width:61vh;
+    width:140vh;
     height:77vh;
-    margin-left:35%;
+    margin:auto;
 }
 .splide__list{
     font-size: 5vh;
@@ -566,6 +565,33 @@ header{
 }
 .splide__slide{
     margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+}
+.slideText{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height:58vh;
+    margin-left: 8%;
+    margin-top: 7%;
+}
+.slideText p{
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 3vh;
+}
+h6{
+    margin-top: 2%;
+    margin-bottom: 0%;
+    font-size: 4vh;
+}
+h5{
+    font-size: 3.4vh;
+    margin-top: 2%;
+    margin-bottom: 0%;
 }
 .slideImg{
     width:100%;
@@ -685,8 +711,28 @@ header{
     display: flex;
     flex-direction: column;
     overflow: auto;
+    overflow-x:hidden;
     /*overflow-y: scroll;*/
 }
+
+    /* Scroll Animations for the Contact Page Scroll Area*/
+.conBgAnimate{
+    position: absolute;
+    z-index: -5;
+    width:100%;
+    height:100%;
+    left: 0;
+    top:0;
+}
+
+.conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
+    margin-left:50%;
+    margin-top:-100%;
+    width:100%;
+    height:100%;
+}
+
+
 .contactTitle{
     position: absolute;
     margin: auto;

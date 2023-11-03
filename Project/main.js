@@ -1,7 +1,6 @@
 gsap.registerPlugin(ScrollTrigger) 
 
 
-
 let homePage = document.querySelector('#homePage');
 let productPage = document.querySelector('#productPage');
 let aboutPage = document.querySelector('#aboutPage');
@@ -460,6 +459,74 @@ function conPage(){
     abArrow.style.display = 'none';
     conArrow.style.display = 'block';
 }
+
+let conScroll = document.querySelector('#contactScroll');
+let conAnimateL1 = document.querySelector('.conAnimateL1');
+let conAnimateL2 = document.querySelector('.conAnimateL2');
+let conAnimateL3 = document.querySelector('.conAnimateL3');
+
+
+gsap.to(conAnimateL1, {
+    scrollTrigger: {
+        scroller: conScroll,
+        trigger: conAnimateL1,
+        start: "210vh 200vh",
+        end: "832vh 275vh",
+        scrub: 2,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(conAnimateL2, {
+    scrollTrigger: {
+        scroller: conScroll,
+        trigger: conAnimateL2,
+        start: "210vh 200vh",
+        end: "832vh 275vh",
+        scrub: 3.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(conAnimateL3, {
+    scrollTrigger: {
+        scroller: conScroll,
+        trigger: conAnimateL3,
+        start: "210vh 200vh",
+        end: "832vh 275vh",
+        scrub: 2.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+/*
+let tl = gsap.timeline({
+    ScrollTrigger: {
+        scroller: conScroll,
+        trigger: '.conBgAnimate',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: true,
+    }
+});
+
+tl.to('.conAnimateL1', {
+    x:0,
+    y:600
+})
+
+*/
+
 
 function toggleBotNav(){
     if(botNav.className == ('botNav'), conBotArrow.className == ('conArrowContainer')) {
