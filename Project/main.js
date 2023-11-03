@@ -7,6 +7,7 @@ let aboutPage = document.querySelector('#aboutPage');
 let contactPage = document.querySelector('#contactPage');
 
 let navBar = document.querySelector('#navBar');
+let navCon = document.querySelector('#navContainer');
 
 let navArrow = document.querySelector('#navArrow');
 let proArrow = document.querySelector('#proArrow');
@@ -57,16 +58,29 @@ let conBotArrow = document.querySelector('.conArrowContainer');
 
 function returnHome(){
     homePage.style.display = 'block';
+    homePage.classList.remove('homePage_hidden');
     productPage.style.display = 'none';
+    productPage.classList.add('productPage_hidden');
     aboutPage.style.display = 'none';
     contactPage.style.display = 'none';
 
     flavour1.style.display = 'flex';
+    flavour1.classList.remove('flavour1_hidden');
+    flavour1.classList.remove('flavour1_hidden2');
     flavour2.style.display = 'none';
+    flavour2.classList.add('flavour2_initial');
+    flavour2.classList.remove('flavour2_hidden');
     flavour3.style.display = 'none';
+    flavour3.classList.add('flavour3_initial');
+    flavour3.classList.remove('flavour3_hidden');
     flavour4.style.display = 'none';
+    flavour4.classList.add('flavour4_initial');
+    flavour4.classList.remove('flavour4_hidden');
+    proAll.style.display = 'none';
+    proAll.classList.add('proAll_initial');
 
     f1Rev.style.display = 'none';
+    f1Rev.classList.add('f1Review_hidden');
     f2Rev.style.display = 'none';
     f3Rev.style.display = 'none';
     f4Rev.style.display = 'none';
@@ -91,12 +105,17 @@ function returnHome(){
     conArrow.style.display = 'none';
 
     lHome.style.display = 'block';
+    lHome.classList.remove('lHome_hidden');
     lBot.style.display = 'block';
+    lBot.classList.remove('lBot_hidden');
     lBot2.style.display = 'none';
     lRight.style.display = 'block';
+    lRight.classList.remove('lRight_hidden');
     lMain.style.display = 'none';
 
     navBar.style.display = 'none';
+    navBar.classList.add('navBar_hidden');
+    navCon.classList.add('navCon_hidden');
 }
 
 function swapArrow1(){
@@ -104,6 +123,37 @@ function swapArrow1(){
     proArrow.style.display = 'block';
 }
 
+function toggleHome(){
+    homePage.classList.add('homePage_hidden');
+    lHome.classList.add('lHome_hidden');
+    lBot.classList.add('lBot_hidden');
+    lRight.classList.add('lRight_hidden');
+    navArrow.style.left = '90%';
+    productPage.style.display = 'block';
+    navBar.style.display = 'block';
+
+    setTimeout(function(){
+        homePage.style.display = 'none';
+    
+        productPage.classList.remove('productPage_hidden');
+
+        navBar.classList.remove('navBar_hidden');
+        navCon.classList.remove('navCon_hidden');
+
+        lHome.style.display = 'none';
+        lBot.style.display = 'none';
+        lBot2.style.display = 'block';
+        lRight.style.display = 'none';
+        lMain.style.display = 'block';
+    
+        products.style.color = '#27AAE1';
+    
+    }, 900)
+
+
+    setTimeout(swapArrow1, 900);
+}
+/*
 function toggleHome(){
     homePage.style.display = 'none';
     productPage.style.display = 'block';
@@ -122,37 +172,64 @@ function toggleHome(){
 
     setTimeout(swapArrow1, 200);
 }
-
+*/
 function proNav(){
     returnHome();
     toggleHome();
 }
 
 function proPage2(){
-    flavour1.style.display = 'none';
+
+    flavour1.classList.add('flavour1_hidden');
     flavour2.style.display = 'flex';
 
+    setTimeout(function(){
+        flavour2.classList.remove('flavour2_initial');
+        flavour1.style.display = 'none';
+    },200)
+
+  
     proArrow.style.display = 'none';
     proArrow2.style.display = 'block';
 }
+
 function proPage3(){
-    flavour2.style.display = 'none';
+    
+    flavour2.classList.add('flavour2_hidden');
     flavour3.style.display = 'flex';
+
+    setTimeout(function(){
+        flavour3.classList.remove('flavour3_initial');
+        flavour2.style.display = 'none';
+    },200)
 
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'block';
 }
 function proPage4(){
-    flavour3.style.display = 'none';
+    
+    flavour3.classList.add('flavour3_hidden');
     flavour4.style.display = 'flex';
+
+    setTimeout(function(){
+        flavour4.classList.remove('flavour4_initial');
+        flavour3.style.display = 'none';
+    },200)
 
     proArrow3.style.display = 'none';
     proArrowOther.style.display = 'block';
 }
 
 function proPageAll(){
-    flavour4.style.display = 'none';
+    
+    flavour4.classList.add('flavour4_hidden');
     proAll.style.display = 'flex';
+
+    setTimeout(function(){
+        proAll.classList.remove('proAll_initial');
+        flavour4.style.display = 'none';
+    },200)
+
 
     proArrowOther.style.display = 'none';
     proArrow4.style.display = 'block';
@@ -160,19 +237,35 @@ function proPageAll(){
 }
 
 function proRev1(){
-    flavour1.style.display = 'none';
     f1Rev.style.display = 'flex';
+    flavour1.classList.add('flavour1_hidden2');
+
+
+    setTimeout(function(){
+        f1Rev.classList.remove('f1Review_hidden');
+        flavour1.style.display = 'none';
+    },200)
 
     proArrow.style.display = 'none';
     revArrow.style.display = 'block';
 }
+
 function revReturn1(){
     flavour1.style.display = 'flex';
-    f1Rev.style.display = 'none';
+    f1Rev.classList.add('f1Review_hidden');
+
+
+
+    setTimeout(function(){
+        f1Rev.style.display = 'none';
+        flavour1.classList.remove('flavour1_hidden2');
+
+    },500)
 
     proArrow.style.display = 'block';
     revArrow.style.display = 'none';
 }
+
 function proRev2(){
     flavour2.style.display = 'none';
     f2Rev.style.display = 'flex';
@@ -369,15 +462,206 @@ window.addEventListener('mousemove', (event) =>{
     
 })
 
+// Background Scroll Animation for all 4 product reviews pages
+    
+    // Define all product reviews scrollable areas 
 
-new Splide( '.splide', {
-    type   : 'loop',
-    perPage: 3,
-  } );
+let f1rScroll = document.querySelector('#f1RScroll');
+let f2rScroll = document.querySelector('#f2RScroll');
+let f3rScroll = document.querySelector('#f3RScroll');
+let f4rScroll = document.querySelector('#f4RScroll');
 
+    // Define all product review background animated elements for flavour 1 reviews. Build and apply scrolltrigger animations. 
 
+let f1rAnimateL1 = document.querySelector('.f1rAnimateL1');
+let f1rAnimateL2 = document.querySelector('.f1rAnimateL2');
+let f1rAnimateL3 = document.querySelector('.f1rAnimateL3');
 
+gsap.to(f1rAnimateL1, {
+    scrollTrigger: {
+        scroller: f1rScroll,
+        trigger: f1rAnimateL1,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 2,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
 
+gsap.to(f1rAnimateL2, {
+    scrollTrigger: {
+        scroller: f1rScroll,
+        trigger: f1rAnimateL2,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 3.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(f1rAnimateL3, {
+    scrollTrigger: {
+        scroller: f1rScroll,
+        trigger: f1rAnimateL3,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 2.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+    // Define all product review background animated elements for flavour 2 reviews. Build and apply scrolltrigger animations. 
+
+let f2rAnimateL1 = document.querySelector('.f2rAnimateL1');
+let f2rAnimateL2 = document.querySelector('.f2rAnimateL2');
+let f2rAnimateL3 = document.querySelector('.f2rAnimateL3');
+
+gsap.to(f2rAnimateL1, {
+    scrollTrigger: {
+        scroller: f2rScroll,
+        trigger: f2rAnimateL1,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 2,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(f2rAnimateL2, {
+    scrollTrigger: {
+        scroller: f2rScroll,
+        trigger: f2rAnimateL2,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 3.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(f2rAnimateL3, {
+    scrollTrigger: {
+        scroller: f2rScroll,
+        trigger: f2rAnimateL3,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 2.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+    // Define all product review background animated elements for flavour 3 reviews. Build and apply scrolltrigger animations.
+
+let f3rAnimateL1 = document.querySelector('.f3rAnimateL1');
+let f3rAnimateL2 = document.querySelector('.f3rAnimateL2');
+let f3rAnimateL3 = document.querySelector('.f3rAnimateL3');
+
+gsap.to(f3rAnimateL1, {
+    scrollTrigger: {
+        scroller: f3rScroll,
+        trigger: f3rAnimateL1,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 2,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(f3rAnimateL2, {
+    scrollTrigger: {
+        scroller: f3rScroll,
+        trigger: f3rAnimateL2,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 3.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(f3rAnimateL3, {
+    scrollTrigger: {
+        scroller: f3rScroll,
+        trigger: f3rAnimateL3,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 2.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+    // Define all product review background animated elements for flavour 3 reviews. Build and apply scrolltrigger animations.
+
+let f4rAnimateL1 = document.querySelector('.f4rAnimateL1');
+let f4rAnimateL2 = document.querySelector('.f4rAnimateL2');
+let f4rAnimateL3 = document.querySelector('.f4rAnimateL3');
+
+gsap.to(f4rAnimateL1, {
+    scrollTrigger: {
+        scroller: f4rScroll,
+        trigger: f4rAnimateL1,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 2,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(f4rAnimateL2, {
+    scrollTrigger: {
+        scroller: f4rScroll,
+        trigger: f4rAnimateL2,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 3.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
+
+gsap.to(f4rAnimateL3, {
+    scrollTrigger: {
+        scroller: f4rScroll,
+        trigger: f4rAnimateL3,
+        start: "287vh 277vh",
+        end: "419vh 180vh",
+        scrub: 2.5,
+        toggleActions: "play pause reverse reset"
+    }, 
+    x:-1600,
+    y:1905,
+    duration:6
+});
 
 
 
@@ -508,25 +792,6 @@ gsap.to(conAnimateL3, {
     duration:6
 });
 
-/*
-let tl = gsap.timeline({
-    ScrollTrigger: {
-        scroller: conScroll,
-        trigger: '.conBgAnimate',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: true,
-    }
-});
-
-tl.to('.conAnimateL1', {
-    x:0,
-    y:600
-})
-
-*/
-
 
 function toggleBotNav(){
     if(botNav.className == ('botNav'), conBotArrow.className == ('conArrowContainer')) {
@@ -548,3 +813,6 @@ function openInsta(){
 function openFacebook(){
     window.open("https://www.facebook.com/", "_blank");
 }
+
+
+

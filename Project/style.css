@@ -84,7 +84,11 @@ header{
     display: flex;
     display: none;
     z-index: 5;
+    transition: 0.8s;
 }
+
+
+
 .options{
     display: flex;
     margin:2.2vh;
@@ -114,6 +118,7 @@ header{
     width: 40.4vh;
     height: 22.4vh;
     z-index: 5;
+    transition: 0.8s;
 }
 
 
@@ -125,7 +130,7 @@ header{
     top:42%;
     transition: 0.2s;
     z-index: 10;
-    /*border: 1px solid red; */
+    transition: 0.6s;
 }
 
 
@@ -201,6 +206,7 @@ header{
 
 .lBot, .lBot2, .lHome, .lMain, .lRight{
     position: absolute;
+    transition: 1s;
 }
 .lBot2{
     width:50%;
@@ -258,8 +264,9 @@ header{
     width:100%;
     height:100%;
     z-index: 0;
-
+    transition: 1s;
 }
+
 
 
 #flavour1, #flavour2, #flavour3, #flavour4, #productsAll{
@@ -269,6 +276,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:0.8s;
 }
 #flavour2, #flavour3, #flavour4{
     display: none;
@@ -349,27 +357,26 @@ header{
 #f1Review, #f2Review, #f3Review, #f4Review{
     width:100%;
     height:100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     display: none;
-    
+    transition: 0.8s;
 }
 
 .f1R{
-    position: absolute;
     margin: auto;
     font-size: 8vh;
     color: #E51B6C;
     top:16vh;
+    margin-bottom: -3%;
+    margin-top: 7%;
 }
 
 .f1RSub{
     margin: auto;
     font-size: 5.5vh;
     color: #E51B6C;
-    margin-top:14%;
     margin-bottom: 0%;
 }
 
@@ -387,8 +394,28 @@ header{
     display: flex;
     flex-direction: column;
     overflow: auto;
+    overflow-x: hidden;
 
 }
+
+.f1rBgAnimate, .f2rBgAnimate, .f3rBgAnimate, .f4rBgAnimate{
+    position: absolute;
+    z-index: -5;
+    width:100%;
+    height:100%;
+    left: 0;
+    top:0;
+}
+
+.f1rAnimateL1 img, .f1rAnimateL2 img, .f1rAnimateL3 img, .f2rAnimateL1 img, .f2rAnimateL2 img, .f2rAnimateL3 img, .f3rAnimateL1 img, .f3rAnimateL2 img, .f3rAnimateL3 img, .f4rAnimateL1 img, .f4rAnimateL2 img, .f4rAnimateL3 img{
+    margin-left:50%;
+    margin-top:-100%;
+    width:100%;
+    height:100%;
+}
+
+
+
 .cust1{
     width:98%;
     height: 48%;
@@ -973,4 +1000,52 @@ h1{
     transform: scale(1.1);
 }
 
+/* Transition Animation Classes*/
+    /* Home Page */
+.homePage_hidden{
+    margin-top: 60%;
+}
 
+.lHome_hidden{
+    transform: translate(-48.5%, -48.5%);
+}
+
+.lBot_hidden{
+    transform: translate(16.1%, 16.1%);
+}
+
+.lRight_hidden{
+    transform: translate(-200%, -400%);;
+}
+
+.productPage_hidden{
+    margin-top:100%;
+}
+
+.navBar_hidden{
+    margin-top:-5%;
+}
+
+.navCon_hidden{
+    margin-left:-30%;
+}
+
+    /* Products Page */
+
+.flavour1_hidden, .flavour2_hidden, .flavour3_hidden, .flavour4_hidden, .proAll_hidden{
+    transform: translateX(-100%);
+}
+.flavour2_initial, .flavour3_initial, .flavour4_initial{
+    transform: translateX(100%);
+}
+.proAll_initial{
+    transform: translateY(100%);
+}
+
+.flavour1_hidden2, .flavour2_hidden2, .flavour3_hidden2, .flavour4_hidden2{
+    transform: translateY(100%);
+}
+
+.f1Review_hidden, .f2Review_hidden, .f3Review_hidden, .f4Review_hidden{
+    margin-top:-100%;
+}
