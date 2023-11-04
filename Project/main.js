@@ -43,6 +43,12 @@ let f2Rev = document.querySelector('#f2Review')
 let f3Rev = document.querySelector('#f3Review')
 let f4Rev = document.querySelector('#f4Review')
 
+let conAnimate = document.querySelector('.conBgAnimate');
+let f1rAnimate = document.querySelector('.f1rBgAnimate');
+let f2rAnimate = document.querySelector('.f2rBgAnimate');
+let f3rAnimate = document.querySelector('.f3rBgAnimate');
+let f4rAnimate = document.querySelector('.f4rBgAnimate');
+
 let melon1 = document.querySelector('.melon1');
 
 let aboutMain = document.querySelector('#aboutMain');
@@ -56,13 +62,22 @@ let dot3 = document.querySelector('.navDot3');
 let botNav = document.querySelector('.botNav');
 let conBotArrow = document.querySelector('.conArrowContainer');
 
-function returnHome(){
-    homePage.style.display = 'block';
-    homePage.classList.remove('homePage_hidden');
-    productPage.style.display = 'none';
-    productPage.classList.add('productPage_hidden');
-    aboutPage.style.display = 'none';
-    contactPage.style.display = 'none';
+function proNavEx(){
+
+    homePage.style.display = 'none';
+    navBar.style.display = 'block';
+    navBar.classList.remove('navBar_hidden');
+    navCon.classList.remove('navCon_hidden');
+    homePage.classList.add('homePage_hidden');
+    aboutPage.classList.add('aboutPage_initial');
+    aboutPage.classList.remove('aboutPage_hidden');
+    contactPage.classList.add('conPage_initial');
+
+    conAnimate.classList.remove('conBgAnimate_reveal');
+
+    products.style.color = '#27AAE1';
+    about.style.color = '#E51B6C';
+    contact.style.color = '#E51B6C';
 
     flavour1.style.display = 'flex';
     flavour1.classList.remove('flavour1_hidden');
@@ -70,21 +85,90 @@ function returnHome(){
     flavour2.style.display = 'none';
     flavour2.classList.add('flavour2_initial');
     flavour2.classList.remove('flavour2_hidden');
+    flavour2.classList.remove('flavour2_hidden2');
     flavour3.style.display = 'none';
     flavour3.classList.add('flavour3_initial');
     flavour3.classList.remove('flavour3_hidden');
+    flavour3.classList.remove('flavour3_hidden2');
     flavour4.style.display = 'none';
     flavour4.classList.add('flavour4_initial');
     flavour4.classList.remove('flavour4_hidden');
+    flavour4.classList.remove('flavour4_hidden2');
     proAll.style.display = 'none';
     proAll.classList.add('proAll_initial');
+    proAll.classList.remove('proAll_hidden');
+
+    proArrow.style.display = 'block';
+    proArrow2.style.display = 'none';
+    proArrow3.style.display = 'none';
+    proArrow4.style.display = 'none';
+    proArrowOther.style.display = 'none';
+    revArrow.style.display = 'none';
+    revArrow2.style.display = 'none';
+    revArrow3.style.display = 'none';
+    revArrow4.style.display = 'none';
+    abArrow.style.display = 'none';
+    conArrow.style.display = 'none';
 
     f1Rev.style.display = 'none';
     f1Rev.classList.add('f1Review_hidden');
     f2Rev.style.display = 'none';
+    f2Rev.classList.add('f2Review_hidden');
     f3Rev.style.display = 'none';
+    f3Rev.classList.add('f3Review_hidden');
     f4Rev.style.display = 'none';
+    f4Rev.classList.add('f4Review_hidden');
 
+    lHome.style.display = 'none';
+    lHome.classList.add('lHome_hidden');
+    lBot.style.display = 'none';
+    lBot.classList.add('lBot_hidden');
+    lBot2.style.display = 'block';
+    lRight.style.display = 'none';
+    lRight.classList.add('lRight_hidden');
+    lMain.style.display = 'block';
+
+}
+
+function returnHome(){
+    homePage.style.display = 'block';
+    homePage.classList.remove('homePage_hidden');
+    productPage.style.display = 'none';
+    productPage.classList.add('productPage_hidden');
+    aboutPage.style.display = 'none';
+    aboutPage.classList.add('aboutPage_initial');
+    aboutPage.classList.remove('aboutPage_hidden');
+    contactPage.style.display = 'none';
+    contactPage.classList.add('conPage_initial');
+
+    flavour1.style.display = 'flex';
+    flavour1.classList.remove('flavour1_hidden');
+    flavour1.classList.remove('flavour1_hidden2');
+    flavour2.style.display = 'none';
+    flavour2.classList.add('flavour2_initial');
+    flavour2.classList.remove('flavour2_hidden');
+    flavour2.classList.remove('flavour2_hidden2');
+    flavour3.style.display = 'none';
+    flavour3.classList.add('flavour3_initial');
+    flavour3.classList.remove('flavour3_hidden');
+    flavour3.classList.remove('flavour3_hidden2');
+    flavour4.style.display = 'none';
+    flavour4.classList.add('flavour4_initial');
+    flavour4.classList.remove('flavour4_hidden');
+    flavour4.classList.remove('flavour4_hidden2');
+    proAll.style.display = 'none';
+    proAll.classList.add('proAll_initial');
+    proAll.classList.remove('proAll_hidden');
+
+    f1Rev.style.display = 'none';
+    f1Rev.classList.add('f1Review_hidden');
+    f2Rev.style.display = 'none';
+    f2Rev.classList.add('f2Review_hidden');
+    f3Rev.style.display = 'none';
+    f3Rev.classList.add('f3Review_hidden');
+    f4Rev.style.display = 'none';
+    f4Rev.classList.add('f4Review_hidden');
+    hideRAnimate();
 
     products.style.color = '#E51B6C';
     about.style.color = '#E51B6C';
@@ -123,19 +207,37 @@ function swapArrow1(){
     proArrow.style.display = 'block';
 }
 
+function revealRAnimate(){
+    f1rAnimate.classList.add('f1rBgAnimate_reveal');
+    f2rAnimate.classList.add('f2rBgAnimate_reveal');
+    f3rAnimate.classList.add('f3rBgAnimate_reveal');
+    f4rAnimate.classList.add('f4rBgAnimate_reveal');
+}
+
+function hideRAnimate(){
+    f1rAnimate.classList.remove('f1rBgAnimate_reveal');
+    f2rAnimate.classList.remove('f2rBgAnimate_reveal');
+    f3rAnimate.classList.remove('f3rBgAnimate_reveal');
+    f4rAnimate.classList.remove('f4rBgAnimate_reveal');
+}
+
 function toggleHome(){
     homePage.classList.add('homePage_hidden');
+    aboutPage.classList.add('aboutPage_initial');
     lHome.classList.add('lHome_hidden');
     lBot.classList.add('lBot_hidden');
     lRight.classList.add('lRight_hidden');
     navArrow.style.left = '90%';
     productPage.style.display = 'block';
     navBar.style.display = 'block';
+    revealRAnimate();
 
     setTimeout(function(){
         homePage.style.display = 'none';
     
         productPage.classList.remove('productPage_hidden');
+
+        conAnimate.classList.remove('conBgAnimate_reveal');
 
         navBar.classList.remove('navBar_hidden');
         navCon.classList.remove('navCon_hidden');
@@ -145,13 +247,13 @@ function toggleHome(){
         lBot2.style.display = 'block';
         lRight.style.display = 'none';
         lMain.style.display = 'block';
-    
         products.style.color = '#27AAE1';
+
     
-    }, 900)
+    }, 700)
 
 
-    setTimeout(swapArrow1, 900);
+    setTimeout(swapArrow1, 700);
 }
 /*
 function toggleHome(){
@@ -174,21 +276,24 @@ function toggleHome(){
 }
 */
 function proNav(){
-    returnHome();
+    //returnHome();
+    proNavEx();
     toggleHome();
+
 }
 
 function proPage2(){
 
     flavour1.classList.add('flavour1_hidden');
     flavour2.style.display = 'flex';
+    flavour2.classList.remove('flavour2_hidden');
 
     setTimeout(function(){
         flavour2.classList.remove('flavour2_initial');
         flavour1.style.display = 'none';
     },200)
 
-  
+
     proArrow.style.display = 'none';
     proArrow2.style.display = 'block';
 }
@@ -203,6 +308,7 @@ function proPage3(){
         flavour2.style.display = 'none';
     },200)
 
+    flavour3.classList.remove('flavour3_hidden');
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'block';
 }
@@ -239,7 +345,7 @@ function proPageAll(){
 function proRev1(){
     f1Rev.style.display = 'flex';
     flavour1.classList.add('flavour1_hidden2');
-
+    proAll.style.display = 'none';
 
     setTimeout(function(){
         f1Rev.classList.remove('f1Review_hidden');
@@ -254,8 +360,6 @@ function revReturn1(){
     flavour1.style.display = 'flex';
     f1Rev.classList.add('f1Review_hidden');
 
-
-
     setTimeout(function(){
         f1Rev.style.display = 'none';
         flavour1.classList.remove('flavour1_hidden2');
@@ -267,43 +371,83 @@ function revReturn1(){
 }
 
 function proRev2(){
-    flavour2.style.display = 'none';
     f2Rev.style.display = 'flex';
+    flavour2.classList.add('flavour2_hidden2');
+    proAll.style.display = 'none';
+
+    setTimeout(function(){
+        f2Rev.classList.remove('f2Review_hidden');
+        flavour2.style.display = 'none';
+    },200)
 
     proArrow2.style.display = 'none';
     revArrow2.style.display = 'block';
 }
+
 function revReturn2(){
     flavour2.style.display = 'flex';
-    f2Rev.style.display = 'none';
+    f2Rev.classList.add('f2Review_hidden');
+
+    setTimeout(function(){
+        f2Rev.style.display = 'none';
+        flavour2.classList.remove('flavour2_hidden2');
+
+    },500)
 
     proArrow2.style.display = 'block';
     revArrow2.style.display = 'none';
 }
+
 function proRev3(){
-    flavour3.style.display = 'none';
     f3Rev.style.display = 'flex';
+    flavour3.classList.add('flavour3_hidden2');
+    proAll.style.display = 'none';
+
+    setTimeout(function(){
+        f3Rev.classList.remove('f3Review_hidden');
+        flavour3.style.display = 'none';
+    },200)
 
     proArrow3.style.display = 'none';
     revArrow3.style.display = 'block';
 }
+
 function revReturn3(){
     flavour3.style.display = 'flex';
-    f3Rev.style.display = 'none';
+    f3Rev.classList.add('f3Review_hidden');
+
+    setTimeout(function(){
+        f3Rev.style.display = 'none';
+        flavour3.classList.remove('flavour3_hidden2');
+
+    },500)
 
     proArrow3.style.display = 'block';
     revArrow3.style.display = 'none';
 }
+
 function proRev4(){
-    flavour4.style.display = 'none';
     f4Rev.style.display = 'flex';
+    flavour4.classList.add('flavour4_hidden2');
+    proAll.style.display = 'none';
+
+    setTimeout(function(){
+        f4Rev.classList.remove('f4Review_hidden');
+        flavour4.style.display = 'none';
+    },200)
 
     proArrowOther.style.display = 'none';
     revArrow4.style.display = 'block';
 }
 function revReturn4(){
     flavour4.style.display = 'flex';
-    f4Rev.style.display = 'none';
+    f4Rev.classList.add('f4Review_hidden');
+
+    setTimeout(function(){
+        f4Rev.style.display = 'none';
+        flavour4.classList.remove('flavour4_hidden2');
+
+    },500)
 
     proArrowOther.style.display = 'block';
     revArrow4.style.display = 'none';
@@ -663,21 +807,68 @@ gsap.to(f4rAnimateL3, {
     duration:6
 });
 
+/*
+function toggleHome(){
+    homePage.classList.add('homePage_hidden');
+    lHome.classList.add('lHome_hidden');
+    lBot.classList.add('lBot_hidden');
+    lRight.classList.add('lRight_hidden');
+    navArrow.style.left = '90%';
+    productPage.style.display = 'block';
+    navBar.style.display = 'block';
+
+    setTimeout(function(){
+        homePage.style.display = 'none';
+    
+        productPage.classList.remove('productPage_hidden');
+
+        navBar.classList.remove('navBar_hidden');
+        navCon.classList.remove('navCon_hidden');
+
+        lHome.style.display = 'none';
+        lBot.style.display = 'none';
+        lBot2.style.display = 'block';
+        lRight.style.display = 'none';
+        lMain.style.display = 'block';
+    
+        products.style.color = '#27AAE1';
+    
+    }, 900)
 
 
+    setTimeout(swapArrow1, 900);
+}
+*/
+
+/*
+function abPage(){
+
+} */
 
 function abPage(){
-    productPage.style.display = 'none';
     aboutPage.style.display = 'block';
-    contactPage.style.display = 'none';
-
-    aboutMain.style.display = 'flex';
-    about1.style.display = 'none';
-    about2.style.display = 'none';
+    conAnimate.classList.remove('conBgAnimate_reveal');
+    hideRAnimate();
+    productPage.classList.add('productPage_hidden');
+    proAll.classList.add('proAll_initial');
+    contactPage.classList.add('conPage_initial');
+    //conAnimate.classList.add('conBgAnimate_reveal');
 
     products.style.color = '#E51B6C';
     about.style.color = '#27AAE1';
     contact.style.color = '#E51B6C';
+
+    setTimeout(function(){
+        aboutPage.classList.remove('aboutPage_initial');
+        aboutPage.classList.remove('aboutPage_hidden');
+        contactPage.style.display = 'none';
+
+        productPage.style.display = 'none';
+    }, 400);
+
+    aboutMain.style.display = 'flex';
+    about1.style.display = 'none';
+    about2.style.display = 'none';
 
     proArrow.style.display = 'none';
     proArrow2.style.display = 'none';
@@ -721,15 +912,31 @@ function abSub2(){
     proArrow4.style.display = 'none';
 }
 
-function conPage(){
-    productPage.style.display = 'none';
-    aboutPage.style.display = 'none';
-    contactPage.style.display = 'block';
 
+
+function conPage(){
+    conAnimate.classList.remove('conBgAnimate_reveal');
+    hideRAnimate();
+    
+    contactPage.style.display = 'block';
+    aboutPage.classList.add('aboutPage_hidden');
+
+    productPage.classList.add('productPage_hidden');
 
     products.style.color = '#E51B6C';
     about.style.color = '#E51B6C';
     contact.style.color = '#27AAE1';
+
+
+    setTimeout(function(){
+        contactPage.classList.remove('conPage_initial');
+        aboutPage.style.display = 'none';
+        productPage.style.display = 'none';
+    }, 600)
+
+    setTimeout(function(){
+        conAnimate.classList.add('conBgAnimate_reveal');
+    }, 1400)
 
     proArrow.style.display = 'none';
     proArrow2.style.display = 'none';
@@ -743,6 +950,40 @@ function conPage(){
     abArrow.style.display = 'none';
     conArrow.style.display = 'block';
 }
+/*
+function abPage(){
+    aboutPage.style.display = 'block';
+    productPage.classList.add('productPage_hidden');
+    proAll.classList.add('proAll_initial');
+    
+    contactPage.style.display = 'none';
+    products.style.color = '#E51B6C';
+    about.style.color = '#27AAE1';
+    contact.style.color = '#E51B6C';
+
+    setTimeout(function(){
+        aboutPage.classList.remove('aboutPage_initial');
+        productPage.style.display = 'none';
+    }, 400);
+
+    aboutMain.style.display = 'flex';
+    about1.style.display = 'none';
+    about2.style.display = 'none';
+
+    proArrow.style.display = 'none';
+    proArrow2.style.display = 'none';
+    proArrow3.style.display = 'none';
+    proArrow4.style.display = 'none';
+    proArrowOther.style.display = 'none';
+    revArrow.style.display = 'none';
+    revArrow2.style.display = 'none';
+    revArrow3.style.display = 'none';
+    revArrow4.style.display = 'none';
+    abArrow.style.display = 'block';
+    conArrow.style.display = 'none';
+}
+*/
+
 
 let conScroll = document.querySelector('#contactScroll');
 let conAnimateL1 = document.querySelector('.conAnimateL1');
