@@ -141,7 +141,6 @@ header{
     animation: rotation1 8s infinite linear;
 }
 @keyframes rotation1 {
-
     from {
         transform: rotate(0deg) scale(1.2);
     }
@@ -155,7 +154,6 @@ header{
     animation: rotation2 5s infinite linear;
 }
 @keyframes rotation2 {
-
     from {
         transform: rotate(359deg) scale(1.1);
     }
