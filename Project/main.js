@@ -1,5 +1,4 @@
-gsap.registerPlugin(ScrollTrigger) 
-
+gsap.registerPlugin(ScrollTrigger); 
 
 let homePage = document.querySelector('#homePage');
 let productPage = document.querySelector('#productPage');
@@ -38,10 +37,10 @@ let flavour3 = document.querySelector('#flavour3');
 let flavour4 = document.querySelector('#flavour4');
 let proAll = document.querySelector('#productsAll');
 
-let f1Rev = document.querySelector('#f1Review')
-let f2Rev = document.querySelector('#f2Review')
-let f3Rev = document.querySelector('#f3Review')
-let f4Rev = document.querySelector('#f4Review')
+let f1Rev = document.querySelector('#f1Review');
+let f2Rev = document.querySelector('#f2Review');
+let f3Rev = document.querySelector('#f3Review');
+let f4Rev = document.querySelector('#f4Review');
 
 let conAnimate = document.querySelector('.conBgAnimate');
 let f1rAnimate = document.querySelector('.f1rBgAnimate');
@@ -49,13 +48,9 @@ let f2rAnimate = document.querySelector('.f2rBgAnimate');
 let f3rAnimate = document.querySelector('.f3rBgAnimate');
 let f4rAnimate = document.querySelector('.f4rBgAnimate');
 
-let melon1 = document.querySelector('.melon1');
-
 let aboutMain = document.querySelector('#aboutMain');
 let about1 = document.querySelector('#about1');
 let about2 = document.querySelector('#about2');
-let explore = document.querySelector('.explore');
-let dot1 = document.querySelector('.navDot1');
 let dot2 = document.querySelector('.navDot2');
 let dot3 = document.querySelector('.navDot3');
 
@@ -250,40 +245,17 @@ function toggleHome(){
         products.style.color = '#27AAE1';
 
     
-    }, 600)
+    }, 600);
 
 
     setTimeout(swapArrow1, 600);
 }
-/*
-function toggleHome(){
-    homePage.style.display = 'none';
-    productPage.style.display = 'block';
-    navArrow.style.left = '90%';
-
-    lHome.style.display = 'none';
-    lBot.style.display = 'none';
-    lBot2.style.display = 'block';
-    lRight.style.display = 'none';
-    lMain.style.display = 'block';
-
-    navBar.style.display = 'block';
-
-    products.style.color = '#27AAE1';
-
-
-    setTimeout(swapArrow1, 200);
-}
-*/
 function proNav(){
-    //returnHome();
     proNavEx();
     toggleHome();
 
 }
-
 function proPage2(){
-
     flavour1.classList.add('flavour1_hidden');
     flavour2.style.display = 'flex';
     flavour2.classList.remove('flavour2_hidden');
@@ -291,55 +263,47 @@ function proPage2(){
     setTimeout(function(){
         flavour2.classList.remove('flavour2_initial');
         flavour1.style.display = 'none';
-    },200)
-
+    },200);
 
     proArrow.style.display = 'none';
     proArrow2.style.display = 'block';
 }
-
 function proPage3(){
-    
     flavour2.classList.add('flavour2_hidden');
     flavour3.style.display = 'flex';
 
     setTimeout(function(){
         flavour3.classList.remove('flavour3_initial');
         flavour2.style.display = 'none';
-    },200)
+    },200);
 
     flavour3.classList.remove('flavour3_hidden');
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'block';
 }
 function proPage4(){
-    
     flavour3.classList.add('flavour3_hidden');
     flavour4.style.display = 'flex';
 
     setTimeout(function(){
         flavour4.classList.remove('flavour4_initial');
         flavour3.style.display = 'none';
-    },200)
+    },200);
 
     proArrow3.style.display = 'none';
     proArrowOther.style.display = 'block';
 }
-
 function proPageAll(){
-    
     flavour4.classList.add('flavour4_hidden');
     proAll.style.display = 'flex';
 
     setTimeout(function(){
         proAll.classList.remove('proAll_initial');
         flavour4.style.display = 'none';
-    },200)
-
+    },200);
 
     proArrowOther.style.display = 'none';
     proArrow4.style.display = 'block';
-
 }
 
 function proRev1(){
@@ -350,7 +314,7 @@ function proRev1(){
     setTimeout(function(){
         f1Rev.classList.remove('f1Review_hidden');
         flavour1.style.display = 'none';
-    },200)
+    },200);
 
     proArrow.style.display = 'none';
     revArrow.style.display = 'block';
@@ -364,12 +328,11 @@ function revReturn1(){
         f1Rev.style.display = 'none';
         flavour1.classList.remove('flavour1_hidden2');
 
-    },500)
+    },500);
 
     proArrow.style.display = 'block';
     revArrow.style.display = 'none';
 }
-
 function proRev2(){
     f2Rev.style.display = 'flex';
     flavour2.classList.add('flavour2_hidden2');
@@ -378,12 +341,11 @@ function proRev2(){
     setTimeout(function(){
         f2Rev.classList.remove('f2Review_hidden');
         flavour2.style.display = 'none';
-    },200)
+    },200);
 
     proArrow2.style.display = 'none';
     revArrow2.style.display = 'block';
 }
-
 function revReturn2(){
     flavour2.style.display = 'flex';
     f2Rev.classList.add('f2Review_hidden');
@@ -392,12 +354,11 @@ function revReturn2(){
         f2Rev.style.display = 'none';
         flavour2.classList.remove('flavour2_hidden2');
 
-    },500)
+    },500);
 
     proArrow2.style.display = 'block';
     revArrow2.style.display = 'none';
 }
-
 function proRev3(){
     f3Rev.style.display = 'flex';
     flavour3.classList.add('flavour3_hidden2');
@@ -406,12 +367,11 @@ function proRev3(){
     setTimeout(function(){
         f3Rev.classList.remove('f3Review_hidden');
         flavour3.style.display = 'none';
-    },200)
+    },200);
 
     proArrow3.style.display = 'none';
     revArrow3.style.display = 'block';
 }
-
 function revReturn3(){
     flavour3.style.display = 'flex';
     f3Rev.classList.add('f3Review_hidden');
@@ -420,12 +380,11 @@ function revReturn3(){
         f3Rev.style.display = 'none';
         flavour3.classList.remove('flavour3_hidden2');
 
-    },500)
+    },500);
 
     proArrow3.style.display = 'block';
     revArrow3.style.display = 'none';
 }
-
 function proRev4(){
     f4Rev.style.display = 'flex';
     flavour4.classList.add('flavour4_hidden2');
@@ -434,7 +393,7 @@ function proRev4(){
     setTimeout(function(){
         f4Rev.classList.remove('f4Review_hidden');
         flavour4.style.display = 'none';
-    },200)
+    },200);
 
     proArrowOther.style.display = 'none';
     revArrow4.style.display = 'block';
@@ -447,7 +406,7 @@ function revReturn4(){
         f4Rev.style.display = 'none';
         flavour4.classList.remove('flavour4_hidden2');
 
-    },500)
+    },500);
 
     proArrowOther.style.display = 'block';
     revArrow4.style.display = 'none';
@@ -477,135 +436,128 @@ const lemon2Move = gsap.utils.toArray('.lemon2')[0];
 const lemon3Move = gsap.utils.toArray('.lemon3')[0];
 const lemon4Move = gsap.utils.toArray('.lemon4')[0];
 
-
 window.addEventListener('mousemove', (event) =>{
-    const mouseX = -((window.innerWidth / 2) - event.pageX) / 40
-    const mouseY = ((window.innerHeight / 2) - event.pageY) / 20
+    const mouseX = -((window.innerWidth / 2) - event.pageX) / 40;
+    const mouseY = ((window.innerHeight / 2) - event.pageY) / 20;
 
-    const mouseXb = -((window.innerWidth / 2) - event.pageX) / 80
-    const mouseYb = ((window.innerHeight / 2) - event.pageY) / 40
+    const mouseXb = -((window.innerWidth / 2) - event.pageX) / 80;
+    const mouseYb = ((window.innerHeight / 2) - event.pageY) / 40;
 
     gsap.to(bottleM, {
         duration: 1,
         rotationY: mouseXb,
         rotationX: mouseYb,
         ease: 'power2.out'
-    })
+    });
     gsap.to(bottleP, {
         duration: 1,
         rotationY: mouseXb,
         rotationX: mouseYb,
         ease: 'power2.out'
-    })
+    });
     gsap.to(bottleA, {
         duration: 1,
         rotationY: mouseXb,
         rotationX: mouseYb,
         ease: 'power2.out'
-    })
+    });
     gsap.to(bottleL, {
         duration: 1,
         rotationY: mouseXb,
         rotationX: mouseYb,
         ease: 'power2.out'
-    })
-
+    });
     gsap.to(melon1Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(melon2Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(melon3Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
-
+    });
     gsap.to(peach1Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(peach2Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(peach3Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
-
+    });
     gsap.to(appleFrontMove, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(apple0Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(apple1Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(apple2Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(apple3Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
-
+    });
     gsap.to(lemon1Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(lemon2Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(lemon3Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
+    });
     gsap.to(lemon4Move, {
         duration: 0.5,
         rotationY: mouseX,
         rotationX: mouseY,
         ease: 'power2.out'
-    })
-    
-})
-
+    });
+});
 // Background Scroll Animation for all 4 product reviews pages
     
     // Define all product reviews scrollable areas 
@@ -911,32 +863,24 @@ function abSub2(){
 
     proArrow4.style.display = 'none';
 }
-
-
-
 function conPage(){
     conAnimate.classList.remove('conBgAnimate_reveal');
     hideRAnimate();
-    
     contactPage.style.display = 'block';
     aboutPage.classList.add('aboutPage_hidden');
-
     productPage.classList.add('productPage_hidden');
-
     products.style.color = '#E51B6C';
     about.style.color = '#E51B6C';
     contact.style.color = '#27AAE1';
-
 
     setTimeout(function(){
         contactPage.classList.remove('conPage_initial');
         aboutPage.style.display = 'none';
         productPage.style.display = 'none';
-    }, 600)
-
+    }, 600);
     setTimeout(function(){
         conAnimate.classList.add('conBgAnimate_reveal');
-    }, 1400)
+    }, 1400);
 
     proArrow.style.display = 'none';
     proArrow2.style.display = 'none';
@@ -950,46 +894,11 @@ function conPage(){
     abArrow.style.display = 'none';
     conArrow.style.display = 'block';
 }
-/*
-function abPage(){
-    aboutPage.style.display = 'block';
-    productPage.classList.add('productPage_hidden');
-    proAll.classList.add('proAll_initial');
-    
-    contactPage.style.display = 'none';
-    products.style.color = '#E51B6C';
-    about.style.color = '#27AAE1';
-    contact.style.color = '#E51B6C';
-
-    setTimeout(function(){
-        aboutPage.classList.remove('aboutPage_initial');
-        productPage.style.display = 'none';
-    }, 400);
-
-    aboutMain.style.display = 'flex';
-    about1.style.display = 'none';
-    about2.style.display = 'none';
-
-    proArrow.style.display = 'none';
-    proArrow2.style.display = 'none';
-    proArrow3.style.display = 'none';
-    proArrow4.style.display = 'none';
-    proArrowOther.style.display = 'none';
-    revArrow.style.display = 'none';
-    revArrow2.style.display = 'none';
-    revArrow3.style.display = 'none';
-    revArrow4.style.display = 'none';
-    abArrow.style.display = 'block';
-    conArrow.style.display = 'none';
-}
-*/
-
 
 let conScroll = document.querySelector('#contactScroll');
 let conAnimateL1 = document.querySelector('.conAnimateL1');
 let conAnimateL2 = document.querySelector('.conAnimateL2');
 let conAnimateL3 = document.querySelector('.conAnimateL3');
-
 
 gsap.to(conAnimateL1, {
     scrollTrigger: {
@@ -1004,7 +913,6 @@ gsap.to(conAnimateL1, {
     y:1905,
     duration:6
 });
-
 gsap.to(conAnimateL2, {
     scrollTrigger: {
         scroller: conScroll,
@@ -1018,7 +926,6 @@ gsap.to(conAnimateL2, {
     y:1905,
     duration:6
 });
-
 gsap.to(conAnimateL3, {
     scrollTrigger: {
         scroller: conScroll,
@@ -1032,8 +939,6 @@ gsap.to(conAnimateL3, {
     y:1905,
     duration:6
 });
-
-
 function toggleBotNav(){
     if(botNav.className == ('botNav'), conBotArrow.className == ('conArrowContainer')) {
         botNav.className = 'botNav botNav_Up';
@@ -1044,7 +949,6 @@ function toggleBotNav(){
         conBotArrow.className = 'conArrowContainer';
     }
 }
-
 function openTwitter(){
     window.open("https://twitter.com/", "_blank");
 }
@@ -1054,6 +958,3 @@ function openInsta(){
 function openFacebook(){
     window.open("https://www.facebook.com/", "_blank");
 }
-
-
-
