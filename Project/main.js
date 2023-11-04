@@ -250,10 +250,10 @@ function toggleHome(){
         products.style.color = '#27AAE1';
 
     
-    }, 700)
+    }, 600)
 
 
-    setTimeout(swapArrow1, 700);
+    setTimeout(swapArrow1, 600);
 }
 /*
 function toggleHome(){
