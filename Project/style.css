@@ -199,7 +199,6 @@ header{
 .linesHome{
     transform: scale(2);
 }
-
 .lBot{
     margin-left:50%;
     margin-top: 33%;
@@ -926,7 +925,6 @@ h1{
 .socialIcons:hover{
     transform: scale(1.1);
 }
-
 /* Transition Animation Classes*/
     /* Home Page | Nav Elements */
 .homePage_hidden{

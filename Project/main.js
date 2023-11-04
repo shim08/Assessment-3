@@ -57,74 +57,6 @@ let dot3 = document.querySelector('.navDot3');
 let botNav = document.querySelector('.botNav');
 let conBotArrow = document.querySelector('.conArrowContainer');
 
-function proNavEx(){
-
-    homePage.style.display = 'none';
-    navBar.style.display = 'block';
-    navBar.classList.remove('navBar_hidden');
-    navCon.classList.remove('navCon_hidden');
-    homePage.classList.add('homePage_hidden');
-    aboutPage.classList.add('aboutPage_initial');
-    aboutPage.classList.remove('aboutPage_hidden');
-    contactPage.classList.add('conPage_initial');
-
-    conAnimate.classList.remove('conBgAnimate_reveal');
-
-    products.style.color = '#27AAE1';
-    about.style.color = '#E51B6C';
-    contact.style.color = '#E51B6C';
-
-    flavour1.style.display = 'flex';
-    flavour1.classList.remove('flavour1_hidden');
-    flavour1.classList.remove('flavour1_hidden2');
-    flavour2.style.display = 'none';
-    flavour2.classList.add('flavour2_initial');
-    flavour2.classList.remove('flavour2_hidden');
-    flavour2.classList.remove('flavour2_hidden2');
-    flavour3.style.display = 'none';
-    flavour3.classList.add('flavour3_initial');
-    flavour3.classList.remove('flavour3_hidden');
-    flavour3.classList.remove('flavour3_hidden2');
-    flavour4.style.display = 'none';
-    flavour4.classList.add('flavour4_initial');
-    flavour4.classList.remove('flavour4_hidden');
-    flavour4.classList.remove('flavour4_hidden2');
-    proAll.style.display = 'none';
-    proAll.classList.add('proAll_initial');
-    proAll.classList.remove('proAll_hidden');
-
-    proArrow.style.display = 'block';
-    proArrow2.style.display = 'none';
-    proArrow3.style.display = 'none';
-    proArrow4.style.display = 'none';
-    proArrowOther.style.display = 'none';
-    revArrow.style.display = 'none';
-    revArrow2.style.display = 'none';
-    revArrow3.style.display = 'none';
-    revArrow4.style.display = 'none';
-    abArrow.style.display = 'none';
-    conArrow.style.display = 'none';
-
-    f1Rev.style.display = 'none';
-    f1Rev.classList.add('f1Review_hidden');
-    f2Rev.style.display = 'none';
-    f2Rev.classList.add('f2Review_hidden');
-    f3Rev.style.display = 'none';
-    f3Rev.classList.add('f3Review_hidden');
-    f4Rev.style.display = 'none';
-    f4Rev.classList.add('f4Review_hidden');
-
-    lHome.style.display = 'none';
-    lHome.classList.add('lHome_hidden');
-    lBot.style.display = 'none';
-    lBot.classList.add('lBot_hidden');
-    lBot2.style.display = 'block';
-    lRight.style.display = 'none';
-    lRight.classList.add('lRight_hidden');
-    lMain.style.display = 'block';
-
-}
-
 function returnHome(){
     homePage.style.display = 'block';
     homePage.classList.remove('homePage_hidden');
@@ -215,7 +147,71 @@ function hideRAnimate(){
     f3rAnimate.classList.remove('f3rBgAnimate_reveal');
     f4rAnimate.classList.remove('f4rBgAnimate_reveal');
 }
+function proNavEx(){
+    homePage.style.display = 'none';
+    navBar.style.display = 'block';
+    navBar.classList.remove('navBar_hidden');
+    navCon.classList.remove('navCon_hidden');
+    homePage.classList.add('homePage_hidden');
+    aboutPage.classList.add('aboutPage_initial');
+    aboutPage.classList.remove('aboutPage_hidden');
+    contactPage.classList.add('conPage_initial');
 
+    conAnimate.classList.remove('conBgAnimate_reveal');
+
+    products.style.color = '#27AAE1';
+    about.style.color = '#E51B6C';
+    contact.style.color = '#E51B6C';
+
+    flavour1.style.display = 'flex';
+    flavour1.classList.remove('flavour1_hidden');
+    flavour1.classList.remove('flavour1_hidden2');
+    flavour2.style.display = 'none';
+    flavour2.classList.add('flavour2_initial');
+    flavour2.classList.remove('flavour2_hidden');
+    flavour2.classList.remove('flavour2_hidden2');
+    flavour3.style.display = 'none';
+    flavour3.classList.add('flavour3_initial');
+    flavour3.classList.remove('flavour3_hidden');
+    flavour3.classList.remove('flavour3_hidden2');
+    flavour4.style.display = 'none';
+    flavour4.classList.add('flavour4_initial');
+    flavour4.classList.remove('flavour4_hidden');
+    flavour4.classList.remove('flavour4_hidden2');
+    proAll.style.display = 'none';
+    proAll.classList.add('proAll_initial');
+    proAll.classList.remove('proAll_hidden');
+
+    proArrow.style.display = 'block';
+    proArrow2.style.display = 'none';
+    proArrow3.style.display = 'none';
+    proArrow4.style.display = 'none';
+    proArrowOther.style.display = 'none';
+    revArrow.style.display = 'none';
+    revArrow2.style.display = 'none';
+    revArrow3.style.display = 'none';
+    revArrow4.style.display = 'none';
+    abArrow.style.display = 'none';
+    conArrow.style.display = 'none';
+
+    f1Rev.style.display = 'none';
+    f1Rev.classList.add('f1Review_hidden');
+    f2Rev.style.display = 'none';
+    f2Rev.classList.add('f2Review_hidden');
+    f3Rev.style.display = 'none';
+    f3Rev.classList.add('f3Review_hidden');
+    f4Rev.style.display = 'none';
+    f4Rev.classList.add('f4Review_hidden');
+
+    lHome.style.display = 'none';
+    lHome.classList.add('lHome_hidden');
+    lBot.style.display = 'none';
+    lBot.classList.add('lBot_hidden');
+    lBot2.style.display = 'block';
+    lRight.style.display = 'none';
+    lRight.classList.add('lRight_hidden');
+    lMain.style.display = 'block';
+}
 function toggleHome(){
     homePage.classList.add('homePage_hidden');
     aboutPage.classList.add('aboutPage_initial');
@@ -246,14 +242,11 @@ function toggleHome(){
 
     
     }, 600);
-
-
     setTimeout(swapArrow1, 600);
 }
 function proNav(){
     proNavEx();
     toggleHome();
-
 }
 function proPage2(){
     flavour1.classList.add('flavour1_hidden');
@@ -264,7 +257,6 @@ function proPage2(){
         flavour2.classList.remove('flavour2_initial');
         flavour1.style.display = 'none';
     },200);
-
     proArrow.style.display = 'none';
     proArrow2.style.display = 'block';
 }
@@ -276,7 +268,6 @@ function proPage3(){
         flavour3.classList.remove('flavour3_initial');
         flavour2.style.display = 'none';
     },200);
-
     flavour3.classList.remove('flavour3_hidden');
     proArrow2.style.display = 'none';
     proArrow3.style.display = 'block';
@@ -289,7 +280,6 @@ function proPage4(){
         flavour4.classList.remove('flavour4_initial');
         flavour3.style.display = 'none';
     },200);
-
     proArrow3.style.display = 'none';
     proArrowOther.style.display = 'block';
 }
@@ -301,11 +291,9 @@ function proPageAll(){
         proAll.classList.remove('proAll_initial');
         flavour4.style.display = 'none';
     },200);
-
     proArrowOther.style.display = 'none';
     proArrow4.style.display = 'block';
 }
-
 function proRev1(){
     f1Rev.style.display = 'flex';
     flavour1.classList.add('flavour1_hidden2');
@@ -315,11 +303,9 @@ function proRev1(){
         f1Rev.classList.remove('f1Review_hidden');
         flavour1.style.display = 'none';
     },200);
-
     proArrow.style.display = 'none';
     revArrow.style.display = 'block';
 }
-
 function revReturn1(){
     flavour1.style.display = 'flex';
     f1Rev.classList.add('f1Review_hidden');
@@ -329,7 +315,6 @@ function revReturn1(){
         flavour1.classList.remove('flavour1_hidden2');
 
     },500);
-
     proArrow.style.display = 'block';
     revArrow.style.display = 'none';
 }
@@ -342,7 +327,6 @@ function proRev2(){
         f2Rev.classList.remove('f2Review_hidden');
         flavour2.style.display = 'none';
     },200);
-
     proArrow2.style.display = 'none';
     revArrow2.style.display = 'block';
 }
@@ -355,7 +339,6 @@ function revReturn2(){
         flavour2.classList.remove('flavour2_hidden2');
 
     },500);
-
     proArrow2.style.display = 'block';
     revArrow2.style.display = 'none';
 }
@@ -368,7 +351,6 @@ function proRev3(){
         f3Rev.classList.remove('f3Review_hidden');
         flavour3.style.display = 'none';
     },200);
-
     proArrow3.style.display = 'none';
     revArrow3.style.display = 'block';
 }
@@ -379,9 +361,7 @@ function revReturn3(){
     setTimeout(function(){
         f3Rev.style.display = 'none';
         flavour3.classList.remove('flavour3_hidden2');
-
     },500);
-
     proArrow3.style.display = 'block';
     revArrow3.style.display = 'none';
 }
@@ -394,7 +374,6 @@ function proRev4(){
         f4Rev.classList.remove('f4Review_hidden');
         flavour4.style.display = 'none';
     },200);
-
     proArrowOther.style.display = 'none';
     revArrow4.style.display = 'block';
 }
@@ -407,7 +386,6 @@ function revReturn4(){
         flavour4.classList.remove('flavour4_hidden2');
 
     },500);
-
     proArrowOther.style.display = 'block';
     revArrow4.style.display = 'none';
 }
