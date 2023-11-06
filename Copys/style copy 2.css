@@ -975,6 +975,7 @@ h1{
         /* Logo and Nav Element Styling */
 
     #navBar{
+        width:100%;
         height:15%;
         display: flex;
         display: none;
@@ -1030,9 +1031,17 @@ h1{
     }
 
     /* Background Line Positioning and Styles */
+    #bgLines{
+        width:100%;
+        height:100%;
+        left: 0;
+        top:0;
+        z-index: -2;
+    }
     .lBot2{
         width:90%;
         height:90%;
+        margin-left:60%;
         margin-top: 58%;
     }
     .lBot, .lHome, .lRight, .lMain{
@@ -1044,12 +1053,17 @@ h1{
         margin-top: -14.5%;
     }
     .lBot{
+        margin-left:50%;
         margin-top: 63%;
+    }
+    .linesBot, .linesRight, .lBot2{
+        transform: scale(1.58);
     }
     .lRight{
         margin-top: 50%;
     }
     .lMain{
+        margin-left:-28.3%;
         margin-top: -16%;
     }
     /* Home Logo Style */
@@ -1060,6 +1074,8 @@ h1{
     }
         /* Product Image and Content Container */
     .proContainer{
+        width:85vh;
+        height:10vh;
         margin-top:18%;
     }
     #flavour1, #flavour2, #flavour3, #flavour4, #productsAll{
@@ -1068,6 +1084,9 @@ h1{
     .watermelon{
         margin-left: 8%;
     }
+    .peach, .apple, .lemon{
+        margin-left:21%;
+    }
         /* Product Information Icons */
     .infoIcons{
         width:18%;
@@ -1075,6 +1094,11 @@ h1{
         margin-top:18%;
         margin-left: 6%;
     }
+    .infoIcons span{
+        margin-top:5%;
+        margin-bottom: 10%;
+    }
+
     .reviews{
         margin-right:10%;
         z-index: 11;
@@ -1082,6 +1106,7 @@ h1{
     .reviewBtn::part(base){
         width:26vh;
         height:4vh;
+        padding-top:2%;
         font-size: 1.6rem;
     }
     .reviews img{
@@ -1103,49 +1128,6 @@ h1{
         margin-bottom: -10%;
     }
 
-    /* Products All Section and Splide Slider Styling*/
-    #productsAll{
-        margin-top: 8%;
-    }
-    .slideImgWrapper{
-        width: 60vh;
-        height: 75vh;
-        margin: auto;
-        margin-top:2%;
-        border: 1px solid red;
-    }
-    .splide{
-        width:54vh;
-        height:77vh;
-        margin:auto;
-        border: 1px solid red;
-        margin-left: 2%;
-    }
 
-    .slideText{
-        width:50%;
-        height:70vh;
-        margin-left: 8%;
-        margin-top: 7%;
-        border: 1px solid red;
-    }
-    .slideText p{
-        font-size: 1.2rem;
-        border: 1px solid red;
-    }
-    h6{
-        margin-top: 2%;
-        margin-bottom: 0%;
-        font-size: 2rem;
-    }
-    h5{
-        font-size: 1.6rem;
-        margin-top: 2%;
-        margin-bottom: 0%;
-    }
-    .slideImg{
-        width:100%;
-        height:100%;
-    }
 
 }
