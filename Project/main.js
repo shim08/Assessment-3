@@ -8,6 +8,7 @@ let contactPage = document.querySelector('#contactPage');
 let navBar = document.querySelector('#navBar');
 let navCon = document.querySelector('#navContainer');
 
+
 let navArrow = document.querySelector('#navArrow');
 let proArrow = document.querySelector('#proArrow');
 let proArrow2 = document.querySelector('#proArrow2');
@@ -56,6 +57,37 @@ let dot3 = document.querySelector('.navDot3');
 
 let botNav = document.querySelector('.botNav');
 let conBotArrow = document.querySelector('.conArrowContainer');
+
+
+let hamburger = document.querySelector('#menuM');
+let topLine = document.querySelector('.topLine');
+let midLine = document.querySelector('.midLine');
+let botLine = document.querySelector('.botLine');
+
+function mobileMenu(){
+    if(midLine.className == ('midLine'), topLine.className == ('topLine'), botLine.className == ('botLine')){
+        topLine.className = 'topLine topLine_toggled';
+        midLine.className = 'midLine midLine_toggled';
+        botLine.className = 'botLine botLine_toggled';
+    }
+    else{
+        topLine.className = 'topLine';
+        midLine.className = 'midLine';
+        botLine.className = 'botLine';
+    }
+}
+
+/*
+function toggleBotNav(){
+    if(botNav.className == ('botNav'), conBotArrow.className == ('conArrowContainer')) {
+        botNav.className = 'botNav botNav_Up';
+        conBotArrow.className = 'conArrowContainer conArrowContainer_Up';
+    }
+    else {
+        botNav.className = 'botNav';
+        conBotArrow.className = 'conArrowContainer';
+    }
+}  */
 
 function returnHome(){
     homePage.style.display = 'block';

@@ -1,0 +1,330 @@
+link or mount librarys
+
+   | DEFINE VARIABLES |        !!!!!! ALL FUNCTIONS THAT SHOULD BE TRIGGERED ON CLICK ARE TRIGGERED WITH onclick="" IN HTML !!!!!!
+
+Home Page;
+Product Page;
+About Page;
+Contact Page; 
+
+Navigation Bar; 
+Navigation Wrapper;
+Mobile Menu Navigation Bar;
+
+Main Navigation Arrows; (1 for each main content section)
+
+Background Elements; (define each background element seperatetly)
+
+| PAGE TITLES |
+Home;
+Products;
+About;
+Contact;
+
+Product Page Sections; (Define each flavour page seperatetly)
+Product Page Reviews Section; (Define each flavour page seperatetly)
+
+Animated Background Elements (Define each element seperately);
+
+About Page
+About Sub Page 1 
+About Sub Page 2
+Navigation Elements for About Sub Sections
+
+
+    | START FUNCTIONS FOR NAVIGATION IN ORDER OF OCCURENCE |
+
+function Return Home {
+    reset all elements, animations, transistions, and classes to their default state;
+    return the user to the beggining of the site as if they had refreshed the page;
+}
+
+function toggle the dropdown hamburger menu for mobile interface{
+    if(menu is closed){
+        open it;
+    }
+    else{
+        close it;
+    }
+}
+
+function reveal and hide background elements that should be either revealed or hidden{
+    if ----{
+        reveal elements
+    }
+    else ----{
+        hide elements
+    }
+}
+
+function Switch Navigation Arrows for Each Main Content Page{
+    previous arrow = display none;
+    new arrow = display block;
+}   (Make one of these functions for Each Main Content Page)
+
+| PRODUCTS PAGE |
+
+function Enter the Products Page{  (!! FOR ALL NAVIGATION FUNCTIONS, ADDING AND REMOVING CLASSES ON MAIN ELEMENTS WILL BE REQUIRED TO GIVE THE SENSE OF SMOOTH TRANSITIONING BETWEEN PAGES)
+    ensure all other pages are hidden;
+    ensure the correct navigation arrow is shown;
+    ensure navigation elements indicate that the products page is active; (e.g. products is highlighted in the navigation bar)
+    use different delay settings to ensure elements are smoothly transitioned in and out of the view port;
+}
+
+function Products Page Flavour 2{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Flavour 3{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Flavour 4{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Final Information Page{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Reviews 1{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Return From Reviews 1{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Reviews 2{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Return From Reviews 2{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Reviews 3{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Return From Reviews 3{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Reviews 4{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+function Products Page Return From Reviews 4{
+    show all required elements;
+    hide all previous elements;
+    show correct navigation arrow;
+    hide old navigation arrow;
+    use delays to smoothly transition elements in and out of the view port;
+} 
+
+    | DEFINE MORE VARIABLE FOR ANIMATED ELEMENTS ON THE PRODUCTS PAGE |
+Product 1;
+Product 2;
+Product 3;
+Product 4;
+
+        | SEPERATE EACH BACKGROUND ELEMENT SO IT CAN BE ANIMATED TO APPEAR TO BE ON ITS OWN LAYER |
+
+Flavour 1 Background Elements (As many as there are)
+Flavour 2 Background Elements (As many as there are)
+Flavour 3 Background Elements (As many as there are)
+Flavour 4 Background Elements (As many as there are)
+
+Create Event Listener that is able to track mouse movements{ (So that elements will be able to react to the users cursor)
+    track cursor x position;
+    track cursor y position;
+}
+
+| USE GSAP TO ANIMATE THE PRODUCTS ELEMENTS TO REACT TO THE CURSOR | *This will make the page feel more interactive
+
+gsap{
+    apply animations to each of the animated elements using the previous cursor position tracker to determine how the elements will respond;
+}
+
+
+| GSAP SCROLL TRIGGER ANIMATION | (Product Reviews)
+| DEFINE EACH SCROLLER THAN WILL HAVE AN ATTACHED ANIMATION |
+
+Flavour 1 Scroller;
+Flavour 2 Scroller;
+Flavour 3 Scroller;
+Flavour 4 Scroller;
+
+| DEFINE THE ANIMATED BACKGROUND ELEMENTS THAT WILL BE ANIMATED ON SCROLL | (these will target pre-styled elements in css) 
+
+Animated Background Element Layer 1 Flavour 1;
+Animated Background Element Layer 2 Flavour 1;
+Animated Background Element Layer 3 Flavour 1;
+
+| TARGET THE ABOVE ANIMATED ELEMENT VARIABLES AND USE GSAP SCROLL TRIGGER TO CHANGE THEIR POSITION BASED ON SCROLL POSITION |
+
+gsap{
+    Scroll Trigger{
+        background element 1;
+        scroller 1;
+        start point;
+        end point; 
+        scrub: yes;
+    }
+}
+gsap{
+    Scroll Trigger{
+        background element 2;
+        scroller 1;
+        start point;
+        end point; 
+        scrub: yes;
+    }
+}
+gsap{
+    Scroll Trigger{
+        background element 3;
+        scroller 1;
+        start point;
+        end point; 
+        scrub: yes;
+    }
+}
+    | REPEAT THIS PROCESS 3 MORE TIMES FOR EACH REVIEW PAGE SCROLLER AND TARGET THAT RESPECTIVE PAGES ELEMENTS |
+
+
+| ABOUT PAGE |
+
+function Enter the About Page{  (!! FOR ALL NAVIGATION FUNCTIONS, ADDING AND REMOVING CLASSES ON MAIN ELEMENTS WILL BE REQUIRED TO GIVE THE SENSE OF SMOOTH TRANSITIONING BETWEEN PAGES)
+    ensure all other pages are hidden;
+    ensure the correct navigation arrow is shown;
+    ensure navigation elements indicate that the products page is active; (e.g. products is highlighted in the navigation bar)
+    use different delay settings to ensure elements are smoothly transitioned in and out of the view port;
+}
+
+function Enter first About section subpage{
+    hide intial about page elements;
+    show correct subpage elements;
+    ensure second subpage elements are hidden;
+    ensure the navigation elements under the content indicate the correct section;
+}
+
+function Enter second About section subpage{
+    hide intial about page elements;
+    show correct subpage elements;
+    ensure second subpage elements are hidden;
+    ensure the navigation elements under the content indicate the correct section;
+}
+
+| CONTACT PAGE |
+
+function Enter the Contact Page{  (!! FOR ALL NAVIGATION FUNCTIONS, ADDING AND REMOVING CLASSES ON MAIN ELEMENTS WILL BE REQUIRED TO GIVE THE SENSE OF SMOOTH TRANSITIONING BETWEEN PAGES)
+    ensure all other pages are hidden;
+    ensure the correct navigation arrow is shown;
+    ensure navigation elements indicate that the products page is active; (e.g. products is highlighted in the navigation bar)
+    use different delay settings to ensure elements are smoothly transitioned in and out of the view port;
+}
+
+| DEFINE VARIABLES FOR CONTACT PAGE SCROLLER AND SCROLL TRIGGER ANIMATION |
+
+Contact Scroller;
+
+Animated Background Element 1;
+Animated Background Element 2;
+Animated Background Element 3;
+
+gsap{
+    scroll trigger{
+        animated element 1;
+        contact scroller;
+        start point;
+        end point;
+        scrub: yes;
+    }
+}
+gsap{
+    scroll trigger{
+        animated element 2;
+        contact scroller;
+        start point;
+        end point;
+        scrub: yes;
+    }
+}
+gsap{
+    scroll trigger{
+        animated element 3;
+        contact scroller;
+        start point;
+        end point;
+        scrub: yes;
+    }
+}
+
+| BOTTOM NAVIGATION FOR CONTACT PAGE |
+
+function Reveal the hidden navigation bar with a button on the contact page{
+    if(bottom navigation bar is hidden){
+        show bottom navigation bar;
+    }
+    else{
+        hide bottom navigation bar;
+    }
+}
+
+| LINK SOCIAL MEDIA BUTTONS TO THEIR RESPECTIVE SITES |
+
+function Open Twitter in new window{
+    open twitter;
+}
+function Open Facebook in new window{
+    open facebook;
+}
+function Open Instagram in new window{
+    open instagram;
+}
