@@ -1375,3 +1375,379 @@ h1{
         display: block;
     }
 }
+
+@media only screen and (max-width: 360px){
+
+    /* Navigation Elements */
+        /* Logo and Nav Element Styling */
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height:7%;
+        top: -20%;
+        left: 82%;
+        z-index: 11;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .hamburger:hover{
+        transform: scale(1.1);
+    }
+    .hamburger_reveal{
+        top:3%;
+    }
+    .midLine, .topLine, .botLine{
+        width:7vh;
+        height:0.8vh;
+        background-color: #E51B6C;
+        margin-top:1.7vh;
+        transition: 0.2s;
+        opacity: 1;
+    }
+    .topLine{
+        margin-top: 0;
+    }
+    .topLine_toggled{ 
+        transform: rotate(45deg) translate(2%, 4%);
+    }
+    .botLine_toggled{
+        transform: rotate(-45deg) translate(2%, -4%);
+    }
+    .midLine_toggled{
+        display: none;
+    }
+    .optionsM{
+        height:110%;
+        width:100%;
+        margin-top:-225%;
+        margin-left:0%;
+        font-size: 2.2rem;
+    }
+    .options_reveal{
+        margin-top: -27%;
+    }
+
+    .homeM{
+        margin-top:40%;
+    }
+    #navContainer{
+        left: 8%;
+        top:2%;
+        width: 28vh;
+        height: 12.4vh;
+    }
+    /* First Arrow Style */
+    #navArrow{
+        width:14vh;
+        height:14vh;
+        margin-left: -34%;
+        top:64%;
+    }
+
+    /* All Other Nav Arrow Styles */
+    #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
+        width:13vh;
+        height:13vh;
+        left:73%;
+        top:44%;
+    }
+
+    /* Background Line Positioning and Styles */
+    .lBot2{
+        margin-top: 68%;
+    }
+    .lBot, .lHome, .lRight, .lMain, .lBot2{
+        width:110%;
+        height:110%;
+    }
+    .lHome{
+        margin-left: -60%;
+    }
+    .lBot{
+        margin-top: 80%;
+    }
+    .lRight{
+        margin-top: 99%;
+    }
+    .lMain{
+        margin-top: -16%;
+    }
+    /* Home Logo Style */
+    #homeLogo{
+        width:52vh;
+        height:52vh;
+        margin-top: 50%;
+    }
+        /* Product Image and Content Container */
+    .proContainer{
+        width:100%;
+        height:80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top:26%;
+    }
+    #flavour1, #flavour2, #flavour3, #flavour4, #productsAll{
+        font-size: 2.2rem;
+    }
+    .watermelon, .peach, .apple, .lemon{
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: -110%;
+    }
+        /* Product Information Icons */
+    .infoIcons{
+        width:23%;
+        font-size: 1rem;
+        margin-top:35%;
+        margin-left: -76%;
+        font-family: poppins, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .reviews{
+        margin-top:0%;
+        margin: auto;
+        z-index: 11;
+    }
+    .reviewBtn::part(base){
+        width:26vh;
+        height:4vh;
+        font-size: 1.4rem;
+    }
+    .reviews img{
+        transform: scale(0.6);
+        margin-left: 0%;
+    }
+    .bottle{
+        width:100%;
+        height:90%;
+        margin-bottom: -92%;
+    }
+    .bgContainer{
+        width:140%;
+        height:70vh;
+        margin-bottom: -20%;
+    }
+
+        /* Shared Styles for Review Headings */
+    .f1R{
+        font-size: 4rem;
+        margin-bottom: -21%;
+        margin-top: 20%;
+    }
+    .f1RSub{
+        font-size: 2.3rem;
+        margin-bottom: -3%;
+    }
+    .f1RStar{
+        width:26%;
+        margin-bottom: -22%;
+    }
+    #f1RScroll, #f2RScroll, #f3RScroll, #f4RScroll{
+        width:95%;
+        height:50%;
+    }
+    .f1rAnimateL1 img, .f1rAnimateL2 img, .f1rAnimateL3 img, .f2rAnimateL1 img, .f2rAnimateL2 img, .f2rAnimateL3 img, .f3rAnimateL1 img, .f3rAnimateL2 img, .f3rAnimateL3 img, .f4rAnimateL1 img, .f4rAnimateL2 img, .f4rAnimateL3 img{
+        margin-left:70%;
+        margin-top:-115%;
+        width:120%;
+    }
+    .cust1Sub{
+        font-size: 1.4rem;
+    }
+    .cust1Sub div{
+        margin-top:2.2%;
+
+    }
+    .cust1Sub img{
+        transform: scale(0.8);
+        margin-top:0%;
+        margin-left: 10%;
+    }
+    .cust1 span{
+        width:98%;
+        margin-top:0%;
+        font-size: 1.1rem;
+    }
+
+    /* Products All Section and Splide Slider Styling*/
+    #productsAll{
+        margin-top: 0%;
+    }
+    .slideImgWrapper{
+        width: 30vh;
+        height: 66vh;
+        margin-top:0%;
+    }
+    .splide{
+        width:68vh;
+        height:66vh;
+    }
+    .slideText{
+        height:66vh;
+        margin-top: 0%;
+    }
+    .slideText p{
+        font-size: 1.5rem;
+    }
+    h6{
+        font-size: 2.4rem;
+    }
+    h5{
+        font-size: 2rem;
+    }
+    .slideImg{
+        width:135%;
+        margin-left: -22%;
+        margin-top:10%;
+    }
+
+    #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
+        left:43%;
+        top:85%;
+    }
+
+    #aboutMain, #about1, #about2{
+        width:90%;
+        height:68%;
+        margin-top: 20%;
+    }
+    .aboutMainTitle{
+        font-size: 5.6rem;
+        margin-top: 36%;
+    }
+    .aboutMain2{
+        font-size: 3rem;
+        margin-top: -32%;
+    }
+    .explore{
+        margin-top: 3%;
+    }
+
+    .about1Title, .about2Title{
+        font-size: 4.8rem;
+    }
+    .about1Sub, .about2Sub{
+        font-size: 3.6rem;
+        margin-top: -10%;
+        margin-bottom: 1%;
+    }
+    .about1Text, .about2Text{
+        width:98%;
+        height:66%;
+        font-size: 1.7rem;
+        margin-top: 0%;
+        line-height: 3.8vh;
+    }
+    .abSubNav{
+        margin-top: -12%;
+    }
+
+    #contactScroll{
+        width:95%;
+        height:52%;
+        margin-top: 34%;
+        text-align: center;
+    }
+        /* Scroll Animations for the Contact Page Scroll Area*/
+    .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
+        margin-left:70%;
+        margin-top:-115%;
+        width:120%;
+    }
+    .contactTitle{
+        font-size: 4.2rem;
+        left: 12vh;
+        top:17vh;
+    }
+    .contactSub, .contactSub2{
+        font-size: 3.2rem;
+    }
+    .inputContainer{
+        width:92%;
+
+    }
+
+    .send{
+        width:18%;
+        height:14%;
+    }
+    .send::part(base){
+        padding-top:0.4vh;
+    }
+    
+    .contactSub2{
+        margin-top: 16vh;
+    }
+    .tel{
+        margin-bottom: 16vh;
+    }
+
+    .conBotArrow{
+        display: none;
+    }
+    .botNav{
+        display: none;
+    }
+    .navHandle{
+        display: none;
+    }
+    .social1, .social2, .social3{
+        width:10vh;
+        height:10vh;
+    }
+    .social1{
+        margin-bottom: 16%;
+    }
+    .social2{
+        margin-right: 0.5%;
+        margin-bottom: 0.5%;
+    }
+    .social3{
+        margin-right:16%;
+    }
+
+    /* Transition Animation Classes*/
+        /* Home Page | Nav Elements */
+    .homePage_hidden{
+        margin-top: 110%;
+    }
+    .lHome_hidden{
+        transform: translate(-23%, -23%);
+    }
+    .lBot_hidden{
+        transform: translate(3.3%, 3.3%);
+    }
+    .lRight_hidden{
+        transform: translate(-200%, -140%);
+    }
+    .navBar_hidden{
+        margin-top:-5%;
+    }
+    .navCon_hidden{
+        margin-left:-60%;
+    }
+        /* Products Page | About Page | Contact Page */
+    .productPage_hidden{
+        margin-top:120%;
+    }
+    .flavour1_hidden, .flavour2_hidden, .flavour3_hidden, .flavour4_hidden, .proAll_hidden, .aboutPage_hidden{
+        transform: translateX(-120%);
+    }
+    .flavour2_initial, .flavour3_initial, .flavour4_initial, .aboutPage_initial{
+        transform: translateX(100%);
+    }
+    .proAll_initial, .conPage_initial, .flavour1_hidden2, .flavour2_hidden2, .flavour3_hidden2, .flavour4_hidden2{
+        transform: translateY(100%);
+    }
+    .f1Review_hidden, .f2Review_hidden, .f3Review_hidden, .f4Review_hidden{
+        margin-top:-100%;
+    }
+    .conBgAnimate_reveal, .f1rBgAnimate_reveal, .f2rBgAnimate_reveal, .f3rBgAnimate_reveal, .f4rBgAnimate_reveal{
+        display: block;
+    }
+}
