@@ -64,6 +64,7 @@ let midLine = document.querySelector('.midLine');
 let botLine = document.querySelector('.botLine');
 
 let options = document.querySelector('.optionsM');
+
 function mobileMenu(){
     options.style.display = 'flex';
     midLine.classList.toggle('midLine_toggled');

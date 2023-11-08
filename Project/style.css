@@ -85,11 +85,19 @@ header{
 .hamburger{
     display: none;
 }
-.options, .optionsM{
+.options{
     display: flex;
     margin:2.2vh;
     padding: 3.14vh;
-    margin-left: 95vh;
+    margin-left: 50%;
+    font-family: supersize-bk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #E51B6C;
+}
+.optionsM{
+    display: flex;
     font-family: supersize-bk, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -1034,16 +1042,18 @@ h1{
         height:110%;
         width:100%;
         margin-top:-165%;
-        margin-left:-0.2%;
+        margin-left:0%;
         background-color: white;
         font-size: 3rem;
         z-index: 11;
         transition: 0.2s;
     }
     .options_reveal{
-        margin-top: -20%;
+        margin-top: -12%;
     }
-
+    .options{
+        display: none;
+    }
     #logoNav{
         display: none;
     }
@@ -1052,7 +1062,7 @@ h1{
         transform: scale(1.2);
     }
     .homeM{
-        margin-top:20%;
+        margin-top:42%;
     }
     .homeM, .productsM, .aboutM, .contactM{
         padding-top:10%;
@@ -1426,11 +1436,13 @@ h1{
         font-size: 2.2rem;
     }
     .options_reveal{
-        margin-top: -27%;
+        margin-top: -16%;
     }
-
+    .options{
+        display: none;
+    }
     .homeM{
-        margin-top:40%;
+        margin-top:55%;
     }
     #navContainer{
         left: 8%;
@@ -1456,7 +1468,7 @@ h1{
 
     /* Background Line Positioning and Styles */
     .lBot2{
-        margin-top: 68%;
+        margin-top: 112%;
     }
     .lBot, .lHome, .lRight, .lMain, .lBot2{
         width:110%;
@@ -1503,7 +1515,7 @@ h1{
         width:23%;
         font-size: 1rem;
         margin-top:35%;
-        margin-left: -76%;
+        margin-left: -72%;
         font-family: poppins, sans-serif;
         font-weight: 600;
         font-style: normal;
@@ -1534,174 +1546,215 @@ h1{
     }
 
         /* Shared Styles for Review Headings */
+
+    #f1Review, #f2Review, #f3Review, #f4Review{
+        text-align: center;
+    }
     .f1R{
-        font-size: 4rem;
-        margin-bottom: -21%;
-        margin-top: 20%;
+        font-size: 2.4rem;
+        margin-bottom: -32%;
+        margin-top: 26%;
     }
     .f1RSub{
-        font-size: 2.3rem;
+        font-size: 1.6rem;
         margin-bottom: -3%;
     }
     .f1RStar{
-        width:26%;
-        margin-bottom: -22%;
+        width:30%;
+        margin-bottom: -4%;
     }
     #f1RScroll, #f2RScroll, #f3RScroll, #f4RScroll{
         width:95%;
-        height:50%;
+        height:45%;
+        text-align: left;
+        margin-top: 0;
     }
     .f1rAnimateL1 img, .f1rAnimateL2 img, .f1rAnimateL3 img, .f2rAnimateL1 img, .f2rAnimateL2 img, .f2rAnimateL3 img, .f3rAnimateL1 img, .f3rAnimateL2 img, .f3rAnimateL3 img, .f4rAnimateL1 img, .f4rAnimateL2 img, .f4rAnimateL3 img{
         margin-left:70%;
         margin-top:-115%;
-        width:120%;
+        width:180%;
+    }
+    .cust1{
+        width:98%;
+        height: 200%;
+        margin-top:0.75%;
+        margin-bottom:0.75%;
     }
     .cust1Sub{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        height:10%;
+        margin-bottom: 2.5%;
     }
     .cust1Sub div{
-        margin-top:2.2%;
-
+        margin-top:2%;
+        width: 70%;
     }
     .cust1Sub img{
-        transform: scale(0.8);
+        transform: scale(1);
         margin-top:0%;
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .cust1 span{
         width:98%;
         margin-top:0%;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     /* Products All Section and Splide Slider Styling*/
     #productsAll{
         margin-top: 0%;
+
     }
     .slideImgWrapper{
-        width: 30vh;
-        height: 66vh;
+        width: 75%;
+        height: 100%;
         margin-top:0%;
+        margin: auto;
+        position: absolute;
+        opacity: 0.4;
+        transform: translateY(25%);
     }
     .splide{
-        width:68vh;
+        width:100%;
         height:66vh;
+        z-index: 10;
     }
     .slideText{
         height:66vh;
+        width: 85%;
+        margin: auto;
         margin-top: 0%;
+        text-align: center;
+        align-items: center;
+        z-index: 10;
     }
     .slideText p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        margin-top: 0%;
     }
     h6{
-        font-size: 2.4rem;
-    }
-    h5{
         font-size: 2rem;
     }
+    h5{
+        font-size: 1.2rem;
+    }
     .slideImg{
-        width:135%;
-        margin-left: -22%;
+        width: 135%;
+        margin-left: 0%;
         margin-top:10%;
+        margin: auto;
+        z-index: 9;
     }
 
     #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
-        left:43%;
+        left:38%;
         top:85%;
     }
 
     #aboutMain, #about1, #about2{
-        width:90%;
+        width:95%;
         height:68%;
-        margin-top: 20%;
+        margin-top: 25%;
+        text-align: center;
     }
     .aboutMainTitle{
-        font-size: 5.6rem;
+        font-size: 3.4rem;
         margin-top: 36%;
     }
     .aboutMain2{
-        font-size: 3rem;
+        font-size: 2.2rem;
         margin-top: -32%;
     }
-    .explore{
-        margin-top: 3%;
+    .explore::part(base){
+        width:22vh;
+        height:7vh;
+        font-size: 1.3rem;
+        padding-top:3%;
     }
 
     .about1Title, .about2Title{
-        font-size: 4.8rem;
+        font-size: 3rem;
+        margin-top: 5%;
     }
     .about1Sub, .about2Sub{
-        font-size: 3.6rem;
-        margin-top: -10%;
+        font-size: 2.1rem;
+        margin-top: -11%;
         margin-bottom: 1%;
     }
     .about1Text, .about2Text{
-        width:98%;
+        width:100%;
         height:66%;
-        font-size: 1.7rem;
+        font-size: 1rem;
         margin-top: 0%;
-        line-height: 3.8vh;
+        line-height: 3.2vh;
     }
     .abSubNav{
-        margin-top: -12%;
+        margin-top: -14%;
     }
 
+    #contactPage{
+        text-align: center;
+    }
     #contactScroll{
-        width:95%;
-        height:52%;
-        margin-top: 34%;
+        width:99%;
+        height:53%;
+        margin-top: 30%;
         text-align: center;
     }
         /* Scroll Animations for the Contact Page Scroll Area*/
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
         margin-left:70%;
         margin-top:-115%;
-        width:120%;
+        width:180%;
+
     }
     .contactTitle{
-        font-size: 4.2rem;
-        left: 12vh;
+        font-size: 2.9rem;
+        left: 0;
         top:17vh;
+        position: relative;
     }
     .contactSub, .contactSub2{
-        font-size: 3.2rem;
+        font-size: 2rem;
     }
     .inputContainer{
         width:92%;
-
+    }
+    textarea{
+        font-size: 0.9rem;
+        padding: 1vh;
+        overflow: hidden;
     }
 
     .send{
-        width:18%;
+        width:24%;
         height:14%;
     }
     .send::part(base){
         padding-top:0.4vh;
+        font-size: 1.1rem;
     }
     
     .contactSub2{
         margin-top: 16vh;
     }
+    .email, .tel{
+        font-size: 1.8rem;
+        padding: 2vh;
+    }
+    .email{
+        margin-top: 3vh;
+    }
     .tel{
-        margin-bottom: 16vh;
-    }
-
-    .conBotArrow{
-        display: none;
-    }
-    .botNav{
-        display: none;
-    }
-    .navHandle{
-        display: none;
+        margin-bottom: 10vh;
     }
     .social1, .social2, .social3{
         width:10vh;
         height:10vh;
     }
     .social1{
-        margin-bottom: 16%;
+        margin-bottom: 15%;
+        margin-right: 8%;
     }
     .social2{
         margin-right: 0.5%;
@@ -1714,26 +1767,23 @@ h1{
     /* Transition Animation Classes*/
         /* Home Page | Nav Elements */
     .homePage_hidden{
-        margin-top: 110%;
+        margin-top: 150%;
     }
     .lHome_hidden{
-        transform: translate(-23%, -23%);
+        transform: translate(-13.5%, -13.5%);
     }
     .lBot_hidden{
-        transform: translate(3.3%, 3.3%);
+        transform: translate(6.2%, 6.2%);
     }
     .lRight_hidden{
-        transform: translate(-200%, -140%);
-    }
-    .navBar_hidden{
-        margin-top:-5%;
+        transform: translate(-230%, -140%);
     }
     .navCon_hidden{
-        margin-left:-60%;
+        margin-left:-80%;
     }
         /* Products Page | About Page | Contact Page */
     .productPage_hidden{
-        margin-top:120%;
+        margin-top:160%;
     }
     .flavour1_hidden, .flavour2_hidden, .flavour3_hidden, .flavour4_hidden, .proAll_hidden, .aboutPage_hidden{
         transform: translateX(-120%);
