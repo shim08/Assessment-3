@@ -43,12 +43,16 @@
             <a class="about" onclick="abPage()">ABOUT</a>
             <a class="contact" onclick="conPage()">CONTACT</a>
         </div>
+        <div class="optionsM">
+            <a class="homeM" onclick="returnHome()">HOME</a>
+            <a class="productsM" onclick="proNav()">PRODUCTS</a>
+            <a class="aboutM" onclick="abPage()">ABOUT</a>
+            <a class="contactM" onclick="conPage()">CONTACT</a>
+        </div>
         <div class="hamburger" onclick="mobileMenu()">
-            <svg id="menuM"  width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect class="midLine" x="43" y="137" width="213" height="25" rx="12.5" fill="#E51B6C"/>
-                <path class="topLine" d="M43 67.5C43 60.5964 48.5964 55 55.5 55H243.5C250.404 55 256 60.5964 256 67.5V67.5C256 74.4036 250.404 80 243.5 80H55.5C48.5964 80 43 74.4036 43 67.5V67.5Z" fill="#E51B6C"/>
-                <path class="botLine" d="M43 231.5C43 224.596 48.5964 219 55.5 219H243.5C250.404 219 256 224.596 256 231.5V231.5C256 238.404 250.404 244 243.5 244H55.5C48.5964 244 43 238.404 43 231.5V231.5Z" fill="#E51B6C"/>
-            </svg>
+            <div class="topLine"></div>
+            <div class="midLine"></div>
+            <div class="botLine"></div>
         </div>
         <div id="navContainer" class="navCon_hidden">
             <img id="logoNav" src="images/Time Warp Logo Final.svg" alt="Time Warp Tea Logo" onclick="returnHome()">

@@ -58,36 +58,23 @@ let dot3 = document.querySelector('.navDot3');
 let botNav = document.querySelector('.botNav');
 let conBotArrow = document.querySelector('.conArrowContainer');
 
-
-let hamburger = document.querySelector('#menuM');
+let hamburger = document.querySelector('.hamburger');
 let topLine = document.querySelector('.topLine');
 let midLine = document.querySelector('.midLine');
 let botLine = document.querySelector('.botLine');
 
+let options = document.querySelector('.optionsM');
 function mobileMenu(){
-    if(midLine.className == ('midLine'), topLine.className == ('topLine'), botLine.className == ('botLine')){
-        topLine.className = 'topLine topLine_toggled';
-        midLine.className = 'midLine midLine_toggled';
-        botLine.className = 'botLine botLine_toggled';
-    }
-    else{
-        topLine.className = 'topLine';
-        midLine.className = 'midLine';
-        botLine.className = 'botLine';
-    }
-}
-
-/*
-function toggleBotNav(){
-    if(botNav.className == ('botNav'), conBotArrow.className == ('conArrowContainer')) {
-        botNav.className = 'botNav botNav_Up';
-        conBotArrow.className = 'conArrowContainer conArrowContainer_Up';
-    }
-    else {
-        botNav.className = 'botNav';
-        conBotArrow.className = 'conArrowContainer';
-    }
-}  */
+    options.style.display = 'flex';
+    midLine.classList.toggle('midLine_toggled');
+    topLine.classList.toggle('topLine_toggled');
+    botLine.classList.toggle('botLine_toggled');
+    
+    setTimeout(function(){
+        options.classList.toggle('options_reveal');
+    }, 200);
+        
+};
 
 function returnHome(){
     homePage.style.display = 'block';
@@ -99,6 +86,13 @@ function returnHome(){
     aboutPage.classList.remove('aboutPage_hidden');
     contactPage.style.display = 'none';
     contactPage.classList.add('conPage_initial');
+
+    options.style.display = 'none';
+    options.classList.remove('options_reveal');
+    midLine.classList.remove('midLine_toggled');
+    topLine.classList.remove('topLine_toggled');
+    botLine.classList.remove('botLine_toggled');
+    hamburger.classList.remove('hamburger_reveal');
 
     flavour1.style.display = 'flex';
     flavour1.classList.remove('flavour1_hidden');
@@ -255,10 +249,20 @@ function toggleHome(){
     navBar.style.display = 'block';
     revealRAnimate();
 
+    options.style.display = 'none';
+    options.classList.remove('options_reveal');
+
+
+
     setTimeout(function(){
         homePage.style.display = 'none';
     
         productPage.classList.remove('productPage_hidden');
+
+        midLine.classList.remove('midLine_toggled');
+        topLine.classList.remove('topLine_toggled');
+        botLine.classList.remove('botLine_toggled');
+        hamburger.classList.add('hamburger_reveal');
 
         conAnimate.classList.remove('conBgAnimate_reveal');
 
@@ -816,6 +820,12 @@ function abPage(){
     contactPage.classList.add('conPage_initial');
     //conAnimate.classList.add('conBgAnimate_reveal');
 
+    options.style.display = 'none';
+    options.classList.remove('options_reveal');
+    midLine.classList.remove('midLine_toggled');
+    topLine.classList.remove('topLine_toggled');
+    botLine.classList.remove('botLine_toggled');
+
     products.style.color = '#E51B6C';
     about.style.color = '#27AAE1';
     contact.style.color = '#E51B6C';
@@ -882,6 +892,12 @@ function conPage(){
     products.style.color = '#E51B6C';
     about.style.color = '#E51B6C';
     contact.style.color = '#27AAE1';
+
+    options.style.display = 'none';
+    options.classList.remove('options_reveal');
+    midLine.classList.remove('midLine_toggled');
+    topLine.classList.remove('topLine_toggled');
+    botLine.classList.remove('botLine_toggled');
 
     setTimeout(function(){
         contactPage.classList.remove('conPage_initial');

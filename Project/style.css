@@ -84,7 +84,7 @@ header{
 .hamburger{
     display: none;
 }
-.options{
+.options, .optionsM{
     display: flex;
     margin:2.2vh;
     padding: 3.14vh;
@@ -94,6 +94,9 @@ header{
     font-style: normal;
     font-size: 1.5rem;
     color: #E51B6C;
+}
+.optionsM{
+    display: none;
 }
 .home, .products, .about, .contact{
     padding:5.6vh;
@@ -986,46 +989,60 @@ h1{
         transition: 0.8s;
     }
     .hamburger{
-        display: block;
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 1%;
+        height:7%;
+        top: -20%;
         left: 82%;
         z-index: 11;
         cursor: pointer;
-    }
-    #menuM{
-        width: 72%;
-        height:72%;
         transition: 0.2s;
     }
-    #menuM:hover{
+    .hamburger:hover{
         transform: scale(1.1);
     }
-    .topLine, .midLine, .botLine{
+    .hamburger_reveal{
+        top:3%;
+    }
+    .midLine, .topLine, .botLine{
+        width:7vh;
+        height:0.8vh;
+        background-color: #E51B6C;
+        margin-top:1.7vh;
         transition: 0.2s;
         opacity: 1;
     }
+    .topLine{
+        margin-top: 0;
+    }
     .topLine_toggled{ 
-        transform: rotate(45deg) translate(18%, -22%);
+        transform: rotate(45deg) translate(2%, 4%);
     }
     .botLine_toggled{
-        transform: rotate(-45deg) translate(-49%, -9%);
+        transform: rotate(-45deg) translate(2%, -4%);
     }
     .midLine_toggled{
         display: none;
     }
-
-    .options{
-        display: flex;
-        margin:2.2vh;
-        padding: 3.14vh;
-        margin-left: 95vh;
-        font-family: supersize-bk, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.5rem;
-        color: #E51B6C;
+    .optionsM{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        height:110%;
+        width:100%;
+        margin-top:-165%;
+        margin-left:-0.2%;
+        background-color: white;
+        font-size: 3rem;
+        z-index: 11;
+        transition: 0.2s;
     }
+    .options_reveal{
+        margin-top: -20%;
+    }
+
     #logoNav{
         display: none;
     }
@@ -1033,12 +1050,15 @@ h1{
         display:block;
         transform: scale(1.2);
     }
-    .home, .products, .about, .contact{
-        padding:5.6vh;
-        padding-top:0;
-        padding-bottom:0;
+    .homeM{
+        margin-top:20%;
     }
-    .home:hover, .products:hover, .about:hover, .contact:hover{
+    .homeM, .productsM, .aboutM, .contactM{
+        padding-top:10%;
+        padding-bottom:0;
+        transition: 0.2s;
+    }
+    .homeM:hover, .productsM:hover, .aboutM:hover, .contactM:hover{
         transform: scale(1.2);
     }
     #navContainer{
