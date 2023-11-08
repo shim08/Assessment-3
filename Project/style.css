@@ -13,6 +13,7 @@ body{
     font-family: supersize-bk, sans-serif;
     font-weight: 400;
     font-style: normal;
+    position: relative;
 }
 header{
     width:100%;
