@@ -1581,7 +1581,8 @@ h1{
     .cust1Sub{
         font-size: 1.2rem;
         height:10%;
-        margin-bottom: 4%;
+        margin-top:2%;
+        margin-bottom: 2.5%;
     }
     .cust1Sub div{
         margin-top:2%;
@@ -1647,7 +1648,7 @@ h1{
     }
 
     #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
-        left:40%;
+        left:38%;
         top:85%;
     }
 
