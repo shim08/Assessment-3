@@ -2230,6 +2230,9 @@ h1{
     .options{
         display: none;
     }
+    .homeM, .productsM, .aboutM, .contactM{
+        display: block;
+    }
     .homeM{
         margin-top:55%;
     }
