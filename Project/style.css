@@ -1463,7 +1463,7 @@ h1{
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:12vh;
         height:12vh;
-        left:78%;
+        left:70%;
         top:44%;
     }
 
@@ -1476,23 +1476,22 @@ h1{
         height:120%;
     }
     .lHome{
-        margin-left: -56%;
-        margin-left: -64%;
+        margin-left: -70%;
     }
     .lBot{
         margin-top: 60%;
     }
     .lRight{
-        margin-top: 82%;
+        margin-top: 90%;
     }
     .lMain{
         margin-top: -23%;
     }
     /* Home Logo Style */
     #homeLogo{
-        width:52vh;
-        height:52vh;
-        margin-top: 50%;
+        width:46vh;
+        height:46vh;
+        margin-top: 52%;
     }
         /* Product Image and Content Container */
     .proContainer{
@@ -1510,7 +1509,7 @@ h1{
     .watermelon, .peach, .apple, .lemon{
         margin: auto;
         margin-top: 0;
-        margin-bottom: -100%;
+        margin-bottom: -114%;
     }
         /* Product Information Icons */
     .infoIcons{
@@ -1531,7 +1530,8 @@ h1{
         width:26vh;
         height:4vh;
         font-size: 1.4rem;
-        margin-bottom: -15%;
+        margin-top: -34%;
+        margin-bottom: -57%;
     }
     .reviews img{
         transform: scale(0.6);
@@ -1541,12 +1541,12 @@ h1{
     .bottle{
         width:115%;
         height:90%;
-        margin-bottom: -86%;
+        margin-bottom: -96%;
     }
     .bgContainer{
         width:150%;
         height:70vh;
-        margin-bottom: -14%;
+        margin-bottom: -18%;
     }
 
         /* Shared Styles for Review Headings */
