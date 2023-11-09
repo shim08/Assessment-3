@@ -1513,19 +1513,7 @@ h1{
     }
         /* Product Information Icons */
     .infoIcons{
-        width:22%;
-        height:50%;
-        font-size: 0.9rem;
-        margin-top:30%;
-        margin-left: -70%;
-        font-family: poppins, sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        border: 1px solid red;
-    }
-    .infoIcons span{
-        margin-top:1%;
-        margin-bottom: 3%;
+        display: none;
     }
     .reviews{
         margin-top:0%;
@@ -1640,7 +1628,7 @@ h1{
         z-index: 10;
     }
     .slideText p{
-        font-size: 1.3rem;
+        font-size: 1.18rem;
         margin-top: 4%;
         line-height: 3vh;
     }
