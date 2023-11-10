@@ -25,7 +25,7 @@
         } );
     </script>
     <!-- Shoelace Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>    
     <!-- Splide Styles Link -->
     <link rel="stylesheet" href="css/splide.min.css">
@@ -35,7 +35,7 @@
 </head>
     <!-- Header containing navigation elements -->
 <header>
-    <div id="cursorFx"></div>
+    <!-- Standard Navigation Bar -->
     <div id="navBar" class="navBar_hidden">
         <div class="options">
             <a class="home" onclick="returnHome()">HOME</a>
@@ -43,135 +43,138 @@
             <a class="about" onclick="abPage()">ABOUT</a>
             <a class="contact" onclick="conPage()">CONTACT</a>
         </div>
+        <!-- Mobile Menu Options -->
         <div class="optionsM">
             <a class="homeM" onclick="returnHome()">HOME</a>
             <a class="productsM" onclick="proNav()">PRODUCTS</a>
             <a class="aboutM" onclick="abPage()">ABOUT</a>
             <a class="contactM" onclick="conPage()">CONTACT</a>
         </div>
+        <!-- Mobile Hamburger Icon -->
         <div class="hamburger" onclick="mobileMenu()">
             <div class="topLine"></div>
             <div class="midLine"></div>
             <div class="botLine"></div>
         </div>
+        <!-- Container For Desktop and Mobile Nav Logo -->
         <div id="navContainer" class="navCon_hidden">
-            <img id="logoNav" src="images/Time Warp Logo Final.svg" alt="Time Warp Tea Logo" onclick="returnHome()">
-            <img id="logoNavFlat" src="images/Time Warp Logo straight.svg" alt="Time Warp Tea Logo" onclick="returnHome()">
+            <img id="logoNav" src="images/TimeWarpLogoFinal.svg" alt="Time Warp Tea Logo" onclick="returnHome()">
+            <img id="logoNavFlat" src="images/TimeWarpLogostraight.svg" alt="Time Warp Tea Logo" onclick="returnHome()">
         </div>
     </div>
 </header>
-    <!-- Beggining of main body -->
+    <!-- Beggining of main section -->
 <body>
     <!-- All navigation arrows for each page. Onclick used to organise and trigger page functions -->
         <!-- Initial Home Arrow -->
     <div id="navArrow" onclick="toggleHome()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/main arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/mainarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     
         <!-- Product Page and Product Reviews Arrows -->
     <div id="proArrow" onclick="proPage2()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/main arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/mainarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     <div id="revArrow" onclick="revReturn1()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/down arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/downarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     <div id="proArrow2" onclick="proPage3()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/main arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/mainarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     <div id="revArrow2" onclick="revReturn2()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/down arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/downarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     <div id="proArrow3" onclick="proPage4()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/main arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/mainarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     <div id="revArrow3" onclick="revReturn3()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/down arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/downarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     <div id="proArrowOther" onclick="proPageAll()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/main arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/mainarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     <div id="proArrow4" onclick="abPage()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/main arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/mainarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
     <div id="revArrow4" onclick="revReturn4()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/down arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/downarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
         <!-- About Page Arrow -->
     <div id="abArrow" onclick="conPage()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/main arrow improved.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/mainarrowimproved.svg" alt="Navigation Arrow Element">
     </div>
         <!-- Contact Page Arrow -->
     <div id="conArrow" onclick="returnHome()">
-        <img class="surArrow1" src="images/arrow surround.svg">
-        <img class="surArrow2" src="images/arrow surround hovered.svg">
-        <img class="mainArrow" src="images/home arrow.svg">
+        <img class="surArrow1" src="images/arrowsurround.svg" alt="Navigation Arrow Element">
+        <img class="surArrow2" src="images/arrowsurroundhovered.svg" alt="Navigation Arrow Element">
+        <img class="mainArrow" src="images/homearrow.svg" alt="Navigation Arrow Element">
     </div>
     <!-- Home Page Section -->
-    <section id="homePage">
+    <div id="homePage">
         <div id="homeLogo">
-            <img src="images/Time Warp Logo Final.svg">
+            <img src="images/TimeWarpLogoFinal.svg" alt="Time Warp Tea Logo">
         </div>
-    </section>
+    </div>
     <!-- Product Page Section -->
-    <section id="productPage" class="productPage_hidden">
+    <div id="productPage" class="productPage_hidden">
         <!-- First Flavour -->
         <div id="flavour1">
             <div class="proContainer">
                 <div class="watermelon">Watermelon</div>
                 <div class="infoIcons">
-                    <img src="images/caffeine free icon.svg">
+                    <img src="images/caffeinefreeicon.svg" alt="Caffeine Free Icon">
                     <span>Caffeine Free</span>
-                    <img src="images/No sugar icon.svg">
+                    <img src="images/Nosugaricon.svg" alt="No Sugar Icon">
                     <span>No Sugar</span>
-                    <img src="images/vitamin icon.svg">
+                    <img src="images/vitaminicon.svg" alt="Vitamin C and D Icon">
                     <span>Vitamin C + D</span>
                 </div>
                 <div class="reviews">
                     <sl-button class="reviewBtn" onclick = "proRev1()">See Reviews <div class="rArrow"></div></sl-button>
-                    <img src="images/review stars 4.svg">
+                    <img src="images/reviewstars4.svg" alt="Review Stars">
                 </div>
             </div>
             <div class="bottle" id="bottleM">
-                <img class="bottleImg" src="images/products/melon.svg">
+                <img class="bottleImg" src="images/products/melon.svg" alt="Product Image">
             </div>
             <div class="bgContainer">
-                <img class="melon1" src="images/products/melon/melon 1.svg">
-                <img class="melon2" src="images/products/melon/melon 2.svg">
-                <img class="melon3" src="images/products/melon/melon 3.svg">
+                <img class="melon1" src="images/products/melon/melon1.svg" alt="Background Element">
+                <img class="melon2" src="images/products/melon/melon2.svg" alt="Background Element">
+                <img class="melon3" src="images/products/melon/melon3.svg" alt="Background Element">
             </div>
         </div>
         <!-- First Reviews -->
         <div id="f1Review" class="f1Review_hidden">
             <div class="f1R">PRODUCTS</div>
             <div class="f1RSub">Watermelon - Customer Reviews</div>
-            <img src="images/review stars 4.svg" class="f1RStar">
+            <img src="images/reviewstars4.svg" class="f1RStar" alt="Review Stars">
             <div id="f1RScroll">
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Eller</div>
-                        <img src="images/review stars 4.svg">
+                        <img src="images/reviewstars4.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -188,7 +191,7 @@
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>King Moggle Mog</div>
-                        <img src="images/review stars 5.svg">
+                        <img src="images/reviewstars5.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -205,7 +208,7 @@
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Tungsten Tortoise</div>
-                        <img src="images/review stars 4.svg">
+                        <img src="images/reviewstars4.svg" alt="Review Stars"> 
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -223,13 +226,13 @@
             <!-- First Reviews Animated Elements -->
             <div class="f1rBgAnimate">
                 <div class="f1rAnimateL1">
-                    <img src="images/aniLines/aniLines1.svg">
+                    <img src="images/aniLines/aniLines1.svg" alt="Background Element">
                 </div>
                 <div class="f1rAnimateL2">
-                    <img src="images/aniLines/aniLines2.svg">
+                    <img src="images/aniLines/aniLines2.svg" alt="Background Element">
                 </div>
                 <div class="f1rAnimateL3">
-                    <img src="images/aniLines/aniLines3.svg">
+                    <img src="images/aniLines/aniLines3.svg" alt="Background Element">
                 </div>
             </div>
         </div>
@@ -238,37 +241,37 @@
             <div class="proContainer">
                 <div class="peach">Peach</div>
                 <div class="infoIcons">
-                    <img src="images/caffeine free icon.svg">
+                    <img src="images/caffeinefreeicon.svg" alt="Caffeine Free Icon">
                     <span>Caffeine Free</span>
-                    <img src="images/No sugar icon.svg">
+                    <img src="images/Nosugaricon.svg" alt="No Sugar Icon">
                     <span>No Sugar</span>
-                    <img src="images/vitamin icon.svg">
+                    <img src="images/vitaminicon.svg" alt="Vitamin C and D Icon">
                     <span>Vitamin C + D</span>
                 </div>
                 <div class="reviews">
                     <sl-button class="reviewBtn" onclick = "proRev2()">See Reviews <div class="rArrow"></div></sl-button>
-                    <img src="images/review stars 5.svg">
+                    <img src="images/reviewstars5.svg" alt="Review Stars">
                 </div>
             </div>
             <div class="bottle" id="bottleP">
-                <img class="bottleImg" src="images/products/peach 2.svg">
+                <img class="bottleImg" src="images/products/peach.svg" alt="Product Image">
             </div>
             <div class="bgContainer">
-                <img class="peach1" src="images/products/peach/peach 1.svg">
-                <img class="peach2" src="images/products/peach/peach 2.svg">
-                <img class="peach3" src="images/products/peach/peach 3.svg">
+                <img class="peach1" src="images/products/peach/peach1.svg" alt="Background Element">
+                <img class="peach2" src="images/products/peach/peach2.svg" alt="Background Element">
+                <img class="peach3" src="images/products/peach/peach3.svg" alt="Background Element">
             </div>
         </div>
         <!-- Second Reviews -->
         <div id="f2Review">
             <div class="f1R">PRODUCTS</div>
             <div class="f1RSub">Peach - Customer Reviews</div>
-            <img src="images/review stars 5.svg" class="f1RStar">
+            <img src="images/reviewstars5.svg" class="f1RStar" alt="Review Stars">
             <div id="f2RScroll">
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Gabe</div>
-                        <img src="images/review stars 4.svg">
+                        <img src="images/reviewstars4.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -285,7 +288,7 @@
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Vulcan</div>
-                        <img src="images/review stars 5.svg">
+                        <img src="images/reviewstars5.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -302,7 +305,7 @@
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Flaymian</div>
-                        <img src="images/review stars 4.svg">
+                        <img src="images/reviewstars4.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -320,13 +323,13 @@
             <!-- Second Reviews Animated Elements -->
             <div class="f2rBgAnimate">
                 <div class="f2rAnimateL1">
-                    <img src="images/aniLines/aniLines1.svg">
+                    <img src="images/aniLines/aniLines1.svg" alt="Background Element">
                 </div>
                 <div class="f2rAnimateL2">
-                    <img src="images/aniLines/aniLines2.svg">
+                    <img src="images/aniLines/aniLines2.svg" alt="Background Element">
                 </div>
                 <div class="f2rAnimateL3">
-                    <img src="images/aniLines/aniLines3.svg">
+                    <img src="images/aniLines/aniLines3.svg" alt="Background Element">
                 </div>
             </div>
         </div>
@@ -335,39 +338,39 @@
             <div class="proContainer">
                 <div class="apple">Apple</div>
                 <div class="infoIcons">
-                    <img src="images/caffeine free icon.svg">
+                    <img src="images/caffeinefreeicon.svg" alt="Caffeine Free Icon">
                     <span>Caffeine Free</span>
-                    <img src="images/No sugar icon.svg">
+                    <img src="images/Nosugaricon.svg" alt="No Sugar Icon">
                     <span>No Sugar</span>
-                    <img src="images/vitamin icon.svg">
+                    <img src="images/vitaminicon.svg" alt="Vitamin C and D Icon">
                     <span>Vitamin C + D</span>
                 </div>
                 <div class="reviews">
                     <sl-button class="reviewBtn" onclick = "proRev3()">See Reviews <div class="rArrow"></div></sl-button>
-                    <img src="images/review stars 4.svg">
+                    <img src="images/reviewstars4.svg" alt="Review Stars">
                 </div>
             </div>
             <div class="bottle" id="bottleA">
-                <img class="bottleImg" src="images/products/apple 2.svg">
+                <img class="bottleImg" src="images/products/apple.svg" alt="Product Image">
             </div>
             <div class="bgContainer">
-                <img class="appleFront" src="images/products/apple/apple front.svg">
-                <img class="apple0" src="images/products/apple/apple 0.svg">
-                <img class="apple1" src="images/products/apple/apple 1.svg">
-                <img class="apple2" src="images/products/apple/apple 2.svg">
-                <img class="apple3" src="images/products/apple/apple 3.svg">
+                <img class="appleFront" src="images/products/apple/applefront.svg" alt="Background Element">
+                <img class="apple0" src="images/products/apple/apple0.svg" alt="Background Element">
+                <img class="apple1" src="images/products/apple/apple1.svg" alt="Background Element">
+                <img class="apple2" src="images/products/apple/apple2.svg" alt="Background Element">
+                <img class="apple3" src="images/products/apple/apple3.svg" alt="Background Element">
             </div>
         </div>
         <!-- Third Reviews -->
         <div id="f3Review">
             <div class="f1R">PRODUCTS</div>
             <div class="f1RSub">Apple - Customer Reviews</div>
-            <img src="images/review stars 5.svg" class="f1RStar">
+            <img src="images/reviewstars5.svg" class="f1RStar" alt="Review Stars">
             <div id="f3RScroll">
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>David Goblins</div>
-                        <img src="images/review stars 4.svg">
+                        <img src="images/reviewstars4.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -384,7 +387,7 @@
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Fleeb</div>
-                        <img src="images/review stars 5.svg">
+                        <img src="images/reviewstars5.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -401,7 +404,7 @@
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Finger</div>
-                        <img src="images/review stars 4.svg">
+                        <img src="images/reviewstars4.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -419,13 +422,13 @@
             <!-- Third Reviews Animated Elements -->
             <div class="f3rBgAnimate">
                 <div class="f3rAnimateL1">
-                    <img src="images/aniLines/aniLines1.svg">
+                    <img src="images/aniLines/aniLines1.svg" alt="Background Element">
                 </div>
                 <div class="f3rAnimateL2">
-                    <img src="images/aniLines/aniLines2.svg">
+                    <img src="images/aniLines/aniLines2.svg" alt="Background Element">
                 </div>
                 <div class="f3rAnimateL3">
-                    <img src="images/aniLines/aniLines3.svg">
+                    <img src="images/aniLines/aniLines3.svg" alt="Background Element">
                 </div>
             </div>
         </div>
@@ -434,38 +437,38 @@
             <div class="proContainer">
                 <div class="lemon">Lemon</div>
                 <div class="infoIcons">
-                    <img src="images/caffeine free icon.svg">
+                    <img src="images/caffeinefreeicon.svg" alt="Caffeine Free Icon">
                     <span>Caffeine Free</span>
-                    <img src="images/No sugar icon.svg">
+                    <img src="images/Nosugaricon.svg" alt="No Sugar Icon">
                     <span>No Sugar</span>
-                    <img src="images/vitamin icon.svg">
+                    <img src="images/vitaminicon.svg" alt="Vitamin C and D Icon">
                     <span>Vitamin C + D</span>
                 </div>
                 <div class="reviews">
                     <sl-button class="reviewBtn" onclick = "proRev4()">See Reviews <div class="rArrow"></div></sl-button>
-                    <img src="images/review stars 4.svg">
+                    <img src="images/reviewstars4.svg" alt="Review Stars">
                 </div>
             </div>
             <div class="bottle" id="bottleL">
-                <img class="bottleImg" src="images/products/lemon 2.svg">
+                <img class="bottleImg" src="images/products/lemon.svg" alt="Product Image">
             </div>
             <div class="bgContainer">
-                <img class="lemon1" src="images/products/lemon/lemon 1.svg">
-                <img class="lemon2" src="images/products/lemon/lemon 2.svg">
-                <img class="lemon3" src="images/products/lemon/lemon 3.svg">
-                <img class="lemon4" src="images/products/lemon/lemon 4.svg">
+                <img class="lemon1" src="images/products/lemon/lemon1.svg" alt="Background Element">
+                <img class="lemon2" src="images/products/lemon/lemon2.svg" alt="Background Element"> 
+                <img class="lemon3" src="images/products/lemon/lemon3.svg" alt="Background Element">
+                <img class="lemon4" src="images/products/lemon/lemon4.svg" alt="Background Element">
             </div>
         </div>
         <!-- Fourth Reviews -->
         <div id="f4Review">
             <div class="f1R">PRODUCTS</div>
             <div class="f1RSub">Lemon - Customer Reviews</div>
-            <img src="images/review stars 5.svg" class="f1RStar">
+            <img src="images/reviewstars5.svg" class="f1RStar" alt="Review Stars">
             <div id="f4RScroll">
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Soapy Cat</div>
-                        <img src="images/review stars 4.svg">
+                        <img src="images/reviewstars4.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -482,7 +485,7 @@
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Bing Soy</div>
-                        <img src="images/review stars 5.svg">
+                        <img src="images/reviewstars5.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -499,7 +502,7 @@
                 <div class="cust1">
                     <div class="cust1Sub">
                         <div>Greeb</div>
-                        <img src="images/review stars 4.svg">
+                        <img src="images/reviewstars4.svg" alt="Review Stars">
                     </div>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo odio,
@@ -517,18 +520,18 @@
             <!-- Flavour Four Animated Elements -->
             <div class="f4rBgAnimate">
                 <div class="f4rAnimateL1">
-                    <img src="images/aniLines/aniLines1.svg">
+                    <img src="images/aniLines/aniLines1.svg" alt="Background Element">
                 </div>
                 <div class="f4rAnimateL2">
-                    <img src="images/aniLines/aniLines2.svg">
+                    <img src="images/aniLines/aniLines2.svg" alt="Background Element">
                 </div>
                 <div class="f4rAnimateL3">
-                    <img src="images/aniLines/aniLines3.svg">
+                    <img src="images/aniLines/aniLines3.svg" alt="Background Element">
                 </div>
             </div>
         </div>
         <!-- Products Page Slider Section-->
-        <section id="productsAll" class="proAll_initial">
+        <div id="productsAll" class="proAll_initial">
             <!-- Splide Slider -->
             <section class="splide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
@@ -548,7 +551,7 @@
                                     tempor eu enim eget, vehicula elementum massa.
                             </div>
                             <div class="slideImgWrapper">
-                                <img class="slideImg" src="images/products/melon.svg">
+                                <img class="slideImg" src="images/products/melon.svg" alt="Product Image">
                             </div>
                         </div>
                         <!-- Slide 2 -->
@@ -566,7 +569,7 @@
                                     tempor eu enim eget, vehicula elementum massa.
                             </div>
                             <div class="slideImgWrapper">
-                                <img class="slideImg" src="images/products/peach 2.svg">
+                                <img class="slideImg" src="images/products/peach.svg" alt="Product Image">
                             </div>
                         </div>
                         <!-- Slide 3 -->
@@ -584,7 +587,7 @@
                                     tempor eu enim eget, vehicula elementum massa.
                             </div>
                             <div class="slideImgWrapper">
-                                <img class="slideImg" src="images/products/apple 2.svg">
+                                <img class="slideImg" src="images/products/apple.svg" alt="Product Image">
                             </div>
                         </div>
                         <!-- Slide 4 -->
@@ -602,16 +605,16 @@
                                     tempor eu enim eget, vehicula elementum massa.
                             </div>
                             <div class="slideImgWrapper">
-                                <img class="slideImg" src="images/products/lemon 2.svg">
+                                <img class="slideImg" src="images/products/lemon.svg" alt="Product Image">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </section>
-    </section>
+        </div>
+    </div>
     <!-- About Page Section -->
-    <section id="aboutPage" class="aboutPage_initial">
+    <div id="aboutPage" class="aboutPage_initial">
         <div id="aboutMain">
             <div class="aboutMainTitle">ABOUT US</div>
             <div class="aboutMain2">Learn about Time Warp</div>
@@ -660,19 +663,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Contact Page Section -->
-    <section id="contactPage" class="conPage_initial">
+    <div id="contactPage" class="conPage_initial">
         <div class="contactTitle">CONTACT US</div>
         <!-- Contact Page Social Icons -->
         <div class="social1">
-            <img class="socialIcons" src="images/facebook.svg" onclick = "openFacebook()">
+            <img class="socialIcons" src="images/facebook.svg" onclick = "openFacebook()" alt="Facebook Icon">
         </div>
         <div class="social2">
-            <img class="socialIcons" src="images/twitter.svg" onclick = "openTwitter()">
+            <img class="socialIcons" src="images/twitter.svg" onclick = "openTwitter()" alt="Twitter Icon">
         </div>
         <div class="social3">
-            <img class="socialIcons" src="images/instagram.svg" onclick = "openInsta()">
+            <img class="socialIcons" src="images/instagram.svg" onclick = "openInsta()" alt="Instagram Icon">
         </div>
         <!-- Contact Page Scroller -->
         <div id="contactScroll">
@@ -690,20 +693,20 @@
         <!-- Contact Page Animated Elements -->
         <div class="conBgAnimate">
             <div class="conAnimateL1">
-                <img src="images/aniLines/aniLines1.svg">
+                <img src="images/aniLines/aniLines1.svg" alt="Background Element">
             </div>
             <div class="conAnimateL2">
-                <img src="images/aniLines/aniLines2.svg">
+                <img src="images/aniLines/aniLines2.svg" alt="Background Element">
             </div>
             <div class="conAnimateL3">
-                <img src="images/aniLines/aniLines3.svg">
+                <img src="images/aniLines/aniLines3.svg" alt="Background Element">
             </div>
         </div>
         <!-- Contact Page Bottom Navigation Pointer Arrows -->                                        
         <div class="conArrowContainer">
-            <div class="conBotArrow" class="a1"></div>
-            <div class="conBotArrow" class="a2"></div>
-            <div class="conBotArrow" class="a3"></div>
+            <div class="conBotArrow" id="a1"></div>
+            <div class="conBotArrow" id="a2"></div>
+            <div class="conBotArrow" id="a3"></div>
         </div>
         <!-- Contact Page Bottom Navigation Tab and Section -->
         <div class="botNav" onclick = 'toggleBotNav()'>
@@ -727,23 +730,23 @@
                 <span onclick = "openFacebook()">Facebook</span>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Background Pattern and Line Storage -->
     <div id="bgLines">
         <div class="lHome">
-            <img class="linesHome" src="images/lines 1.svg">
+            <img class="linesHome" src="images/lines1.svg" alt="Background Element">
         </div>
         <div class="lBot">
-            <img class="linesBot" src="images/lines 2.svg">
+            <img class="linesBot" src="images/lines2.svg" alt="Background Element">
         </div>
         <div class="lRight">
-            <img class="linesRight" src="images/lines right.svg">
+            <img class="linesRight" src="images/linesright.svg" alt="Background Element">
         </div>
         <div class="lBot2">
-            <img class="linesBot2" src="images/lines 2.svg">
+            <img class="linesBot2" src="images/lines2.svg" alt="Background Element">
         </div>
         <div class="lMain">
-            <img class="linesMain" src="images/lines main.svg">
+            <img class="linesMain" src="images/linesmain.svg" alt="Background Element">
         </div>
     </div>
     <!-- Link Scripts for Libraries and Main JS file -->

@@ -20,49 +20,9 @@ header{
     height:16%;
     z-index: 5;
 }
-/* GET BACK TO THIS 
-#cursorFx{
-    position: absolute;
-    z-index: 20;
-    opacity: 1;
-    height:1vh;
-    width:1vh;
-    border-radius: 50%;
-    border-color: #E51B6C;
-    animation: cursorRipple 1s ease-in-out 0 1;
-}   
-
-@keyframes cursorRipple{
-    
-    0%{
-        opacity: 1;
-    }
-    20%{
-        opacity: 0.8;
-        transform: scale(1.2);
-    }
-    40%{
-        opacity: 0.6;
-        transform: scale(1.4);
-    }
-    60%{
-        opacity: 0.4;
-        transform: scale(1.6);
-    }
-    80%{
-        opacity: 0.2;
-        transform: scale(1.8);
-    }
-    100%{
-        opacity: 0;
-        transform: scale(2);
-    }
-}   */
-
 /* Various Shared Styles to Simplify Styling */
-
 /* Navigation Elements */
-    /* Logo and Nav Element Styling */
+/* Logo and Nav Element Styling */
 #logoNav, #logoNavFlat, .home, .products, .about, .contact{
     cursor: pointer;
     transition: 0.2s;
@@ -95,7 +55,6 @@ header{
     font-size: 1.5rem;
     color: #E51B6C;
 }
-
 .home, .products, .about, .contact{
     padding:5.8%;
     padding-top:0;
@@ -118,7 +77,6 @@ header{
 .hamburger{
     display: none;
 }
-
 .optionsM{
     display: flex;
     font-family: supersize-bk, sans-serif;
@@ -128,6 +86,9 @@ header{
     color: #E51B6C;
 }
 .optionsM{
+    display: none;
+}
+.homeM, .productsM, .aboutM, .contactM{
     display: none;
 }
 /* First Arrow Style */
@@ -204,13 +165,11 @@ header{
     transition: 1s;
 }
 .lBot2{
-    width:50%;
-    height:50%;
     margin-left:60%;
-    margin-top: 27.79%;
+    margin-top: 27%;
     display: none;
 }
-.lBot, .lHome, .lRight, .lMain{
+.lBot, .lHome, .lRight, .lMain, .lBot2{
     width:50%;
     height:50%;
 }
@@ -472,25 +431,25 @@ header{
 }
 /* Precise Positioning for Each Background Element */
 .melon1{
-    transform: scale(80%);
+    transform: scale(0.8);
     z-index: 7;
     margin-top: 19%;
     margin-left: 50%;
 }
 .melon2{
-    transform: scale(75%);
+    transform: scale(0.75);
     z-index: 6;
     margin-top:12vh;
     margin-right: 14vh;
 }
 .melon3{
-    transform: scale(50%);
+    transform: scale(0.5);
     z-index: 5;
     margin-left:20%;
 }
 .peach1{
     z-index: 7;
-    transform: scale(75%);
+    transform: scale(0.75);
     margin-top: 10%;
     margin-left: -10%;
 }
@@ -500,61 +459,60 @@ header{
 }
 .peach3{
     z-index: 5;
-    transform: scale(20%);
+    transform: scale(0.2);
     margin-top: -48%;
     margin-left: -58%;
 }
 .appleFront{
     z-index: 9;
-    transform: scale(10%);
+    transform: scale(0.1);
     margin-left: -45%;
     margin-top: -56%;
 }
 .apple0{
     z-index: 8;
-    transform: scale(32%);
+    transform: scale(0.32);
     margin-left: -24%;
     margin-top: -11%;
 }
 .apple1{
     z-index: 7;
-    transform: scale(65%);
+    transform: scale(0.65);
     margin-left: 25%;
     margin-top: 9%;
 }
 .apple2{
     z-index: 6;
-    transform: scale(47%);
+    transform: scale(0.47);
     margin-top: 26%;
     margin-left: -30%;
 }
 .apple3{
     z-index: 5;
-    transform: scale(68%);
+    transform: scale(0.68);
     margin-top: 8%;
     margin-left: 35%;
 }
 .lemon1{
     z-index: 9;
-    transform: scale(35%);
+    transform: scale(0.35);
     margin-left: -20%;
     margin-top: 10%;
 }
 .lemon2{
     z-index: 8;
-    transform: scale(95%);
+    transform: scale(0.95);
     margin-left: 50%;
     margin-top: 25%;
 }
 .lemon3{
     z-index: 7;
-    transform: scale(55%);
+    transform: scale(0.55);
     margin-left: -67%;
     margin-top: -13%;
 }
 .lemon4{
     z-index: 6;
-    transform: scale(100%);
     margin-left:48%;
     margin-top:20%;
 }
@@ -852,13 +810,13 @@ textarea::placeholder{
     position: absolute;
     display: flex;
     flex-direction: column;
-    margin-left:7.2%;
-    margin-top:0%;
+    margin-left:6.8%;
+    margin-top:-2%;
     transition: 0.2s;
 }
 /* Class to be Added by JavaScript to Move the Arrow When Required */
 .conArrowContainer_Up{
-    margin-top: -9%;
+    margin-top: -11%;
 }
 /* Styling for the Animated Arrows */
 .conBotArrow{
@@ -898,7 +856,7 @@ textarea::placeholder{
     bottom: 0;
     opacity: 0.6;
     display: flex;
-    margin-bottom:-9% ;
+    margin-bottom:-8.6% ;
     cursor: pointer;
     transition: 0.2s;
     text-align: left;
@@ -1021,24 +979,10 @@ h1{
 }
 /* Media Query 1 - Medium Laptop Screen-Size */
 @media only screen and (max-width: 1366px){
-    header{
-        width:100%;
-        height:16%;
-        z-index: 5;
-    }
-    #navBar{
-        height:15%;
-        display: flex;
-        display: none;
-        z-index: 5;
-        transition: 0.8s;
-    }
     .options{
         margin:2vh;
         padding: 3vh;
         margin-left: 40%;
-        font-size: 1.5rem;
-        color: #E51B6C;
     }
     .homeM, .productsM, .aboutM, .contactM{
         display: none;
@@ -1048,36 +992,8 @@ h1{
         padding-top:0;
         padding-bottom:0;
     }
-    .midLine, .topLine, .botLine{
-        width:7vh;
-        height:0.8vh;
-        background-color: #E51B6C;
-        margin-top:1.7vh;
-        transition: 0.2s;
-        opacity: 1;
-    }
-    .topLine{
-        margin-top: 0;
-    }
-    .topLine_toggled{ 
-        transform: rotate(45deg) translate(2%, 4%);
-    }
-    .botLine_toggled{
-        transform: rotate(-45deg) translate(2%, -4%);
-    }
-    .midLine_toggled{
-        display: none;
-    }
     .homeM{
         margin-top:42%;
-    }
-    .homeM, .productsM, .aboutM, .contactM{
-        padding-top:10%;
-        padding-bottom:0;
-        transition: 0.2s;
-    }
-    .homeM:hover, .productsM:hover, .aboutM:hover, .contactM:hover{
-        transform: scale(1.2);
     }
     #navContainer{
         left: 3%;
@@ -1092,24 +1008,19 @@ h1{
         top:43%;
     }
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
-        width:15vh;
-        height:15vh;
         left:86%;
         top:44%;
-    }
-    .lBot2{
-        margin-top: 20%;
     }
     .lBot, .lHome, .lRight, .lMain, .lBot2{
         width:60%;
         height:60%;
     }
+    .lBot2{
+        margin-top: 20%;
+    }
     .lHome{
         margin-left: -22%;
         margin-top: -15%;
-    }
-    .lBot{
-        margin-top: 33%;
     }
     .lRight{
         margin-top: 20%;
@@ -1132,7 +1043,6 @@ h1{
         margin-left: 0%;
     }
     .infoIcons{
-        width:9%;
         font-size: 1.1rem;
         margin-top:6%;
         margin-left: -10%;
@@ -1207,15 +1117,15 @@ h1{
         margin-top: 0%;
         text-align: center;
     }
-    .slideImgWrapper{
-        width: 40vh;
-        height: 76vh;
-        margin-top:-2%;
-    }
     .splide{
         width:130vh;
         height:70vh;
         margin-top: 12%;
+    }
+    .slideImgWrapper{
+        width: 40vh;
+        height: 76vh;
+        margin-top:-2%;
     }
     .slideText{
         height:66vh;
@@ -1382,58 +1292,19 @@ h1{
     .f1Review_hidden, .f2Review_hidden, .f3Review_hidden, .f4Review_hidden{
         margin-top:-100%;
     }
-    .conBgAnimate_reveal, .f1rBgAnimate_reveal, .f2rBgAnimate_reveal, .f3rBgAnimate_reveal, .f4rBgAnimate_reveal{
-        display: block;
-    }
 }
 /* Media Query 2 - Small Laptop or Landscape Tablet Screen-Size */
 @media only screen and (max-width: 1024px){
-    header{
-        width:100%;
-        height:16%;
-        z-index: 5;
-    }
-    #navBar{
-        height:15%;
-        display: flex;
-        display: none;
-        z-index: 5;
-        transition: 0.8s;
-    }
     .options{
         margin:2vh;
         padding: 3vh;
         margin-left: 40%;
         font-size: 1.3rem;
-        color: #E51B6C;
-    }
-    .homeM, .productsM, .aboutM, .contactM{
-        display: none;
     }
     .home, .products, .about, .contact{
         padding:2.6vh;
         padding-top:0;
         padding-bottom:0;
-    }
-    .midLine, .topLine, .botLine{
-        width:7vh;
-        height:0.8vh;
-        background-color: #E51B6C;
-        margin-top:1.7vh;
-        transition: 0.2s;
-        opacity: 1;
-    }
-    .topLine{
-        margin-top: 0;
-    }
-    .topLine_toggled{ 
-        transform: rotate(45deg) translate(2%, 4%);
-    }
-    .botLine_toggled{
-        transform: rotate(-45deg) translate(2%, -4%);
-    }
-    .midLine_toggled{
-        display: none;
     }
     .homeM{
         margin-top:42%;
@@ -1447,22 +1318,16 @@ h1{
         transform: scale(1.2);
     }
     #navContainer{
-        left: 3%;
-        top:2%;
         width: 32vh;
-        height: 12.4vh;
     }
     #navArrow{
         width:14vh;
         height:14vh;
         margin-left: 5%;
-        top:43%;
     }
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:14vh;
         height:14vh;
-        left:86%;
-        top:44%;
     }
     .lBot2{
         margin-top: 30%;
@@ -1470,19 +1335,6 @@ h1{
     .lBot, .lHome, .lRight, .lMain, .lBot2{
         width:70%;
         height:70%;
-    }
-    .lHome{
-        margin-left: -22%;
-        margin-top: -15%;
-    }
-    .lBot{
-        margin-top: 33%;
-    }
-    .lRight{
-        margin-top: 20%;
-    }
-    .lMain{
-        margin-top: -20%;
     }
     #homeLogo{
         width:54vh;
@@ -1492,84 +1344,28 @@ h1{
     .proContainer{
         margin-top:15%;
     }
-    #flavour1, #flavour2, #flavour3, #flavour4, #productsAll{
-        font-size: 3.2rem;
-    }
-    .watermelon{
-        margin-left: 0%;
-    }
     .infoIcons{
         width:11%;
-        font-size: 1.1rem;
         margin-top:8%;
-        margin-left: 0%;
-        text-align: center;
-    }
-    .reviews{
-        margin-left:10%;
-        margin-top: -2%;
-        z-index: 11;
-    }
-    .reviewBtn::part(base){
-        width:26vh;
-        height:4vh;
-        font-size: 1.6rem;
-    }
-    .reviews img{
-        transform: scale(1);
         margin-left: 0%;
     }
     .bottle{
-        width:80%;
         margin-bottom: -40%;
     }
     .bgContainer{
         width:100vh;
-        height:70vh;
-        margin-bottom: 0%;
     }
     .f1R{
-        font-size: 4rem;
-        margin-bottom: 0%;
         margin-top: 12%;
-    }
-    .f1RSub{
-        font-size: 2.3rem;
-        margin-bottom: 0%;
     }
     .f1RStar{
         width:26%;
-        margin-bottom: 0%;
     }
     #f1RScroll, #f2RScroll, #f3RScroll, #f4RScroll{
-        width:68%;
         height:58%;
     }
-    .f1rAnimateL1 img, .f1rAnimateL2 img, .f1rAnimateL3 img, .f2rAnimateL1 img, .f2rAnimateL2 img, .f2rAnimateL3 img, .f3rAnimateL1 img, .f3rAnimateL2 img, .f3rAnimateL3 img, .f4rAnimateL1 img, .f4rAnimateL2 img, .f4rAnimateL3 img{
-        margin-left:70%;
-        margin-top:-115%;
-        width:120%;
-    }
-    .cust1Sub{
-        font-size: 1.4rem;
-    }
-    .cust1Sub div{
-        margin-top:1%;
-
-    }
-    .cust1Sub img{
-        transform: scale(0.8);
-        margin-top:0%;
-        margin-left: 10%;
-    }
     .cust1 span{
-        width:98%;
-        margin-top:0%;
         font-size: 1rem;
-    }
-    #productsAll{
-        margin-top: 0%;
-        text-align: center;
     }
     .slideImgWrapper{
         width: 30vh;
@@ -1578,15 +1374,10 @@ h1{
     }
     .splide{
         width:90vh;
-        height:70vh;
         margin-top: 16%;
     }
     .slideText{
         height:66vh;
-        margin-top: 0%;
-    }
-    .slideText p{
-        font-size: 1.5rem;
     }
     h6{
         font-size: 2.2rem;
@@ -1594,92 +1385,23 @@ h1{
     h5{
         font-size: 1.4rem;
     }
-    .slideImg{
-        width:135%;
-        margin-left: -22%;
-        margin-top:10%;
-    }
     #aboutMain, #about1, #about2{
-        width:68%;
-        height:76%;
         margin-top: 13%;
     }
     .aboutMainTitle{
-        font-size: 5.6rem;
         margin-top: 20%;
     }
     .aboutMain2{
-        font-size: 3rem;
         margin-top: -32%;
     }
-    .explore{
-        margin-top: 2%;
-    }
-    .explore::part(base){
-        width:20vh;
-        height:7vh;
-    }
-    .about1Title, .about2Title{
-        font-size: 4.4rem;
-    }
     .about1Sub, .about2Sub{
-        font-size: 3.2rem;
         margin-top: -3%;
-        margin-bottom: 1%;
-    }
-    .about1Text, .about2Text{
-        width:98%;
-        height:66%;
-        font-size: 1.7rem;
-        margin-top: 0%;
-        line-height: 3.8vh;
-    }
-    .abSubNav{
-        margin-top: -7%;
-    }
-    #contactScroll{
-        width:68%;
-        height:50%;
-        margin-top: 2%;
-        text-align: center;
-    }
-    .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
-        margin-left:56%;
-        margin-top:-115%;
-        width:120%;
     }
     .contactTitle{
-        font-size: 4.2rem;
         margin-top: 13%;
-    }
-    .contactSub, .contactSub2{
-        font-size: 3.2rem;
-    }
-    .inputContainer{
-        width:92%;
-    }
-    textarea{
-        font-size: 1rem;
-    }
-    .send{
-        width:18%;
-        height:14%;
-    }
-    .send::part(base){
-        padding-top:0.4vh;
-    }
-    .contactSub2{
-        margin-top: 16vh;
     }
     .tel{
         margin-bottom: 8vh;
-    }
-    .email, .tel{
-        font-size: 2.4rem;
-    }
-    .social1, .social2, .social3{
-        width:11vh;
-        height:11vh;
     }
     .social1{
         margin-bottom: 20%;
@@ -1697,20 +1419,9 @@ h1{
     }
     .botNav{
         margin-bottom: -13.4%;
-        text-align: left;
     }
     .botNav_Up{
         margin-bottom: 0%;
-    }
-    h1{
-        font-size: 1.4rem;
-        margin-bottom: 0;
-        margin-top: 1.3vh;
-    }
-    .botNav span{
-        font-size: 1rem;
-        margin-top: 0.6vh;
-        margin-left: 2vh;
     }
     .homePage_hidden{
         margin-top: 110%;
@@ -1724,45 +1435,9 @@ h1{
     .lRight_hidden{
         transform: translate(-200%, -240%);
     }
-    .navBar_hidden{
-        margin-top:-15%;
-    }
-    .navCon_hidden{
-        margin-left:-60%;
-    }
-    .productPage_hidden{
-        margin-top:120%;
-    }
-    .flavour1_hidden, .flavour2_hidden, .flavour3_hidden, .flavour4_hidden, .proAll_hidden, .aboutPage_hidden{
-        transform: translateX(-120%);
-    }
-    .flavour2_initial, .flavour3_initial, .flavour4_initial, .aboutPage_initial{
-        transform: translateX(100%);
-    }
-    .proAll_initial, .conPage_initial, .flavour1_hidden2, .flavour2_hidden2, .flavour3_hidden2, .flavour4_hidden2{
-        transform: translateY(100%);
-    }
-    .f1Review_hidden, .f2Review_hidden, .f3Review_hidden, .f4Review_hidden{
-        margin-top:-100%;
-    }
-    .conBgAnimate_reveal, .f1rBgAnimate_reveal, .f2rBgAnimate_reveal, .f3rBgAnimate_reveal, .f4rBgAnimate_reveal{
-        display: block;
-    }
 }
 /* Media Query 3 - Portrait Tablet Screen-Size */
 @media only screen and (max-width: 768px){
-    header{
-        width:100%;
-        height:16%;
-        z-index: 5;
-    }
-    #navBar{
-        height:15%;
-        display: flex;
-        display: none;
-        z-index: 5;
-        transition: 0.8s;
-    }
     .hamburger{
         display: flex;
         flex-direction: column;
@@ -1841,9 +1516,7 @@ h1{
     }
     #navContainer{
         left: 12%;
-        top:2%;
         width: 28vh;
-        height: 12.4vh;
     }
     #navArrow{
         width:11vh;
@@ -1855,7 +1528,6 @@ h1{
         width:11vh;
         height:11vh;
         left:80%;
-        top:44%;
     }
     .lBot2{
         width:90%;
@@ -1887,9 +1559,6 @@ h1{
     .proContainer{
         margin-top:18%;
     }
-    #flavour1, #flavour2, #flavour3, #flavour4, #productsAll{
-        font-size: 3.2rem;
-    }
     .watermelon{
         margin-left: 8%;
     }
@@ -1900,14 +1569,7 @@ h1{
         margin-left: 6%;
     }
     .reviews{
-        margin-right:10%;
         margin-left: 2%;
-        z-index: 11;
-    }
-    .reviewBtn::part(base){
-        width:26vh;
-        height:4vh;
-        font-size: 1.6rem;
     }
     .reviews img{
         transform: scale(0.6);
@@ -1917,83 +1579,42 @@ h1{
         border-width: 0 0.4vh 0.4vh 0;
     }
     .bottle{
-        width:80%;
         margin-bottom: -58%;
     }
     .bgContainer{
         width:90vh;
-        height:70vh;
         margin-bottom: -10%;
     }
     .f1R{
-        font-size: 4rem;
         margin-bottom: -21%;
         margin-top: 20%;
     }
     .f1RSub{
-        font-size: 2.3rem;
         margin-bottom: -3%;
     }
     .f1RStar{
-        width:26%;
         margin-bottom: -22%;
     }
     #f1RScroll, #f2RScroll, #f3RScroll, #f4RScroll{
         width:95%;
         height:50%;
     }
-    .f1rAnimateL1 img, .f1rAnimateL2 img, .f1rAnimateL3 img, .f2rAnimateL1 img, .f2rAnimateL2 img, .f2rAnimateL3 img, .f3rAnimateL1 img, .f3rAnimateL2 img, .f3rAnimateL3 img, .f4rAnimateL1 img, .f4rAnimateL2 img, .f4rAnimateL3 img{
-        margin-left:70%;
-        margin-top:-115%;
-        width:120%;
-    }
-    .cust1Sub{
-        font-size: 1.4rem;
-    }
     .cust1Sub div{
         margin-top:2.2%;
-
-    }
-    .cust1Sub img{
-        transform: scale(0.8);
-        margin-top:0%;
-        margin-left: 10%;
     }
     .cust1 span{
-        width:98%;
-        margin-top:0%;
         font-size: 1.1rem;
-    }
-    #productsAll{
-        margin-top: 0%;
-    }
-    .slideImgWrapper{
-        width: 30vh;
-        height: 66vh;
-        margin-top:0%;
     }
     .splide{
         width:68vh;
         height:66vh;
         margin-top: 20%;
     }
-    .slideText{
-        height:66vh;
-        margin-top: 0%;
-    }
-    .slideText p{
-        font-size: 1.5rem;
-    }
     h6{
         font-size: 2.4rem;
     }
     h5{
         font-size: 2rem;
-    }
-    .slideImg{
-        width:135%;
-        margin-left: -22%;
-        margin-top:10%;
     }
     #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         left:43%;
@@ -2005,12 +1626,7 @@ h1{
         margin-top: 18%;
     }
     .aboutMainTitle{
-        font-size: 5.6rem;
         margin-top: 36%;
-    }
-    .aboutMain2{
-        font-size: 3rem;
-        margin-top: -32%;
     }
     .explore{
         margin-top: 3%;
@@ -2026,14 +1642,6 @@ h1{
     .about1Sub, .about2Sub{
         font-size: 3.6rem;
         margin-top: -6%;
-        margin-bottom: 1%;
-    }
-    .about1Text, .about2Text{
-        width:98%;
-        height:66%;
-        font-size: 1.7rem;
-        margin-top: 0%;
-        line-height: 3.8vh;
     }
     .abSubNav{
         margin-top: -10%;
@@ -2041,36 +1649,12 @@ h1{
     #contactScroll{
         width:95%;
         height:52%;
-        margin-top: 2%;
-        text-align: center;
     }
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
         margin-left:70%;
-        margin-top:-115%;
-        width:120%;
     }
     .contactTitle{
-        font-size: 4.2rem;
-        left: 12vh;
         margin-top: 22%;
-    }
-    .contactSub, .contactSub2{
-        font-size: 3.2rem;
-    }
-    .inputContainer{
-        width:92%;
-
-    }
-    .send{
-        width:18%;
-        height:14%;
-    }
-    .send::part(base){
-        padding-top:0.4vh;
-    }
-    
-    .contactSub2{
-        margin-top: 16vh;
     }
     .tel{
         margin-bottom: 16vh;
@@ -2098,9 +1682,6 @@ h1{
     .social3{
         margin-right:16%;
     }
-    .homePage_hidden{
-        margin-top: 110%;
-    }
     .lHome_hidden{
         transform: translate(-23%, -23%);
     }
@@ -2113,103 +1694,35 @@ h1{
     .navBar_hidden{
         margin-top:-5%;
     }
-    .navCon_hidden{
-        margin-left:-60%;
-    }
-    .productPage_hidden{
-        margin-top:120%;
-    }
-    .flavour1_hidden, .flavour2_hidden, .flavour3_hidden, .flavour4_hidden, .proAll_hidden, .aboutPage_hidden{
-        transform: translateX(-120%);
-    }
-    .flavour2_initial, .flavour3_initial, .flavour4_initial, .aboutPage_initial{
-        transform: translateX(100%);
-    }
-    .proAll_initial, .conPage_initial, .flavour1_hidden2, .flavour2_hidden2, .flavour3_hidden2, .flavour4_hidden2{
-        transform: translateY(100%);
-    }
-    .f1Review_hidden, .f2Review_hidden, .f3Review_hidden, .f4Review_hidden{
-        margin-top:-100%;
-    }
-    .conBgAnimate_reveal, .f1rBgAnimate_reveal, .f2rBgAnimate_reveal, .f3rBgAnimate_reveal, .f4rBgAnimate_reveal{
-        display: block;
-    }
 }
 /* Media Query 4 - Larger Mobile Screen-Size (Tested iPhone 13 Safari and Chrome) (This layout looks somewhat off when using desktop browser resizing to test but looks much better on the iPhone 13, which is what I made it for specifically */
 @media only screen and (max-width: 390px){
-    .hamburger{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        height:7%;
-        top: -20%;
-        left: 82%;
-        z-index: 11;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-    .hamburger:hover{
-        transform: scale(1.1);
-    }
-    .hamburger_reveal{
-        top:3%;
-    }
     .midLine, .topLine, .botLine{
         width:6vh;
         height:0.6vh;
-        background-color: #E51B6C;
-        margin-top:1.7vh;
-        transition: 0.2s;
-        opacity: 1;
-    }
-    .topLine{
-        margin-top: 0;
-    }
-    .topLine_toggled{ 
-        transform: rotate(45deg) translate(2%, 4%);
-    }
-    .botLine_toggled{
-        transform: rotate(-45deg) translate(2%, -4%);
-    }
-    .midLine_toggled{
-        display: none;
     }
     .optionsM{
-        height:110%;
-        width:100%;
         margin-top:-280%;
-        margin-left:0%;
         font-size: 2.2rem;
     }
     .options_reveal{
         margin-top: -16%;
     }
-    .options{
-        display: none;
-    }
-    .homeM, .productsM, .aboutM, .contactM{
-        display: block;
-    }
     .homeM{
         margin-top:55%;
     }
     #navContainer{
-        left: 12%;
-        top:2%;
         width: 24vh;
-        height: 12.4vh;
     }
     #navArrow{
         width:13vh;
         height:13vh;
         margin-left: -34%;
-        top:64%;
     }
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:12vh;
         height:12vh;
         left:70%;
-        top:44%;
     }
     .lBot2{
         margin-top: 88%;
@@ -2258,17 +1771,13 @@ h1{
     .reviews{
         margin-top:0%;
         margin: auto;
-        z-index: 11;
     }
     .reviewBtn::part(base){
-        width:26vh;
-        height:4vh;
         font-size: 1.4rem;
         margin-top: -34%;
         margin-bottom: -46%;
     }
     .reviews img{
-        transform: scale(0.6);
         margin-left: 0%;
         margin-top: -10%;
     }
@@ -2279,7 +1788,6 @@ h1{
     }
     .bgContainer{
         width:150%;
-        height:70vh;
         margin-bottom: -18%;
     }
     #f1Review, #f2Review, #f3Review, #f4Review{
@@ -2292,21 +1800,17 @@ h1{
     }
     .f1RSub{
         font-size: 1.6rem;
-        margin-bottom: -3%;
     }
     .f1RStar{
         width:30%;
         margin-bottom: -4%;
     }
     #f1RScroll, #f2RScroll, #f3RScroll, #f4RScroll{
-        width:95%;
         height:49%;
         text-align: left;
         margin-top: 0;
     }
     .f1rAnimateL1 img, .f1rAnimateL2 img, .f1rAnimateL3 img, .f2rAnimateL1 img, .f2rAnimateL2 img, .f2rAnimateL3 img, .f3rAnimateL1 img, .f3rAnimateL2 img, .f3rAnimateL3 img, .f4rAnimateL1 img, .f4rAnimateL2 img, .f4rAnimateL3 img{
-        margin-left:70%;
-        margin-top:-115%;
         width:180%;
     }
     .cust1{
@@ -2327,22 +1831,14 @@ h1{
     }
     .cust1Sub img{
         transform: scale(1);
-        margin-top:0%;
         margin-left: 5%;
     }
     .cust1 span{
-        width:98%;
-        margin-top:0%;
         font-size: 0.9rem;
-    }
-    #productsAll{
-        margin-top: 0%;
-
     }
     .slideImgWrapper{
         width: 75%;
         height: 100%;
-        margin-top:0%;
         margin: auto;
         position: absolute;
         opacity: 0.4;
@@ -2350,7 +1846,6 @@ h1{
     }
     .splide{
         width:100%;
-        height:66vh;
         z-index: 10;
         margin-top: 26%;
     }
@@ -2368,14 +1863,10 @@ h1{
         margin-top: 4%;
         line-height: 3vh;
     }
-    h6{
-        font-size: 2.4rem;
-    }
     h5{
         font-size: 1.4rem;
     }
     .slideImg{
-        width: 135%;
         margin-left: 0%;
         margin-top:10%;
         margin: auto;
@@ -2383,7 +1874,6 @@ h1{
     }
     #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         left:38%;
-        top:85%;
     }
     #aboutMain, #about1, #about2{
         width:98%;
@@ -2397,7 +1887,6 @@ h1{
     }
     .aboutMain2{
         font-size: 2.3rem;
-        margin-top: -32%;
     }
     .explore::part(base){
         width:22vh;
@@ -2412,32 +1901,22 @@ h1{
     .about1Sub, .about2Sub{
         font-size: 2.2rem;
         margin-top: -16%;
-        margin-bottom: 1%;
     }
     .about1Text, .about2Text{
         width:100%;
-        height:66%;
         font-size: 1.1rem;
-        margin-top: 0%;
         line-height: 3vh;
     }
     .abSubNav{
         margin-top: -20%;
     }
-    #contactPage{
-        text-align: center;
-    }
     #contactScroll{
         width:99%;
         height:50%;
         margin-top: 26%;
-        text-align: center;
     }
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
-        margin-left:70%;
-        margin-top:-115%;
         width:180%;
-
     }
     .contactTitle{
         font-size: 2.9rem;
@@ -2447,9 +1926,6 @@ h1{
     }
     .contactSub, .contactSub2{
         font-size: 2rem;
-    }
-    .inputContainer{
-        width:92%;
     }
     textarea{
         font-size: 0.9rem;
@@ -2461,7 +1937,6 @@ h1{
         height:12%;
     }
     .send::part(base){
-        padding-top:0.4vh;
         font-size: 1.1rem;
     }
     .contactSub2{
@@ -2510,97 +1985,31 @@ h1{
     .productPage_hidden{
         margin-top:185%;
     }
-    .flavour1_hidden, .flavour2_hidden, .flavour3_hidden, .flavour4_hidden, .proAll_hidden, .aboutPage_hidden{
-        transform: translateX(-120%);
-    }
-    .flavour2_initial, .flavour3_initial, .flavour4_initial, .aboutPage_initial{
-        transform: translateX(100%);
-    }
-    .proAll_initial, .conPage_initial, .flavour1_hidden2, .flavour2_hidden2, .flavour3_hidden2, .flavour4_hidden2{
-        transform: translateY(100%);
-    }
-    .f1Review_hidden, .f2Review_hidden, .f3Review_hidden, .f4Review_hidden{
-        margin-top:-100%;
-    }
-    .conBgAnimate_reveal, .f1rBgAnimate_reveal, .f2rBgAnimate_reveal, .f3rBgAnimate_reveal, .f4rBgAnimate_reveal{
-        display: block;
-    }
 }
 /* Media Query 5 - Smaller Mobile Screen-Size */
 @media only screen and (max-width: 360px){
-    .hamburger{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        height:7%;
-        top: -20%;
-        left: 82%;
-        z-index: 11;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-    .hamburger:hover{
-        transform: scale(1.1);
-    }
-    .hamburger_reveal{
-        top:3%;
-    }
     .midLine, .topLine, .botLine{
         width:7vh;
         height:0.8vh;
-        background-color: #E51B6C;
-        margin-top:1.7vh;
-        transition: 0.2s;
-        opacity: 1;
-    }
-    .topLine{
-        margin-top: 0;
-    }
-    .topLine_toggled{ 
-        transform: rotate(45deg) translate(2%, 4%);
-    }
-    .botLine_toggled{
-        transform: rotate(-45deg) translate(2%, -4%);
-    }
-    .midLine_toggled{
-        display: none;
     }
     .optionsM{
-        height:110%;
-        width:100%;
         margin-top:-225%;
-        margin-left:0%;
-        font-size: 2.2rem;
     }
     .options_reveal{
         margin-top: -16%;
     }
-    .options{
-        display: none;
-    }
-    .homeM, .productsM, .aboutM, .contactM{
-        display: block;
-    }
-    .homeM{
-        margin-top:55%;
-    }
     #navContainer{
         left: 8%;
-        top:2%;
         width: 28vh;
-        height: 12.4vh;
     }
     #navArrow{
         width:14vh;
         height:14vh;
-        margin-left: -34%;
-        top:64%;
     }
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:13vh;
         height:13vh;
         left:73%;
-        top:44%;
     }
     .lBot2{
         margin-top: 112%;
@@ -2628,133 +2037,40 @@ h1{
         margin-top: 50%;
     }
     .proContainer{
-        width:100%;
-        height:80%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
         margin-top:26%;
     }
     #flavour1, #flavour2, #flavour3, #flavour4, #productsAll{
         font-size: 2.2rem;
     }
     .watermelon, .peach, .apple, .lemon{
-        margin: auto;
         margin-top: 0;
         margin-bottom: -110%;
     }
-    .infoIcons{
-        width:23%;
-        font-size: 1rem;
-        margin-top:35%;
-        margin-left: -72%;
-        font-family: poppins, sans-serif;
-        font-weight: 600;
-        font-style: normal;
-    }
-    .reviews{
-        margin-top:0%;
-        margin: auto;
-        z-index: 11;
-    }
-    .reviewBtn::part(base){
-        width:26vh;
-        height:4vh;
-        font-size: 1.4rem;
-    }
-    .reviews img{
-        transform: scale(0.6);
-        margin-left: 0%;
-    }
     .bottle{
         width:100%;
-        height:90%;
         margin-bottom: -92%;
     }
     .bgContainer{
         width:140%;
-        height:70vh;
         margin-bottom: -20%;
-    }
-    #f1Review, #f2Review, #f3Review, #f4Review{
-        text-align: center;
     }
     .f1R{
         font-size: 2.4rem;
         margin-bottom: -32%;
         margin-top: 26%;
     }
-    .f1RSub{
-        font-size: 1.6rem;
-        margin-bottom: -3%;
-    }
-    .f1RStar{
-        width:30%;
-        margin-bottom: -4%;
-    }
     #f1RScroll, #f2RScroll, #f3RScroll, #f4RScroll{
-        width:95%;
         height:45%;
-        text-align: left;
-        margin-top: 0;
-    }
-    .f1rAnimateL1 img, .f1rAnimateL2 img, .f1rAnimateL3 img, .f2rAnimateL1 img, .f2rAnimateL2 img, .f2rAnimateL3 img, .f3rAnimateL1 img, .f3rAnimateL2 img, .f3rAnimateL3 img, .f4rAnimateL1 img, .f4rAnimateL2 img, .f4rAnimateL3 img{
-        margin-left:70%;
-        margin-top:-115%;
-        width:180%;
-    }
-    .cust1{
-        width:98%;
-        height: 200%;
-        margin-top:0.75%;
-        margin-bottom:0.75%;
     }
     .cust1Sub{
-        font-size: 1.2rem;
-        height:10%;
         margin-bottom: 2.5%;
     }
-    .cust1Sub div{
-        margin-top:2%;
-        width: 70%;
-    }
-    .cust1Sub img{
-        transform: scale(1);
-        margin-top:0%;
-        margin-left: 5%;
-    }
-    .cust1 span{
-        width:98%;
-        margin-top:0%;
-        font-size: 0.9rem;
-    }
-    #productsAll{
-        margin-top: 0%;
-
-    }
     .slideImgWrapper{
-        width: 75%;
-        height: 100%;
-        margin-top:0%;
-        margin: auto;
-        position: absolute;
-        opacity: 0.4;
         transform: translateY(25%);
-    }
-    .splide{
-        width:100%;
-        height:66vh;
-        z-index: 10;
     }
     .slideText{
         height:66vh;
         width: 85%;
-        margin: auto;
-        margin-top: 0%;
-        text-align: center;
-        align-items: center;
-        z-index: 10;
     }
     .slideText p{
         font-size: 1.1rem;
@@ -2766,22 +2082,12 @@ h1{
     h5{
         font-size: 1.2rem;
     }
-    .slideImg{
-        width: 135%;
-        margin-left: 0%;
-        margin-top:10%;
-        margin: auto;
-        z-index: 9;
-    }
     #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         left:38%;
-        top:85%;
     }
     #aboutMain, #about1, #about2{
         width:95%;
-        height:68%;
         margin-top: 25%;
-        text-align: center;
     }
     .aboutMainTitle{
         font-size: 3.4rem;
@@ -2789,13 +2095,9 @@ h1{
     }
     .aboutMain2{
         font-size: 2.2rem;
-        margin-top: -32%;
     }
     .explore::part(base){
-        width:22vh;
-        height:7vh;
         font-size: 1.3rem;
-        padding-top:3%;
     }
     .about1Title, .about2Title{
         font-size: 3rem;
@@ -2804,64 +2106,29 @@ h1{
     .about1Sub, .about2Sub{
         font-size: 2.1rem;
         margin-top: -11%;
-        margin-bottom: 1%;
     }
     .about1Text, .about2Text{
-        width:100%;
-        height:66%;
         font-size: 1rem;
-        margin-top: 0%;
         line-height: 3.2vh;
     }
     .abSubNav{
         margin-top: -14%;
     }
-    #contactPage{
-        text-align: center;
-    }
     #contactScroll{
-        width:99%;
         height:53%;
-        margin-top: 30%;
-        text-align: center;
-    }
-    .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
-        margin-left:70%;
-        margin-top:-115%;
-        width:180%;
-
+        margin-top: 20%;
     }
     .contactTitle{
-        font-size: 2.9rem;
-        left: 0;
-        top:17vh;
-        position: relative;
-    }
-    .contactSub, .contactSub2{
-        font-size: 2rem;
-    }
-    .inputContainer{
-        width:92%;
-    }
-    textarea{
-        font-size: 0.9rem;
-        padding: 1vh;
-        overflow: hidden;
+        top:11vh;
     }
     .send{
-        width:24%;
         height:14%;
-    }
-    .send::part(base){
-        padding-top:0.4vh;
-        font-size: 1.1rem;
     }
     .contactSub2{
         margin-top: 16vh;
     }
     .email, .tel{
         font-size: 1.8rem;
-        padding: 2vh;
     }
     .email{
         margin-top: 3vh;
@@ -2872,17 +2139,6 @@ h1{
     .social1, .social2, .social3{
         width:10vh;
         height:10vh;
-    }
-    .social1{
-        margin-bottom: 15%;
-        margin-right: 8%;
-    }
-    .social2{
-        margin-right: 0.5%;
-        margin-bottom: 0.5%;
-    }
-    .social3{
-        margin-right:16%;
     }
     .homePage_hidden{
         margin-top: 150%;
@@ -2896,25 +2152,7 @@ h1{
     .lRight_hidden{
         transform: translate(-230%, -140%);
     }
-    .navCon_hidden{
-        margin-left:-80%;
-    }
     .productPage_hidden{
         margin-top:160%;
-    }
-    .flavour1_hidden, .flavour2_hidden, .flavour3_hidden, .flavour4_hidden, .proAll_hidden, .aboutPage_hidden{
-        transform: translateX(-120%);
-    }
-    .flavour2_initial, .flavour3_initial, .flavour4_initial, .aboutPage_initial{
-        transform: translateX(100%);
-    }
-    .proAll_initial, .conPage_initial, .flavour1_hidden2, .flavour2_hidden2, .flavour3_hidden2, .flavour4_hidden2{
-        transform: translateY(100%);
-    }
-    .f1Review_hidden, .f2Review_hidden, .f3Review_hidden, .f4Review_hidden{
-        margin-top:-100%;
-    }
-    .conBgAnimate_reveal, .f1rBgAnimate_reveal, .f2rBgAnimate_reveal, .f3rBgAnimate_reveal, .f4rBgAnimate_reveal{
-        display: block;
     }
 }
