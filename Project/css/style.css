@@ -1913,7 +1913,7 @@ h1{
     #contactScroll{
         width:99%;
         height:50%;
-        margin-top: 26%;
+        margin-top: 18%;
     }
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
         width:180%;
@@ -1921,7 +1921,7 @@ h1{
     .contactTitle{
         font-size: 2.9rem;
         left: 0;
-        top:13vh;
+        top:10vh;
         position: relative;
     }
     .contactSub, .contactSub2{
@@ -1950,7 +1950,7 @@ h1{
         margin-top: 0%;
     }
     .tel{
-        margin-bottom: 2vh;
+        margin-bottom: 10vh;
     }
     .social1, .social2, .social3{
         width:9vh;
