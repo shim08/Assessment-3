@@ -82,9 +82,7 @@ header{
     z-index: 5;
     transition: 0.8s;
 }
-.hamburger{
-    display: none;
-}
+/* Nav Bar Section Options*/ 
 .options{
     display: flex;
     margin:2.2vh;
@@ -97,6 +95,30 @@ header{
     font-size: 1.5rem;
     color: #E51B6C;
 }
+
+.home, .products, .about, .contact{
+    padding:5.8%;
+    padding-top:0;
+    padding-bottom:0;
+}
+.home:hover, .products:hover, .about:hover, .contact:hover{
+    transform: scale(1.2);
+}
+/* Nav Bar Logo */
+#navContainer{
+    position: absolute;
+    left: 5%;
+    top:5%;
+    width: 40.4vh;
+    height: 22.4vh;
+    z-index: 5;
+    transition: 0.8s;
+}
+/* Mobile Layour Hamburger Menu and Navigation Options */ 
+.hamburger{
+    display: none;
+}
+
 .optionsM{
     display: flex;
     font-family: supersize-bk, sans-serif;
@@ -107,23 +129,6 @@ header{
 }
 .optionsM{
     display: none;
-}
-.home, .products, .about, .contact{
-    padding:5.8%;
-    padding-top:0;
-    padding-bottom:0;
-}
-.home:hover, .products:hover, .about:hover, .contact:hover{
-    transform: scale(1.2);
-}
-#navContainer{
-    position: absolute;
-    left: 5%;
-    top:5%;
-    width: 40.4vh;
-    height: 22.4vh;
-    z-index: 5;
-    transition: 0.8s;
 }
 /* First Arrow Style */
 #navArrow{
@@ -136,7 +141,6 @@ header{
     z-index: 10;
     transition: 0.6s;
 }
-
 /* All Arrow Hover Styles */
 #navArrow:hover, #proArrow:hover, #proArrow2:hover, #proArrow3:hover, #proArrow4:hover, #proArrowOther:hover, #abArrow:hover, #conArrow:hover, #revArrow:hover, #revArrow2:hover, #revArrow3:hover, #revArrow4:hover{
     transform: scale(1.1);
@@ -348,7 +352,7 @@ header{
     display: none;
     transition: 1s;
 }
-    /* Shared Styles for Review Headings */
+    /* Shared Styles for Review Headings and Subheadings */
 .f1R{
     margin: auto;
     font-size: 5rem;
@@ -363,11 +367,13 @@ header{
     color: #E51B6C;
     margin-bottom: 0%;
 }
+/* Review Star Images */
 .f1RStar{
     width:20%;
     height:8%;
     margin-bottom: -3%;
 }
+/* Review Page Scrollable Sections */
 #f1RScroll, #f2RScroll, #f3RScroll, #f4RScroll{
     width:70%;
     height:50%;
@@ -379,6 +385,7 @@ header{
     overflow-x: hidden;
 
 }
+/* Review Pages Scroll Trigger Background Animation Containers */
 .f1rBgAnimate, .f2rBgAnimate, .f3rBgAnimate, .f4rBgAnimate{
     position: absolute;
     z-index: -5;
@@ -388,12 +395,14 @@ header{
     top:0;
     display: none;
 }
+/* Review Page Scroll Trigger Background Animation Elements */
 .f1rAnimateL1 img, .f1rAnimateL2 img, .f1rAnimateL3 img, .f2rAnimateL1 img, .f2rAnimateL2 img, .f2rAnimateL3 img, .f3rAnimateL1 img, .f3rAnimateL2 img, .f3rAnimateL3 img, .f4rAnimateL1 img, .f4rAnimateL2 img, .f4rAnimateL3 img{
     margin-left:50%;
     margin-top:-100%;
     width:100%;
     height:100%;
 }
+/* Shared Stlyes for Each Customer Review Box */
 .cust1{
     width:98%;
     height: 48%;
@@ -431,6 +440,8 @@ header{
     font-style: normal;
     font-size: 1.4rem;
 }
+/* Styling for All 4 Bottle Images*/
+/* Containers */
 .bottle{
     width:30%;
     height: 90%;
@@ -441,19 +452,25 @@ header{
     align-items: center;
     margin-bottom: -22%;
 }
+/* Actual Images */
 .bottleImg{
     width: 100%;
     height: 100%;
 }
+/* Styling for GSAP Animated Product Page Background Elements */
+/* Containers */
 .bgContainer{
     width:100vh;
     height:73vh;
     position: absolute;
     bottom: 0;
 }
+/* Individual Background Elements (These had to be seperate for the animation to appear layered)*/
+/* Shared Positioning Attribute */
 .melon1, .melon2, .melon3, .peach1, .peach2, .peach3, .appleFront, .apple0, .apple1, .apple2, .apple3, .lemon1, .lemon2, .lemon3, .lemon4{
     position: absolute;
 }
+/* Precise Positioning for Each Background Element */
 .melon1{
     transform: scale(80%);
     z-index: 7;
@@ -541,20 +558,25 @@ header{
     margin-left:48%;
     margin-top:20%;
 }
+/* Beggining of All Products Page */
 #productsAll{
     margin-top: 2%;
 }
+/* Splide Slider*/
+/* Basic Slider Styles */
+.splide{
+    width:140vh;
+    height:77vh;
+    margin:auto;
+}
+/* Slider Bottle Image Wrapper */
 .slideImgWrapper{
     width: 60vh;
     height: 75vh;
     margin: auto;
     margin-top:2%;
 }
-.splide{
-    width:140vh;
-    height:77vh;
-    margin:auto;
-}
+/* All Other Splide Slider Styles */
 .splide__list{
     color:#E51B6C;
     align-items: center;
@@ -594,6 +616,8 @@ h5{
     width:100%;
     height:100%;
 }
+/* Start of About Page */
+/* Shared Styles for Each About Section */
 #aboutMain, #about1, #about2{
     width:70%;
     height:75%;
@@ -602,10 +626,12 @@ h5{
     display: flex;
     flex-direction: column;
 }
+/* Alignment for Section Headings and Subheadings */
 .aboutMainTitle, .aboutMain2, .about1Title, .about1Sub, .about2Title, .about2Sub{
     margin: auto;
     color: #E51B6C;
 }
+/* Individual Heading and Subheading Styles */
 .aboutMainTitle{
     font-size: 6rem;
     margin-top: 14%;
@@ -615,6 +641,7 @@ h5{
     margin-top: -18%;
     margin-bottom: 0;
 }
+/* Shoelace Explore Button Styles */
 .explore{
     border: none;
     margin: auto;
@@ -637,6 +664,7 @@ h5{
 .explore::part(base):hover{
     transform: scale(1.1);
 }
+/* Heading and Subheading Styles for Sections 2 and 3 */
 .about1Title, .about2Title{
     font-size: 5rem;
     margin-top: 0%;
@@ -646,6 +674,7 @@ h5{
     margin-top: -8%;
     margin-bottom: 1%;
 }
+/* Main Text Styles */
 .about1Text, .about2Text{
     width:70%;
     height:60%;
@@ -658,9 +687,11 @@ h5{
     text-align: center;
     line-height: 4.4vh;
 }
+/* Sections Should be Hidden Until Called on by JavaScript */
 #about1, #about2{
     display: none;
 }
+/* Lower Navigation Buttons on About Page */
 .abSubNav{
     width:40%;
     height:10%;
@@ -690,7 +721,8 @@ h5{
 .navDot1:hover, .navDot2:hover, .navDot3:hover, .arrow-left:hover, .arrow-right:hover{
     transform: scale(1.2);
 }
-
+/* Start of Contact Page */
+/* Main Contact Page Scrollable Section */
 #contactScroll{
     width:70%;
     height:50%;
@@ -701,7 +733,8 @@ h5{
     overflow: auto;
     overflow-x:hidden;
 }
-    /* Scroll Animations for the Contact Page Scroll Area*/
+/* Scroll Animations for the Contact Page Scroll Area*/
+/* Animated Elements Container */
 .conBgAnimate{
     position: absolute;
     z-index: -5;
@@ -711,20 +744,24 @@ h5{
     top:0;
     display: none;
 }
+/* Animated Elements */
 .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
     margin-left:50%;
     margin-top:-100%;
     width:100%;
     height:100%;
 }
+/* General Page Text Styling*/
 #contactPage{
     text-align: center;
 }
+/* Main Contact Title */
 .contactTitle{
     font-size: 4.8rem;
     color: #E51B6C;
     margin-top: 8%;
 }
+/* Contact Sub Titles */
 .contactSub, .contactSub2{
     margin: auto;
     font-size: 3.8rem;
@@ -732,6 +769,7 @@ h5{
     margin-top: 0vh;
     margin-bottom: 0;
 }
+/* User Input Field Styles */
 .inputContainer{
     margin: auto;
     width:85%;
@@ -769,6 +807,7 @@ textarea::placeholder{
 .input3{
     height:65%;
 }
+/* Shoelace Send Button Styles and Positioning */
 .send{
     width:10%;
     height:14%;
@@ -788,10 +827,11 @@ textarea::placeholder{
     transform: scale(1.1);
     color: #E51B6C;
 }
-
+/* Creates Space Between the 2 Main Sections of the Contact Scroller */
 .contactSub2{
     margin-top: 16vh;
 }
+/* More General Contact Scroller Styles */
 .email, .tel{
     font-family: poppins, sans-serif;
     font-weight: 600;
@@ -806,7 +846,8 @@ textarea::placeholder{
 .tel{
     margin-bottom: 20vh;
 }
-
+/* Animated Arrow Pointing at Bottom Navigation on Contact Page */
+/* Arrow Container */
 .conArrowContainer{
     position: absolute;
     display: flex;
@@ -815,9 +856,11 @@ textarea::placeholder{
     margin-top:0%;
     transition: 0.2s;
 }
+/* Class to be Added by JavaScript to Move the Arrow When Required */
 .conArrowContainer_Up{
     margin-top: -9%;
 }
+/* Styling for the Animated Arrows */
 .conBotArrow{
     border: solid #E51B6C;
     width:4vh;
@@ -831,7 +874,7 @@ textarea::placeholder{
     animation: conArrowBot 1s infinite linear;
     animation-timing-function: ease-in-out;
 }
-
+/* Basic CSS Animations to Animate the Arrows Above */
 @keyframes conArrowBot {
 
     0%{
@@ -846,6 +889,7 @@ textarea::placeholder{
         margin-top:0%;
     }
 }
+/* Bottom Navigation Bar (Pushed Under the ViewPort)*/
 .botNav{
     width:100%;
     height:18vh;
@@ -859,9 +903,11 @@ textarea::placeholder{
     transition: 0.2s;
     text-align: left;
 }
+/* Bottom Navigation Class to be Added by JavaScript When Required (Will reveal the bottom navigation menu)*/
 .botNav_Up{
     margin-bottom: 0%;
 }
+/* Bottom Navigation Basic Text and Link Styling */
 .quickNav, .conInfo, .quickSocials{
     width:15%;
     height:100%;
@@ -895,6 +941,7 @@ h1{
 .conInfo span:hover{
     transform: scale(1);
 }
+/* Clickable Handle To Reveal and Hide Bottom Navigation Bar */
 .navHandle{
     width:12vh;
     height: 3vh;
@@ -903,6 +950,7 @@ h1{
     margin-left: 10vh;
     margin-top:-3vh;
 }
+/* Socials Icons Basic Styles */
 .social1, .social2, .social3{
     position: absolute;
     right:0;
@@ -911,6 +959,7 @@ h1{
     bottom: 0;
     cursor: pointer;
 }
+/* Socials Icons Precise Positioning and Hover Properties */
 .social1{
     margin-bottom: 12%;
     margin-right: 0.5%;
@@ -931,8 +980,8 @@ h1{
 .socialIcons:hover{
     transform: scale(1.1);
 }
-/* Transition Animation Classes*/
-    /* Home Page | Nav Elements */
+/* Transition Animation Classes (These are added and removed as required by JavaScript to create smooth page transitions)*/
+/* Home Page | Nav Elements */
 .homePage_hidden{
     margin-top: 60%;
 }
@@ -951,7 +1000,7 @@ h1{
 .navCon_hidden{
     margin-left:-30%;
 }
-    /* Products Page | About Page | Contact Page */
+/* Products Page | About Page | Contact Page */
 .productPage_hidden{
     margin-top:100%;
 }
@@ -970,17 +1019,13 @@ h1{
 .conBgAnimate_reveal, .f1rBgAnimate_reveal, .f2rBgAnimate_reveal, .f3rBgAnimate_reveal, .f4rBgAnimate_reveal{
     display: block;
 }
-
+/* Media Query 1 - Medium Laptop Screen-Size */
 @media only screen and (max-width: 1366px){
     header{
         width:100%;
         height:16%;
         z-index: 5;
     }
-    
-    /* Navigation Elements */
-        /* Logo and Nav Element Styling */
-
     #navBar{
         height:15%;
         display: flex;
@@ -1023,7 +1068,6 @@ h1{
     .midLine_toggled{
         display: none;
     }
-
     .homeM{
         margin-top:42%;
     }
@@ -1041,23 +1085,18 @@ h1{
         width: 38vh;
         height: 12.4vh;
     }
-    /* First Arrow Style */
     #navArrow{
         width:15vh;
         height:15vh;
         margin-left: 3%;
         top:43%;
     }
-
-    /* All Other Nav Arrow Styles */
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:15vh;
         height:15vh;
         left:86%;
         top:44%;
     }
-
-    /* Background Line Positioning and Styles */
     .lBot2{
         margin-top: 20%;
     }
@@ -1078,13 +1117,11 @@ h1{
     .lMain{
         margin-top: -20%;
     }
-    /* Home Logo Style */
     #homeLogo{
         width:60vh;
         height:60vh;
         margin-top: 20%;
     }
-        /* Product Image and Content Container */
     .proContainer{
         margin-top:10%;
     }
@@ -1094,7 +1131,6 @@ h1{
     .watermelon{
         margin-left: 0%;
     }
-        /* Product Information Icons */
     .infoIcons{
         width:9%;
         font-size: 1.1rem;
@@ -1116,8 +1152,6 @@ h1{
         transform: scale(1);
         margin-left: 0%;
     }
-
-
     .bottle{
         width:80%;
         margin-bottom: -28%;
@@ -1127,8 +1161,6 @@ h1{
         height:70vh;
         margin-bottom: 0%;
     }
-
-        /* Shared Styles for Review Headings */
     .f1R{
         font-size: 4rem;
         margin-bottom: 0%;
@@ -1171,8 +1203,6 @@ h1{
         margin-top:0%;
         font-size: 1.1rem;
     }
-
-    /* Products All Section and Splide Slider Styling*/
     #productsAll{
         margin-top: 0%;
         text-align: center;
@@ -1205,7 +1235,6 @@ h1{
         margin-left: -22%;
         margin-top:10%;
     }
-
     #aboutMain, #about1, #about2{
         width:68%;
         height:76%;
@@ -1226,7 +1255,6 @@ h1{
         width:20vh;
         height:7vh;
     }
-
     .about1Title, .about2Title{
         font-size: 4.4rem;
         margin-top: 6%;
@@ -1246,14 +1274,12 @@ h1{
     .abSubNav{
         margin-top: -7%;
     }
-
     #contactScroll{
         width:68%;
         height:50%;
         margin-top: 2%;
         text-align: center;
     }
-        /* Scroll Animations for the Contact Page Scroll Area*/
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
         margin-left:56%;
         margin-top:-115%;
@@ -1279,7 +1305,6 @@ h1{
     .send::part(base){
         padding-top:0.4vh;
     }
-    
     .contactSub2{
         margin-top: 16vh;
     }
@@ -1289,7 +1314,6 @@ h1{
     .email, .tel{
         font-size: 2.4rem;
     }
-
     .social1, .social2, .social3{
         width:11vh;
         height:11vh;
@@ -1304,7 +1328,6 @@ h1{
     .social3{
         margin-right:14%;
     }
-
     .conArrowContainer{
         transform: translateY(-60%);
         margin-left: 8%;
@@ -1326,8 +1349,6 @@ h1{
         margin-top: 0.6vh;
         margin-left: 2vh;
     }
-    /* Transition Animation Classes*/
-        /* Home Page | Nav Elements */
     .homePage_hidden{
         margin-top: 80%;
     }
@@ -1346,7 +1367,6 @@ h1{
     .navCon_hidden{
         margin-left:-60%;
     }
-        /* Products Page | About Page | Contact Page */
     .productPage_hidden{
         margin-top:120%;
     }
@@ -1366,17 +1386,13 @@ h1{
         display: block;
     }
 }
-
+/* Media Query 2 - Small Laptop or Landscape Tablet Screen-Size */
 @media only screen and (max-width: 1024px){
     header{
         width:100%;
         height:16%;
         z-index: 5;
     }
-    
-    /* Navigation Elements */
-        /* Logo and Nav Element Styling */
-
     #navBar{
         height:15%;
         display: flex;
@@ -1419,7 +1435,6 @@ h1{
     .midLine_toggled{
         display: none;
     }
-
     .homeM{
         margin-top:42%;
     }
@@ -1437,23 +1452,18 @@ h1{
         width: 32vh;
         height: 12.4vh;
     }
-    /* First Arrow Style */
     #navArrow{
         width:14vh;
         height:14vh;
         margin-left: 5%;
         top:43%;
     }
-
-    /* All Other Nav Arrow Styles */
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:14vh;
         height:14vh;
         left:86%;
         top:44%;
     }
-
-    /* Background Line Positioning and Styles */
     .lBot2{
         margin-top: 30%;
     }
@@ -1474,13 +1484,11 @@ h1{
     .lMain{
         margin-top: -20%;
     }
-    /* Home Logo Style */
     #homeLogo{
         width:54vh;
         height:54vh;
         margin-top: 27%;
     }
-        /* Product Image and Content Container */
     .proContainer{
         margin-top:15%;
     }
@@ -1490,7 +1498,6 @@ h1{
     .watermelon{
         margin-left: 0%;
     }
-        /* Product Information Icons */
     .infoIcons{
         width:11%;
         font-size: 1.1rem;
@@ -1512,8 +1519,6 @@ h1{
         transform: scale(1);
         margin-left: 0%;
     }
-
-
     .bottle{
         width:80%;
         margin-bottom: -40%;
@@ -1523,8 +1528,6 @@ h1{
         height:70vh;
         margin-bottom: 0%;
     }
-
-        /* Shared Styles for Review Headings */
     .f1R{
         font-size: 4rem;
         margin-bottom: 0%;
@@ -1564,8 +1567,6 @@ h1{
         margin-top:0%;
         font-size: 1rem;
     }
-
-    /* Products All Section and Splide Slider Styling*/
     #productsAll{
         margin-top: 0%;
         text-align: center;
@@ -1598,7 +1599,6 @@ h1{
         margin-left: -22%;
         margin-top:10%;
     }
-
     #aboutMain, #about1, #about2{
         width:68%;
         height:76%;
@@ -1619,7 +1619,6 @@ h1{
         width:20vh;
         height:7vh;
     }
-
     .about1Title, .about2Title{
         font-size: 4.4rem;
     }
@@ -1638,15 +1637,12 @@ h1{
     .abSubNav{
         margin-top: -7%;
     }
-
-    
     #contactScroll{
         width:68%;
         height:50%;
         margin-top: 2%;
         text-align: center;
     }
-        /* Scroll Animations for the Contact Page Scroll Area*/
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
         margin-left:56%;
         margin-top:-115%;
@@ -1672,7 +1668,6 @@ h1{
     .send::part(base){
         padding-top:0.4vh;
     }
-    
     .contactSub2{
         margin-top: 16vh;
     }
@@ -1682,7 +1677,6 @@ h1{
     .email, .tel{
         font-size: 2.4rem;
     }
-
     .social1, .social2, .social3{
         width:11vh;
         height:11vh;
@@ -1697,7 +1691,6 @@ h1{
     .social3{
         margin-right:20%;
     }
-
     .conArrowContainer{
         transform: translateY(-50%);
         margin-left: 10.6%;
@@ -1719,8 +1712,6 @@ h1{
         margin-top: 0.6vh;
         margin-left: 2vh;
     }
-    /* Transition Animation Classes*/
-        /* Home Page | Nav Elements */
     .homePage_hidden{
         margin-top: 110%;
     }
@@ -1739,7 +1730,6 @@ h1{
     .navCon_hidden{
         margin-left:-60%;
     }
-        /* Products Page | About Page | Contact Page */
     .productPage_hidden{
         margin-top:120%;
     }
@@ -1759,17 +1749,13 @@ h1{
         display: block;
     }
 }
-
+/* Media Query 3 - Portrait Tablet Screen-Size */
 @media only screen and (max-width: 768px){
     header{
         width:100%;
         height:16%;
         z-index: 5;
     }
-    
-    /* Navigation Elements */
-        /* Logo and Nav Element Styling */
-
     #navBar{
         height:15%;
         display: flex;
@@ -1859,23 +1845,18 @@ h1{
         width: 28vh;
         height: 12.4vh;
     }
-    /* First Arrow Style */
     #navArrow{
         width:11vh;
         height:11vh;
         margin-left: -29%;
         top:64%;
     }
-
-    /* All Other Nav Arrow Styles */
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:11vh;
         height:11vh;
         left:80%;
         top:44%;
     }
-
-    /* Background Line Positioning and Styles */
     .lBot2{
         width:90%;
         height:90%;
@@ -1898,13 +1879,11 @@ h1{
     .lMain{
         margin-top: -16%;
     }
-    /* Home Logo Style */
     #homeLogo{
         width:48vh;
         height:48vh;
         margin-top: 44.5%;
     }
-        /* Product Image and Content Container */
     .proContainer{
         margin-top:18%;
     }
@@ -1914,7 +1893,6 @@ h1{
     .watermelon{
         margin-left: 8%;
     }
-        /* Product Information Icons */
     .infoIcons{
         width:18%;
         font-size: 1rem;
@@ -1938,7 +1916,6 @@ h1{
     .rArrow{
         border-width: 0 0.4vh 0.4vh 0;
     }
-
     .bottle{
         width:80%;
         margin-bottom: -58%;
@@ -1948,8 +1925,6 @@ h1{
         height:70vh;
         margin-bottom: -10%;
     }
-
-        /* Shared Styles for Review Headings */
     .f1R{
         font-size: 4rem;
         margin-bottom: -21%;
@@ -1989,8 +1964,6 @@ h1{
         margin-top:0%;
         font-size: 1.1rem;
     }
-
-    /* Products All Section and Splide Slider Styling*/
     #productsAll{
         margin-top: 0%;
     }
@@ -2022,12 +1995,10 @@ h1{
         margin-left: -22%;
         margin-top:10%;
     }
-
     #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         left:43%;
         top:85%;
     }
-
     #aboutMain, #about1, #about2{
         width:90%;
         height:70%;
@@ -2067,14 +2038,12 @@ h1{
     .abSubNav{
         margin-top: -10%;
     }
-
     #contactScroll{
         width:95%;
         height:52%;
         margin-top: 2%;
         text-align: center;
     }
-        /* Scroll Animations for the Contact Page Scroll Area*/
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
         margin-left:70%;
         margin-top:-115%;
@@ -2092,7 +2061,6 @@ h1{
         width:92%;
 
     }
-
     .send{
         width:18%;
         height:14%;
@@ -2107,7 +2075,6 @@ h1{
     .tel{
         margin-bottom: 16vh;
     }
-
     .conBotArrow{
         display: none;
     }
@@ -2131,9 +2098,6 @@ h1{
     .social3{
         margin-right:16%;
     }
-
-    /* Transition Animation Classes*/
-        /* Home Page | Nav Elements */
     .homePage_hidden{
         margin-top: 110%;
     }
@@ -2152,7 +2116,6 @@ h1{
     .navCon_hidden{
         margin-left:-60%;
     }
-        /* Products Page | About Page | Contact Page */
     .productPage_hidden{
         margin-top:120%;
     }
@@ -2172,12 +2135,8 @@ h1{
         display: block;
     }
 }
-
+/* Media Query 4 - Larger Mobile Screen-Size (Tested iPhone 13 Safari and Chrome) (This layout looks somewhat off when using desktop browser resizing to test but looks much better on the iPhone 13, which is what I made it for specifically */
 @media only screen and (max-width: 390px){
-
-    /* Navigation Elements */
-        /* Logo and Nav Element Styling */
-
     .hamburger{
         display: flex;
         flex-direction: column;
@@ -2240,23 +2199,18 @@ h1{
         width: 24vh;
         height: 12.4vh;
     }
-    /* First Arrow Style */
     #navArrow{
         width:13vh;
         height:13vh;
         margin-left: -34%;
         top:64%;
     }
-
-    /* All Other Nav Arrow Styles */
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:12vh;
         height:12vh;
         left:70%;
         top:44%;
     }
-
-    /* Background Line Positioning and Styles */
     .lBot2{
         margin-top: 88%;
     }
@@ -2276,13 +2230,11 @@ h1{
     .lMain{
         margin-top: -23%;
     }
-    /* Home Logo Style */
     #homeLogo{
         width:46vh;
         height:46vh;
         margin-top: 52%;
     }
-        /* Product Image and Content Container */
     .proContainer{
         width:100%;
         height:80%;
@@ -2300,7 +2252,6 @@ h1{
         margin-top: 3%;
         margin-bottom: -108%;
     }
-        /* Product Information Icons */
     .infoIcons{
         display: none;
     }
@@ -2331,9 +2282,6 @@ h1{
         height:70vh;
         margin-bottom: -18%;
     }
-
-        /* Shared Styles for Review Headings */
-
     #f1Review, #f2Review, #f3Review, #f4Review{
         text-align: center;
     }
@@ -2387,8 +2335,6 @@ h1{
         margin-top:0%;
         font-size: 0.9rem;
     }
-
-    /* Products All Section and Splide Slider Styling*/
     #productsAll{
         margin-top: 0%;
 
@@ -2435,12 +2381,10 @@ h1{
         margin: auto;
         z-index: 9;
     }
-
     #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         left:38%;
         top:85%;
     }
-
     #aboutMain, #about1, #about2{
         width:98%;
         height:68%;
@@ -2461,7 +2405,6 @@ h1{
         font-size: 1.4rem;
         padding-top:3%;
     }
-
     .about1Title, .about2Title{
         font-size: 3.2rem;
         margin-top: -6%;
@@ -2481,7 +2424,6 @@ h1{
     .abSubNav{
         margin-top: -20%;
     }
-
     #contactPage{
         text-align: center;
     }
@@ -2491,7 +2433,6 @@ h1{
         margin-top: 26%;
         text-align: center;
     }
-        /* Scroll Animations for the Contact Page Scroll Area*/
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
         margin-left:70%;
         margin-top:-115%;
@@ -2515,7 +2456,6 @@ h1{
         padding: 1vh;
         overflow: hidden;
     }
-
     .send{
         width:24%;
         height:12%;
@@ -2524,7 +2464,6 @@ h1{
         padding-top:0.4vh;
         font-size: 1.1rem;
     }
-    
     .contactSub2{
         margin-top: 8vh;
     }
@@ -2553,9 +2492,6 @@ h1{
     .social3{
         margin-right:16%;
     }
-
-    /* Transition Animation Classes*/
-        /* Home Page | Nav Elements */
     .homePage_hidden{
         margin-top: 180%;
     }
@@ -2571,7 +2507,6 @@ h1{
     .navCon_hidden{
         margin-left:-80%;
     }
-        /* Products Page | About Page | Contact Page */
     .productPage_hidden{
         margin-top:185%;
     }
@@ -2591,15 +2526,8 @@ h1{
         display: block;
     }
 }
-
-
-
-
+/* Media Query 5 - Smaller Mobile Screen-Size */
 @media only screen and (max-width: 360px){
-
-    /* Navigation Elements */
-        /* Logo and Nav Element Styling */
-
     .hamburger{
         display: flex;
         flex-direction: column;
@@ -2662,23 +2590,18 @@ h1{
         width: 28vh;
         height: 12.4vh;
     }
-    /* First Arrow Style */
     #navArrow{
         width:14vh;
         height:14vh;
         margin-left: -34%;
         top:64%;
     }
-
-    /* All Other Nav Arrow Styles */
     #proArrow, #proArrow2, #proArrow3, #proArrow4, #proArrowOther, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         width:13vh;
         height:13vh;
         left:73%;
         top:44%;
     }
-
-    /* Background Line Positioning and Styles */
     .lBot2{
         margin-top: 112%;
     }
@@ -2704,7 +2627,6 @@ h1{
         height:52vh;
         margin-top: 50%;
     }
-        /* Product Image and Content Container */
     .proContainer{
         width:100%;
         height:80%;
@@ -2722,7 +2644,6 @@ h1{
         margin-top: 0;
         margin-bottom: -110%;
     }
-        /* Product Information Icons */
     .infoIcons{
         width:23%;
         font-size: 1rem;
@@ -2756,9 +2677,6 @@ h1{
         height:70vh;
         margin-bottom: -20%;
     }
-
-        /* Shared Styles for Review Headings */
-
     #f1Review, #f2Review, #f3Review, #f4Review{
         text-align: center;
     }
@@ -2811,8 +2729,6 @@ h1{
         margin-top:0%;
         font-size: 0.9rem;
     }
-
-    /* Products All Section and Splide Slider Styling*/
     #productsAll{
         margin-top: 0%;
 
@@ -2857,12 +2773,10 @@ h1{
         margin: auto;
         z-index: 9;
     }
-
     #proArrow4, #abArrow, #conArrow, #revArrow, #revArrow2, #revArrow3, #revArrow4{
         left:38%;
         top:85%;
     }
-
     #aboutMain, #about1, #about2{
         width:95%;
         height:68%;
@@ -2883,7 +2797,6 @@ h1{
         font-size: 1.3rem;
         padding-top:3%;
     }
-
     .about1Title, .about2Title{
         font-size: 3rem;
         margin-top: 5%;
@@ -2903,7 +2816,6 @@ h1{
     .abSubNav{
         margin-top: -14%;
     }
-
     #contactPage{
         text-align: center;
     }
@@ -2913,7 +2825,6 @@ h1{
         margin-top: 30%;
         text-align: center;
     }
-        /* Scroll Animations for the Contact Page Scroll Area*/
     .conAnimateL1 img, .conAnimateL2 img, .conAnimateL3 img{
         margin-left:70%;
         margin-top:-115%;
@@ -2937,7 +2848,6 @@ h1{
         padding: 1vh;
         overflow: hidden;
     }
-
     .send{
         width:24%;
         height:14%;
@@ -2946,7 +2856,6 @@ h1{
         padding-top:0.4vh;
         font-size: 1.1rem;
     }
-    
     .contactSub2{
         margin-top: 16vh;
     }
@@ -2975,9 +2884,6 @@ h1{
     .social3{
         margin-right:16%;
     }
-
-    /* Transition Animation Classes*/
-        /* Home Page | Nav Elements */
     .homePage_hidden{
         margin-top: 150%;
     }
@@ -2993,7 +2899,6 @@ h1{
     .navCon_hidden{
         margin-left:-80%;
     }
-        /* Products Page | About Page | Contact Page */
     .productPage_hidden{
         margin-top:160%;
     }
