@@ -806,18 +806,7 @@ textarea::placeholder{
 .tel{
     margin-bottom: 20vh;
 }
-/* Custom Scroll Bar for Contact Page | Only compatible with Chrome */
-#contactScroll::-webkit-scrollbar{
-    position: absolute;
-    width:3vh;
-    border-radius: 3vh;
-    background-color:#E51B6C;
-}
-#contactScroll::-webkit-scrollbar-thumb{
-    background-color:#27AAE1;
-    border-radius: 3vh;
-    
-}
+
 .conArrowContainer{
     position: absolute;
     display: flex;
